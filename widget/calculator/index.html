@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Solar Savings Calculator — Widget</title>
+<meta name="robots" content="noindex,follow">
+<style>
+:root{--bg:#fff;--ink:#0f1c2e;--mut:#5b6b80;--line:#e2e8f0;--accent:#f59e0b;--sky:#0ea5e9;--soft:#f8fafc}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:-apple-system,Segoe UI,system-ui,Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.45}
+.wrap{max-width:660px;margin:0 auto;padding:16px 18px 18px}
+h1{font-size:20px;margin:0 0 4px;line-height:1.25}
+.sub{color:var(--mut);font-size:13px;margin:0 0 14px}
+label{display:block;font-size:13px;color:var(--mut);margin:10px 0 4px}
+select,input{width:100%;padding:9px 10px;font-size:15px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font-family:inherit}
+select:focus,input:focus{outline:none;border-color:var(--sky);box-shadow:0 0 0 3px rgba(14,165,233,.18)}
+.out{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0 10px;background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px}
+.o{text-align:center}
+.v{font-size:20px;font-weight:700;color:var(--ink);line-height:1.15}
+.l{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
+.disc{font-size:11px;color:var(--mut);margin:8px 0 0;line-height:1.4}
+.foot{font-size:11px;color:var(--mut);margin:14px 0 0;text-align:center;padding-top:10px;border-top:1px solid var(--line)}
+.foot a{color:var(--ink);font-weight:600;text-decoration:none}
+.foot a:hover{text-decoration:underline}
+@media (max-width:430px){.out{grid-template-columns:1fr 1fr;}.o:nth-child(3){grid-column:1/3}}
+</style>
+<script>
+function fmt(n){return n.toLocaleString('en-US');}
+function calc(){
+ var rate=Math.max(0,parseFloat(document.getElementById('rate').value)||0)/100;
+ var w=Math.max(0,parseFloat(document.getElementById('watts').value)||0);
+ var price=Math.max(0,parseFloat(document.getElementById('price').value)||0);
+ var perW=parseFloat(document.getElementById('perw').value); if(isNaN(perW))perW=1.0;
+ perW=Math.min(1.6,Math.max(0.3,perW));
+ var kwh=Math.round(w*perW);
+ var save=kwh*rate;
+ var pay=save>0?(price/save):0;
+ document.getElementById('o_kwh').textContent=fmt(kwh)+' kWh';
+ document.getElementById('o_save').textContent='$'+fmt(Math.round(save));
+ document.getElementById('o_pay').textContent=(pay>0?pay.toFixed(1)+' yrs':'—');
+}
+document.addEventListener('DOMContentLoaded',function(){
+ ['rate','watts','price','perw'].forEach(function(id){document.getElementById(id).addEventListener('input',calc);});
+ function clampField(){var w=document.getElementById('watts');w.value=Math.max(0,parseFloat(w.value)||0);var pr=document.getElementById('price');pr.value=Math.max(0,parseFloat(pr.value)||0);var pw=document.getElementById('perw');var v=parseFloat(pw.value);if(isNaN(v))v=1.0;pw.value=Math.min(1.6,Math.max(0.3,v));calc();}
+ ['watts','price','perw'].forEach(function(id){document.getElementById(id).addEventListener('blur',clampField);});
+ calc();
+});
+</script>
+</head><body>
+<div class="wrap">
+<h1>Solar Savings Calculator</h1>
+<p class="sub">Estimate yearly savings &amp; payback time for a plug-in solar kit.</p>
+<label for="rate">Your state (sets electricity rate)</label>
+<select id="rate"><option value="17">US average</option><option value="15">Alabama</option><option value="24">Alaska</option><option value="15">Arizona</option><option value="13">Arkansas</option><option value="31">California</option><option value="15">Colorado</option><option value="29">Connecticut</option><option value="17">Delaware</option><option value="15">Florida</option><option value="14">Georgia</option><option value="42">Hawaii</option><option value="11">Idaho</option><option value="17">Illinois</option><option value="16">Indiana</option><option value="14">Iowa</option><option value="14">Kansas</option><option value="13">Kentucky</option><option value="12">Louisiana</option><option value="24">Maine</option><option value="17">Maryland</option><option value="30">Massachusetts</option><option value="19">Michigan</option><option value="15">Minnesota</option><option value="13">Mississippi</option><option value="13">Missouri</option><option value="13">Montana</option><option value="12">Nebraska</option><option value="15">Nevada</option><option value="24">New Hampshire</option><option value="18">New Jersey</option><option value="15">New Mexico</option><option value="25">New York</option><option value="14">North Carolina</option><option value="12">North Dakota</option><option value="16">Ohio</option><option value="13">Oklahoma</option><option value="13">Oregon</option><option value="18">Pennsylvania</option><option value="29">Rhode Island</option><option value="15">South Carolina</option><option value="13">South Dakota</option><option value="13">Tennessee</option><option value="15">Texas</option><option value="11">Utah</option><option value="21">Vermont</option><option value="14">Virginia</option><option value="11">Washington</option><option value="15">West Virginia</option><option value="17">Wisconsin</option><option value="12">Wyoming</option></select>
+<label for="watts">System size (watts)</label>
+<input id="watts" type="number" value="800" min="100" step="50">
+<label for="price">Kit price ($)</label>
+<input id="price" type="number" value="600" min="0" step="50">
+<label for="perw">Annual production per watt (kWh/W) &mdash; 0.8&ndash;1.2 typical</label>
+<input id="perw" type="number" value="1.0" min="0.3" max="1.6" step="0.05">
+<div class="out" aria-live="polite">
+<div class="o"><div class="v" id="o_kwh">&mdash;</div><div class="l">Yearly production</div></div>
+<div class="o"><div class="v" id="o_save">&mdash;</div><div class="l">Yearly savings</div></div>
+<div class="o"><div class="v" id="o_pay">&mdash;</div><div class="l">Payback</div></div>
+</div>
+<p class="disc">Estimates only. Actual rate, sun exposure, panel angle &amp; shading vary.</p>
+<p class="foot">Calculator by <a href="https://pluginsolarhub.org/savings-calculator/?utm_source=widget" target="_blank" rel="noopener">PlugInSolarHub</a></p>
+</div>
+</body></html>
