@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-06-14",
+  "source": "https://pluginsolarhub.org/state-legality/",
+  "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+  "state": "Illinois",
+  "slug": "illinois",
+  "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+  "status_badge_verbatim": "Gray area",
+  "avg_rate_cents": 17,
+  "main_utilities": [
+    "ComEd",
+    "Ameren"
+  ],
+  "page_url": "https://pluginsolarhub.org/state-legality/illinois/",
+  "last_reviewed": "2026-06-14",
+  "legislation": null,
+  "source_file": "/data/plug-in-solar-laws.json"
+}

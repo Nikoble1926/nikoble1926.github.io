@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-06-14",
+  "source": "https://pluginsolarhub.org/state-legality/",
+  "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+  "state": "Connecticut",
+  "slug": "connecticut",
+  "status": "Legal — signed (effective Oct 1, 2026)",
+  "status_badge_verbatim": "Legal — signed (effective Oct 1, 2026)",
+  "avg_rate_cents": 29,
+  "main_utilities": [
+    "Eversource",
+    "United Illuminating"
+  ],
+  "page_url": "https://pluginsolarhub.org/state-legality/connecticut/",
+  "last_reviewed": "2026-06-14",
+  "legislation": {
+    "bill": "HB 5340",
+    "status": "signed",
+    "date": "2026-06-04",
+    "effective": "2026-10-01",
+    "max_watts": 1200,
+    "cert_required": "Accredited testing laboratory (UL or equivalent)",
+    "signed_by": "Gov. Ned Lamont",
+    "source_url": "https://pv-magazine-usa.com/2026/06/05/connecticut-governor-signs-the-states-omnibus-2026-solar-bill/",
+    "notes": "Omnibus solar bill includes plug-in / balcony solar authorization. Balcony solar rules take effect Oct 1 2026."
+  },
+  "source_file": "/data/plug-in-solar-laws.json"
+}

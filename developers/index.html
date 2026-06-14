@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Plug-In Solar Legality Dataset — Free Developer API (2026)</title>
+<meta name="description" content="Free, machine-readable 50-state plug-in / balcony solar legality dataset for developers and AI agents. JSON over plain HTTP, no auth, no rate limit. Updated as bills move; last verified June 14, 2026.">
+<link rel="canonical" href="https://pluginsolarhub.org/developers/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Plug-In Solar Legality Dataset — Free Developer API (2026)">
+<meta property="og:description" content="Free, machine-readable 50-state plug-in / balcony solar legality dataset. JSON over plain HTTP, no auth.">
+<meta property="og:url" content="https://pluginsolarhub.org/developers/">
+<meta property="og:image" content="https://pluginsolarhub.org/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Plug-In Solar Legality Dataset — Free Developer API">
+<meta name="twitter:description" content="Free, machine-readable 50-state plug-in / balcony solar legality dataset. JSON over plain HTTP, no auth.">
+<meta name="twitter:image" content="https://pluginsolarhub.org/og-image.png">
+<meta name="robots" content="index,follow"><link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Dataset","name":"Plug-In Solar Legality Dataset (50 U.S. states)","description":"Machine-readable per-state legality, status, electricity rate, main utilities and current legislation (bill / cap / effective date / source) for plug-in / balcony solar in all 50 U.S. states.","url":"https://pluginsolarhub.org/developers/","license":"https://pluginsolarhub.org/developers/#license","creator":{"@type":"Organization","name":"PlugInSolarHub","url":"https://pluginsolarhub.org/"},"publisher":{"@type":"Organization","name":"PlugInSolarHub","url":"https://pluginsolarhub.org/"},"dateModified":"2026-06-14","keywords":["plug-in solar","balcony solar","legality","interconnection","SUNNY Act","HB 5340","50-state","USA"],"isAccessibleForFree":true,"distribution":[{"@type":"DataDownload","name":"Full dataset","contentUrl":"https://pluginsolarhub.org/data/plug-in-solar-laws.json","encodingFormat":"application/json"},{"@type":"DataDownload","name":"Per-state directory index","contentUrl":"https://pluginsolarhub.org/data/states/index.json","encodingFormat":"application/json"}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://pluginsolarhub.org/"},{"@type":"ListItem","position":2,"name":"Developers","item":"https://pluginsolarhub.org/developers/"}]}]</script></head><body>
+<header class="site"><div class="wrap bar">
+<a class="logo" href="/"><span class="sun"></span>PlugInSolarHub</a>
+<nav class="main"><a href="/">Home</a><a href="/best-balcony-solar-kits-2026/">Best Kits</a><a href="/deals/">Deals</a><a href="/accessories/">Accessories</a><a href="/savings-calculator/">Calculator</a><a href="/guides/">Guides</a><a href="/state-legality/">State Rules</a><a href="/reviews/">Reviews</a><a href="/about/">About</a></nav></div></header>
+<main><div class="wrap"><div class="crumbs"><a href="/">Home</a> &rsaquo; Developers</div></div>
+<section><div class="wrap"><article class="article"><h1>Plug-In Solar Legality Dataset &mdash; Free Developer API</h1>
+<p class="lead" style="color:var(--mut);font-size:19px">Free, machine-readable plug-in / balcony solar legality data for all 50 U.S. states. JSON over plain HTTPS, no auth, no API key, no rate limit. For AI agents, energy startups, news outlets, and integrators.</p>
+<p class="tag"><strong>Last verified:</strong> June 14, 2026 &middot; <strong>Schema:</strong> v1.0 &middot; <strong>Coverage:</strong> 50/50 states</p>
+
+<h2 style="margin-top:24px">What this is</h2>
+<div class="article">
+<p>A structured, version-controlled view of the <a href="/state-legality/">50-state plug-in solar legality tracker</a>. We re-check each state&rsquo;s legal status, average electricity rate, main utilities, and any in-flight plug-in solar legislation (bill number, governor, cap in watts, effective date, source URL) and publish the structured result as JSON. Each state record is fully self-contained.</p>
+<p><strong>Why it exists:</strong> plug-in solar laws are moving fast (six states have signed legislation in 2026; two more are awaiting governor signatures) and most published trackers are PDFs or hand-curated tables. Agents and AI assistants need a stable JSON endpoint.</p>
+<p><strong>Update cadence:</strong> updated as bills move. The dataset&rsquo;s top-level <code>last_updated</code> reflects the latest re-verification pass.</p>
+</div>
+
+<h2 style="margin-top:32px">Endpoints</h2>
+<table><caption class="sr-only">JSON endpoints</caption><thead><tr><th scope="col">Endpoint</th><th scope="col">Purpose</th></tr></thead><tbody>
+<tr><td><code>GET <a href="/data/plug-in-solar-laws.json">/data/plug-in-solar-laws.json</a></code></td><td>Full dataset &mdash; all 50 states + top-level metadata in one document</td></tr>
+<tr><td><code>GET <a href="/data/states/index.json">/data/states/index.json</a></code></td><td>Directory listing &mdash; one entry per state with its slug, status, and file path</td></tr>
+<tr><td><code>GET <a href="/data/states/new-york.json">/data/states/&lt;slug&gt;.json</a></code></td><td>Per-state record (self-contained, includes inherited schema_version + last_updated)</td></tr>
+</tbody></table>
+<p class="tag" style="margin:8px 0 0">All responses are <code>application/json</code> served from GitHub Pages over HTTPS. No CORS restrictions for read.</p>
+
+<h2 style="margin-top:32px">Schema</h2>
+<table><caption class="sr-only">State record schema</caption><thead><tr><th scope="col">Field</th><th scope="col">Type</th><th scope="col">Description</th></tr></thead><tbody>
+<tr><td><code>schema_version</code></td><td>string</td><td>Dataset schema version (currently <code>"1.0"</code>).</td></tr>
+<tr><td><code>last_updated</code></td><td>string (YYYY-MM-DD)</td><td>Date of latest re-verification pass on the master dataset.</td></tr>
+<tr><td><code>source</code></td><td>string (URL)</td><td>Human-readable source for the data (the state-legality tracker page).</td></tr>
+<tr><td><code>state</code></td><td>string</td><td>State name (e.g. <code>"New York"</code>).</td></tr>
+<tr><td><code>slug</code></td><td>string</td><td>URL slug used across the site (e.g. <code>"new-york"</code>).</td></tr>
+<tr><td><code>status</code></td><td>string</td><td>Plain-English legality summary (e.g. <code>"Legal &mdash; signed (effective Oct 1, 2026)"</code>).</td></tr>
+<tr><td><code>status_badge_verbatim</code></td><td>string</td><td>The exact badge text shown on the state page.</td></tr>
+<tr><td><code>avg_rate_cents</code></td><td>integer</td><td>Approximate average residential electricity rate in cents/kWh.</td></tr>
+<tr><td><code>main_utilities</code></td><td>string[]</td><td>Major investor-owned utilities serving the state (only when explicitly named on the page).</td></tr>
+<tr><td><code>page_url</code></td><td>string (URL)</td><td>Canonical URL of the corresponding human-facing state page.</td></tr>
+<tr><td><code>last_reviewed</code></td><td>string (YYYY-MM-DD)</td><td>Date this state record was last reviewed.</td></tr>
+<tr><td><code>legislation</code></td><td>object &#124; null</td><td>Verified plug-in / balcony solar legislation. <code>null</code> if no plug-in-specific statute exists yet.</td></tr>
+<tr><td><code>legislation.bill</code></td><td>string</td><td>Bill number (e.g. <code>"HB 5340"</code>, <code>"A.9111C / S.8512C"</code>).</td></tr>
+<tr><td><code>legislation.status</code></td><td>string</td><td>One of <code>"signed"</code>, <code>"passed_awaiting_governor"</code>, <code>"introduced"</code>.</td></tr>
+<tr><td><code>legislation.date</code></td><td>string</td><td>Bill action date (e.g. signing date or chamber-passage date).</td></tr>
+<tr><td><code>legislation.effective</code></td><td>string &#124; null</td><td>Effective date if known.</td></tr>
+<tr><td><code>legislation.max_watts</code></td><td>integer</td><td>Watt cap allowed under the bill.</td></tr>
+<tr><td><code>legislation.cert_required</code></td><td>string</td><td>Required certification (e.g. UL or equivalent accredited testing laboratory).</td></tr>
+<tr><td><code>legislation.signed_by</code></td><td>string &#124; null</td><td>Governor who signed (if signed).</td></tr>
+<tr><td><code>legislation.source_url</code></td><td>string (URL)</td><td>Authoritative source for the bill information.</td></tr>
+<tr><td><code>legislation.notes</code></td><td>string</td><td>One-line context (e.g. unique aspects like Colorado&rsquo;s 1,920W cap).</td></tr>
+</tbody></table>
+
+<h2 style="margin-top:32px">Example usage</h2>
+
+<h3 style="margin-top:18px">curl</h3>
+<pre style="background:#0f172a;color:#e5e7eb;padding:14px;border-radius:8px;overflow-x:auto;font-size:13px"><code># Fetch the New York record
+curl -s https://pluginsolarhub.org/data/states/new-york.json
+
+# Get the full dataset and grep for signed legislation
+curl -s https://pluginsolarhub.org/data/plug-in-solar-laws.json \
+  | jq '.states[] | select(.legislation.status == "signed") | {state, bill: .legislation.bill, date: .legislation.date}'</code></pre>
+
+<h3 style="margin-top:18px">JavaScript (browser / Node 18+)</h3>
+<pre style="background:#0f172a;color:#e5e7eb;padding:14px;border-radius:8px;overflow-x:auto;font-size:13px"><code>// Find every state where plug-in solar is legally signed
+const data = await fetch(
+  "https://pluginsolarhub.org/data/plug-in-solar-laws.json"
+).then(r =&gt; r.json());
+
+const signed = data.states.filter(
+  s =&gt; s.legislation?.status === "signed"
+);
+
+console.log(`${signed.length} states have signed plug-in solar laws:`);
+for (const s of signed) {
+  console.log(`  ${s.state} — ${s.legislation.bill} (${s.legislation.date})`);
+}</code></pre>
+
+<h2 style="margin-top:32px" id="license">License &amp; terms</h2>
+<div class="article">
+<p><strong>Free to use with attribution.</strong> If you display or republish this data, please link back to <a href="https://pluginsolarhub.org/state-legality/">pluginsolarhub.org/state-legality/</a> as the source. AI agents may use it without explicit attribution per record, but should reference the source domain in their citation chain.</p>
+<p>For <strong>bulk pulls</strong>, <strong>commercial integrations</strong>, or guaranteed-SLA update notifications, please reach out via the <a href="/contact/">contact page</a>. We&rsquo;re happy to discuss data partnerships, custom feeds, and webhook delivery.</p>
+<p>This is an initial informational license statement, not a formal legal document. Use is at your own risk.</p>
+</div>
+
+<h2 style="margin-top:32px">Accuracy &amp; disclaimer</h2>
+<div class="article">
+<p>This dataset is <strong>informational, not legal advice</strong>. Plug-in solar legislation moves fast and utility-level interconnection rules vary within a state. Before installing a kit, always confirm current rules with your utility (e.g. Eversource, Con Edison, NYSEG, Xcel Energy, PG&amp;E) and your state&rsquo;s public utilities commission.</p>
+<p>We re-verify each state record at least every several weeks and immediately after any state-level legislation event (sign / veto / passage). The <code>last_reviewed</code> field on each state record reflects the actual verification timestamp.</p>
+<p>If you find a stale or incorrect entry, please <a href="/contact/">reach out</a> &mdash; we update fast.</p>
+</div>
+
+<h2 style="margin-top:32px">Data partnerships</h2>
+<div class="note" style="margin-top:14px;border-left:4px solid #0ea5e9"><strong>Building something with this data?</strong> We&rsquo;d love to hear about it &mdash; whether you&rsquo;re a solar startup, energy news outlet, AI assistant, or analytics platform. Drop us a line via the <a href="/contact/">contact page</a> and we can discuss webhook-style update notifications, bulk historic data, or custom slices.</div>
+
+<div class="disc" style="margin-top:24px">Schema version 1.0. Last verified June 14, 2026. Use this data at your own risk &mdash; informational, not legal advice. Verify current rules with your utility and state authority.</div>
+</article></div></section></main>
+<footer class="site"><div class="wrap"><div class="cols">
+<div><h4>PlugInSolarHub</h4><p class="tag" style="color:#9fb3c8">Independent reviews, tools and plain-English guides for plug-in &amp; balcony solar in the United States.</p></div>
+<div><h4>Tools</h4><ul>
+<li><a href="/savings-calculator/">Savings calculator</a></li>
+<li><a href="/embed-solar-calculator/">Embed our calculator (free)</a></li>
+<li><a href="/state-legality/">50-state tracker</a></li>
+<li><a href="/best-balcony-solar-kits-2026/">Best kits 2026</a></li>
+<li><a href="/deals/">Deals (June 2026)</a></li>
+<li><a href="/prime-day-solar-deals-2026/">Prime Day solar deals</a></li>
+<li><a href="/accessories/">Accessories under $50</a></li></ul></div>
+<div><h4>Learn</h4><ul>
+<li><a href="/guides/">Guides</a></li><li><a href="/reviews/">Reviews</a></li>
+<li><a href="/best-plug-in-solar-for-renters/">Renters guide</a></li>
+<li><a href="/how-much-does-balcony-solar-cost/">Cost breakdown</a></li>
+<li><a href="/balcony-solar-vs-power-station/">Solar vs power station</a></li>
+<li><a href="/solar-generators-hurricane-season/">Hurricane solar generators</a></li>
+<li><a href="/garden-solar-under-30/">Garden solar under $30</a></li>
+<li><a href="/portable-solar-panels-camping/">Camping solar panels</a></li>
+<li><a href="/whole-home-backup-anker-solix/">Whole-home backup (X1 vs F3800)</a></li>
+<li><a href="/compare/ecoflow-stream-vs-anker-solix/">EcoFlow vs Anker</a></li>
+<li><a href="/best-rv-solar-kits-2026/">Best RV solar kits</a></li>
+<li><a href="/about/">About &amp; methodology</a></li></ul></div></div>
+<div class="fdisc">
+<p><strong>Affiliate disclosure:</strong> PlugInSolarHub is reader-supported. When you buy through links on our site, we may earn an affiliate commission at no extra cost to you. As an Amazon Associate we earn from qualifying purchases.</p>
+<p style="margin-bottom:8px"><a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="/affiliate-disclosure/">Affiliate disclosure</a> &middot; <a href="/contact/">Contact</a> &middot; <a href="/about/">About</a></p>
+<p>Some content is produced with the help of AI and reviewed for accuracy. Plug-in solar regulations and electricity rates change frequently &mdash; always confirm current details with your utility and local authority. &copy; 2026 PlugInSolarHub.</p>
+</div></div></footer><script defer src="/_vercel/insights/script.js"></script></body></html>

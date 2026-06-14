@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-06-14",
+  "source": "https://pluginsolarhub.org/state-legality/",
+  "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+  "state": "Maine",
+  "slug": "maine",
+  "status": "Gray area - check utility",
+  "status_badge_verbatim": "Gray area - check utility",
+  "avg_rate_cents": 24,
+  "main_utilities": [],
+  "page_url": "https://pluginsolarhub.org/state-legality/maine/",
+  "last_reviewed": "2026-06-14",
+  "legislation": {
+    "bill": "LD 1730",
+    "status": "signed",
+    "date": "2026-04-06",
+    "effective": "2026-07-15",
+    "max_watts": 1200,
+    "cert_required": "UL or equivalent nationally recognized testing laboratory",
+    "signed_by": "Gov. Janet Mills",
+    "source_url": "https://pv-magazine-usa.com/2026/04/16/maines-plug-in-solar-law-takes-effect-in-july-but-some-companies-are-already-selling-products-in-the-state/",
+    "notes": "Up to 420W self-install; up to 1,200W requires a licensed electrician."
+  },
+  "source_file": "/data/plug-in-solar-laws.json"
+}

@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-06-14",
+  "source": "https://pluginsolarhub.org/state-legality/",
+  "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+  "count": 50,
+  "states": [
+    {
+      "slug": "alabama",
+      "state": "Alabama",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/alabama/",
+      "file": "/data/states/alabama.json"
+    },
+    {
+      "slug": "alaska",
+      "state": "Alaska",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/alaska/",
+      "file": "/data/states/alaska.json"
+    },
+    {
+      "slug": "arizona",
+      "state": "Arizona",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/arizona/",
+      "file": "/data/states/arizona.json"
+    },
+    {
+      "slug": "arkansas",
+      "state": "Arkansas",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/arkansas/",
+      "file": "/data/states/arkansas.json"
+    },
+    {
+      "slug": "california",
+      "state": "California",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/california/",
+      "file": "/data/states/california.json"
+    },
+    {
+      "slug": "colorado",
+      "state": "Colorado",
+      "status": "Gray area",
+      "page_url": "https://pluginsolarhub.org/state-legality/colorado/",
+      "file": "/data/states/colorado.json"
+    },
+    {
+      "slug": "connecticut",
+      "state": "Connecticut",
+      "status": "Legal — signed (effective Oct 1, 2026)",
+      "page_url": "https://pluginsolarhub.org/state-legality/connecticut/",
+      "file": "/data/states/connecticut.json"
+    },
+    {
+      "slug": "delaware",
+      "state": "Delaware",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/delaware/",
+      "file": "/data/states/delaware.json"
+    },
+    {
+      "slug": "florida",
+      "state": "Florida",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/florida/",
+      "file": "/data/states/florida.json"
+    },
+    {
+      "slug": "georgia",
+      "state": "Georgia",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/georgia/",
+      "file": "/data/states/georgia.json"
+    },
+    {
+      "slug": "hawaii",
+      "state": "Hawaii",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/hawaii/",
+      "file": "/data/states/hawaii.json"
+    },
+    {
+      "slug": "idaho",
+      "state": "Idaho",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/idaho/",
+      "file": "/data/states/idaho.json"
+    },
+    {
+      "slug": "illinois",
+      "state": "Illinois",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/illinois/",
+      "file": "/data/states/illinois.json"
+    },
+    {
+      "slug": "indiana",
+      "state": "Indiana",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/indiana/",
+      "file": "/data/states/indiana.json"
+    },
+    {
+      "slug": "iowa",
+      "state": "Iowa",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/iowa/",
+      "file": "/data/states/iowa.json"
+    },
+    {
+      "slug": "kansas",
+      "state": "Kansas",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/kansas/",
+      "file": "/data/states/kansas.json"
+    },
+    {
+      "slug": "kentucky",
+      "state": "Kentucky",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/kentucky/",
+      "file": "/data/states/kentucky.json"
+    },
+    {
+      "slug": "louisiana",
+      "state": "Louisiana",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/louisiana/",
+      "file": "/data/states/louisiana.json"
+    },
+    {
+      "slug": "maine",
+      "state": "Maine",
+      "status": "Gray area - check utility",
+      "page_url": "https://pluginsolarhub.org/state-legality/maine/",
+      "file": "/data/states/maine.json"
+    },
+    {
+      "slug": "maryland",
+      "state": "Maryland",
+      "status": "Gray area - check utility",
+      "page_url": "https://pluginsolarhub.org/state-legality/maryland/",
+      "file": "/data/states/maryland.json"
+    },
+    {
+      "slug": "massachusetts",
+      "state": "Massachusetts",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/massachusetts/",
+      "file": "/data/states/massachusetts.json"
+    },
+    {
+      "slug": "michigan",
+      "state": "Michigan",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/michigan/",
+      "file": "/data/states/michigan.json"
+    },
+    {
+      "slug": "minnesota",
+      "state": "Minnesota",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/minnesota/",
+      "file": "/data/states/minnesota.json"
+    },
+    {
+      "slug": "mississippi",
+      "state": "Mississippi",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/mississippi/",
+      "file": "/data/states/mississippi.json"
+    },
+    {
+      "slug": "missouri",
+      "state": "Missouri",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/missouri/",
+      "file": "/data/states/missouri.json"
+    },
+    {
+      "slug": "montana",
+      "state": "Montana",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/montana/",
+      "file": "/data/states/montana.json"
+    },
+    {
+      "slug": "nebraska",
+      "state": "Nebraska",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/nebraska/",
+      "file": "/data/states/nebraska.json"
+    },
+    {
+      "slug": "nevada",
+      "state": "Nevada",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/nevada/",
+      "file": "/data/states/nevada.json"
+    },
+    {
+      "slug": "new-hampshire",
+      "state": "New Hampshire",
+      "status": "Gray area - check utility",
+      "page_url": "https://pluginsolarhub.org/state-legality/new-hampshire/",
+      "file": "/data/states/new-hampshire.json"
+    },
+    {
+      "slug": "new-jersey",
+      "state": "New Jersey",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/new-jersey/",
+      "file": "/data/states/new-jersey.json"
+    },
+    {
+      "slug": "new-mexico",
+      "state": "New Mexico",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/new-mexico/",
+      "file": "/data/states/new-mexico.json"
+    },
+    {
+      "slug": "new-york",
+      "state": "New York",
+      "status": "Passed legislature — awaiting Governor",
+      "page_url": "https://pluginsolarhub.org/state-legality/new-york/",
+      "file": "/data/states/new-york.json"
+    },
+    {
+      "slug": "north-carolina",
+      "state": "North Carolina",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/north-carolina/",
+      "file": "/data/states/north-carolina.json"
+    },
+    {
+      "slug": "north-dakota",
+      "state": "North Dakota",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/north-dakota/",
+      "file": "/data/states/north-dakota.json"
+    },
+    {
+      "slug": "ohio",
+      "state": "Ohio",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/ohio/",
+      "file": "/data/states/ohio.json"
+    },
+    {
+      "slug": "oklahoma",
+      "state": "Oklahoma",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/oklahoma/",
+      "file": "/data/states/oklahoma.json"
+    },
+    {
+      "slug": "oregon",
+      "state": "Oregon",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/oregon/",
+      "file": "/data/states/oregon.json"
+    },
+    {
+      "slug": "pennsylvania",
+      "state": "Pennsylvania",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/pennsylvania/",
+      "file": "/data/states/pennsylvania.json"
+    },
+    {
+      "slug": "rhode-island",
+      "state": "Rhode Island",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/rhode-island/",
+      "file": "/data/states/rhode-island.json"
+    },
+    {
+      "slug": "south-carolina",
+      "state": "South Carolina",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/south-carolina/",
+      "file": "/data/states/south-carolina.json"
+    },
+    {
+      "slug": "south-dakota",
+      "state": "South Dakota",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/south-dakota/",
+      "file": "/data/states/south-dakota.json"
+    },
+    {
+      "slug": "tennessee",
+      "state": "Tennessee",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/tennessee/",
+      "file": "/data/states/tennessee.json"
+    },
+    {
+      "slug": "texas",
+      "state": "Texas",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/texas/",
+      "file": "/data/states/texas.json"
+    },
+    {
+      "slug": "utah",
+      "state": "Utah",
+      "status": "Early mover",
+      "page_url": "https://pluginsolarhub.org/state-legality/utah/",
+      "file": "/data/states/utah.json"
+    },
+    {
+      "slug": "vermont",
+      "state": "Vermont",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/vermont/",
+      "file": "/data/states/vermont.json"
+    },
+    {
+      "slug": "virginia",
+      "state": "Virginia",
+      "status": "Gray area",
+      "page_url": "https://pluginsolarhub.org/state-legality/virginia/",
+      "file": "/data/states/virginia.json"
+    },
+    {
+      "slug": "washington",
+      "state": "Washington",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/washington/",
+      "file": "/data/states/washington.json"
+    },
+    {
+      "slug": "west-virginia",
+      "state": "West Virginia",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/west-virginia/",
+      "file": "/data/states/west-virginia.json"
+    },
+    {
+      "slug": "wisconsin",
+      "state": "Wisconsin",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/wisconsin/",
+      "file": "/data/states/wisconsin.json"
+    },
+    {
+      "slug": "wyoming",
+      "state": "Wyoming",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "page_url": "https://pluginsolarhub.org/state-legality/wyoming/",
+      "file": "/data/states/wyoming.json"
+    }
+  ]
+}

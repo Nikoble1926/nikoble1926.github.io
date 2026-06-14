@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-06-14",
+  "source": "https://pluginsolarhub.org/state-legality/",
+  "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+  "state": "New York",
+  "slug": "new-york",
+  "status": "Passed legislature — awaiting Governor",
+  "status_badge_verbatim": "Passed legislature — awaiting Governor",
+  "avg_rate_cents": 25,
+  "main_utilities": [
+    "Con Edison",
+    "National Grid",
+    "NYSEG"
+  ],
+  "page_url": "https://pluginsolarhub.org/state-legality/new-york/",
+  "last_reviewed": "2026-06-14",
+  "legislation": {
+    "bill": "A.9111C / S.8512C (SUNNY Act)",
+    "status": "passed_awaiting_governor",
+    "date": "2026-05-29",
+    "effective": null,
+    "max_watts": 1200,
+    "cert_required": "Accredited testing laboratory (e.g. UL); state fire code compliance",
+    "signed_by": null,
+    "source_url": "https://www.nysenate.gov/legislation/bills/2025/S8512",
+    "notes": "Passed both chambers May 29, 2026. Senate sponsor: Sen. Liz Krueger. Awaiting Gov. Kathy Hochul's signature."
+  },
+  "source_file": "/data/plug-in-solar-laws.json"
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-06-14",
+  "source": "https://pluginsolarhub.org/state-legality/",
+  "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+  "state": "Arkansas",
+  "slug": "arkansas",
+  "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+  "status_badge_verbatim": "Gray area - check utility",
+  "avg_rate_cents": 13,
+  "main_utilities": [
+    "Entergy"
+  ],
+  "page_url": "https://pluginsolarhub.org/state-legality/arkansas/",
+  "last_reviewed": "2026-06-14",
+  "legislation": null,
+  "source_file": "/data/plug-in-solar-laws.json"
+}

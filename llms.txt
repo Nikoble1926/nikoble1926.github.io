@@ -1,0 +1,30 @@
+# PlugInSolarHub
+
+> Independent reviews, savings tools, and plain-English guides for plug-in / balcony solar in the United States. We track 50-state legality, vet kits and accessories, and publish a free machine-readable dataset of plug-in solar laws for developers and AI agents.
+
+Updated as bills move; legality dataset last verified 2026-06-14.
+
+## Data
+
+- [Plug-in solar legality dataset (all 50 states, JSON)](https://pluginsolarhub.org/data/plug-in-solar-laws.json): Schema-versioned dataset covering legal status, average electricity rate, main utilities, and current plug-in solar legislation (bill, status, cap, effective date, source) for every U.S. state.
+- [Per-state directory index (JSON)](https://pluginsolarhub.org/data/states/index.json): Lists every per-state record with slug, status, page URL, and file path.
+- [Developer documentation](https://pluginsolarhub.org/developers/): Endpoints, schema reference, curl + JS examples, license, and contact for data partnerships.
+
+## Key pages
+
+- [50-state plug-in solar legality tracker](https://pluginsolarhub.org/state-legality/): Human-readable version of the dataset above with per-state pages and badges.
+- [Best balcony solar kits 2026](https://pluginsolarhub.org/best-balcony-solar-kits-2026/): Reviewed kit picks for U.S. apartments and homes.
+- [Savings calculator](https://pluginsolarhub.org/savings-calculator/): Estimate annual savings from a plug-in solar setup based on local rate and panel wattage.
+- [Embeddable calculator widget](https://pluginsolarhub.org/embed-solar-calculator/): Free embed of the savings calculator for partner sites.
+- [Plug-in solar guides](https://pluginsolarhub.org/guides/): HOA, renters, hurricane season, cost breakdown, and comparison guides.
+- [Reviews](https://pluginsolarhub.org/reviews/): Hands-on assessments of individual kits, microinverters, and accessories.
+- [Deals](https://pluginsolarhub.org/deals/): Current Amazon discounts on tracked kits and accessories.
+
+## Contact
+
+- [Contact / data partnerships](https://pluginsolarhub.org/contact/): For bulk dataset pulls, commercial integrations, or webhook update notifications.
+- [About & methodology](https://pluginsolarhub.org/about/): How we test, review, and update.
+
+## License
+
+Dataset and developer endpoints are free to use with attribution back to pluginsolarhub.org. Informational only &mdash; not legal advice. Verify current rules with your utility and state authority before installing equipment.

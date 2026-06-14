@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-06-14",
+  "source": "https://pluginsolarhub.org/state-legality/",
+  "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+  "state": "New Hampshire",
+  "slug": "new-hampshire",
+  "status": "Gray area - check utility",
+  "status_badge_verbatim": "Gray area - check utility",
+  "avg_rate_cents": 24,
+  "main_utilities": [
+    "Eversource",
+    "Unitil"
+  ],
+  "page_url": "https://pluginsolarhub.org/state-legality/new-hampshire/",
+  "last_reviewed": "2026-06-14",
+  "legislation": {
+    "bill": "SB 540",
+    "status": "passed_awaiting_governor",
+    "date": "2026-05",
+    "effective": null,
+    "max_watts": 1200,
+    "cert_required": "Nationally recognized testing laboratory",
+    "signed_by": null,
+    "source_url": "https://pv-magazine-usa.com/2026/05/12/new-hampshire-legislature-advances-plug-in-solar-bill-to-governor/",
+    "notes": "Allows a single plug-in solar device up to 1,200W AC output per customer. Awaiting executive action."
+  },
+  "source_file": "/data/plug-in-solar-laws.json"
+}

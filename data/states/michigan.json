@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-06-14",
+  "source": "https://pluginsolarhub.org/state-legality/",
+  "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+  "state": "Michigan",
+  "slug": "michigan",
+  "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+  "status_badge_verbatim": "Gray area, higher rates",
+  "avg_rate_cents": 19,
+  "main_utilities": [
+    "DTE",
+    "Consumers Energy"
+  ],
+  "page_url": "https://pluginsolarhub.org/state-legality/michigan/",
+  "last_reviewed": "2026-06-14",
+  "legislation": null,
+  "source_file": "/data/plug-in-solar-laws.json"
+}

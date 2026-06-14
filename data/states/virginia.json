@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-06-14",
+  "source": "https://pluginsolarhub.org/state-legality/",
+  "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+  "state": "Virginia",
+  "slug": "virginia",
+  "status": "Gray area",
+  "status_badge_verbatim": "Gray area",
+  "avg_rate_cents": 14,
+  "main_utilities": [
+    "Dominion Energy"
+  ],
+  "page_url": "https://pluginsolarhub.org/state-legality/virginia/",
+  "last_reviewed": "2026-06-14",
+  "legislation": {
+    "bill": "HB 395 / SB 250",
+    "status": "signed",
+    "date": "2026-04-22",
+    "effective": "2026-07-01",
+    "max_watts": 1200,
+    "cert_required": "UL or equivalent",
+    "signed_by": "Gov. Abigail Spanberger",
+    "source_url": "https://pv-magazine-usa.com/2026/03/12/virginia-becomes-second-u-s-state-to-advance-plug-in-solar-legislation-to-the-governors-desk/",
+    "notes": "Localities cannot ban balcony solar on residential structures within cap; passed House 96–0 and Senate 30–8."
+  },
+  "source_file": "/data/plug-in-solar-laws.json"
+}

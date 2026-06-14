@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-06-14",
+  "source": "https://pluginsolarhub.org/state-legality/",
+  "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+  "state": "Utah",
+  "slug": "utah",
+  "status": "Early mover",
+  "status_badge_verbatim": "Early mover",
+  "avg_rate_cents": 11,
+  "main_utilities": [],
+  "page_url": "https://pluginsolarhub.org/state-legality/utah/",
+  "last_reviewed": "2026-06-14",
+  "legislation": {
+    "bill": "HB 340",
+    "status": "signed",
+    "date": "2025-03",
+    "effective": "2025-05-07",
+    "max_watts": 1200,
+    "cert_required": "UL or equivalent nationally recognized testing laboratory",
+    "signed_by": "Gov. Spencer Cox",
+    "source_url": "https://grist.org/energy/utah-portable-plug-in-solar-law/",
+    "notes": "First U.S. state to fully legalize plug-in solar; treated legally as appliances, no interconnection agreement or fees required within cap."
+  },
+  "source_file": "/data/plug-in-solar-laws.json"
+}

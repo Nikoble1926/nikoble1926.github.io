@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-06-14",
+  "source": "https://pluginsolarhub.org/state-legality/",
+  "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+  "state": "Maryland",
+  "slug": "maryland",
+  "status": "Gray area - check utility",
+  "status_badge_verbatim": "Gray area - check utility",
+  "avg_rate_cents": 17,
+  "main_utilities": [
+    "Pepco",
+    "BGE"
+  ],
+  "page_url": "https://pluginsolarhub.org/state-legality/maryland/",
+  "last_reviewed": "2026-06-14",
+  "legislation": {
+    "bill": "HB 1532",
+    "status": "signed",
+    "date": "2026-05-12",
+    "effective": "2026-05-12",
+    "max_watts": 1200,
+    "cert_required": "UL certification or equivalent safety standard",
+    "signed_by": "Gov. Wes Moore",
+    "source_url": "https://pv-magazine-usa.com/2026/04/15/bills-containing-plug-in-solar-provisions-pass-in-maryland-and-colorado/",
+    "notes": "Utility RELIEF Act; emergency clause = effective immediately on signing. One portable solar system per residential meter."
+  },
+  "source_file": "/data/plug-in-solar-laws.json"
+}
