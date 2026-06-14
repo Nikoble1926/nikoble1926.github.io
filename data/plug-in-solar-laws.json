@@ -1,0 +1,707 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-06-14",
+  "source": "https://pluginsolarhub.org/state-legality/",
+  "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+  "states": [
+    {
+      "state": "Alabama",
+      "slug": "alabama",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 15,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/alabama/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Alaska",
+      "slug": "alaska",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 24,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/alaska/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Arizona",
+      "slug": "arizona",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Strong sun, check utility",
+      "avg_rate_cents": 15,
+      "main_utilities": [
+        "APS",
+        "SRP"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/arizona/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Arkansas",
+      "slug": "arkansas",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 13,
+      "main_utilities": [
+        "Entergy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/arkansas/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "California",
+      "slug": "california",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Leaning permissive",
+      "avg_rate_cents": 31,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/california/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Colorado",
+      "slug": "colorado",
+      "status": "Gray area",
+      "status_badge_verbatim": "Gray area",
+      "avg_rate_cents": 15,
+      "main_utilities": [
+        "Xcel Energy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/colorado/",
+      "last_reviewed": "2026",
+      "legislation": {
+        "bill": "HB26-1007",
+        "status": "signed",
+        "date": "2026-05-07",
+        "effective": "2027-01-01",
+        "max_watts": 1920,
+        "cert_required": "Safety standards established by the law; meter-collar adapters allowed",
+        "signed_by": "Gov. Jared Polis",
+        "source_url": "https://www.solarpowerworldonline.com/2026/05/colorado-approves-balcony-solar-requires-utilities-to-accept-meter-collars/",
+        "notes": "Highest U.S. plug-in solar cap (1,920W). Defines 'portable-scale solar generation devices' as a formal legal category."
+      }
+    },
+    {
+      "state": "Connecticut",
+      "slug": "connecticut",
+      "status": "Gray area - check utility",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 29,
+      "main_utilities": [
+        "Eversource",
+        "United Illuminating"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/connecticut/",
+      "last_reviewed": "2026",
+      "legislation": {
+        "bill": "HB 5340",
+        "status": "signed",
+        "date": "2026-06-04",
+        "effective": "2026-10-01",
+        "max_watts": 1200,
+        "cert_required": "Accredited testing laboratory (UL or equivalent)",
+        "signed_by": "Gov. Ned Lamont",
+        "source_url": "https://pv-magazine-usa.com/2026/06/05/connecticut-governor-signs-the-states-omnibus-2026-solar-bill/",
+        "notes": "Omnibus solar bill includes plug-in / balcony solar authorization. Balcony solar rules take effect Oct 1 2026."
+      }
+    },
+    {
+      "state": "Delaware",
+      "slug": "delaware",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 17,
+      "main_utilities": [
+        "Delmarva"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/delaware/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Florida",
+      "slug": "florida",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Permissive climate, check utility",
+      "avg_rate_cents": 15,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/florida/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Georgia",
+      "slug": "georgia",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area",
+      "avg_rate_cents": 14,
+      "main_utilities": [
+        "Georgia Power"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/georgia/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Hawaii",
+      "slug": "hawaii",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 42,
+      "main_utilities": [
+        "Hawaiian Electric"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/hawaii/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Idaho",
+      "slug": "idaho",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 11,
+      "main_utilities": [
+        "Idaho Power"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/idaho/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Illinois",
+      "slug": "illinois",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area",
+      "avg_rate_cents": 17,
+      "main_utilities": [
+        "ComEd",
+        "Ameren"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/illinois/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Indiana",
+      "slug": "indiana",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 16,
+      "main_utilities": [
+        "Duke Energy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/indiana/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Iowa",
+      "slug": "iowa",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 14,
+      "main_utilities": [
+        "Alliant Energy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/iowa/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Kansas",
+      "slug": "kansas",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 14,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/kansas/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Kentucky",
+      "slug": "kentucky",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 13,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/kentucky/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Louisiana",
+      "slug": "louisiana",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 12,
+      "main_utilities": [
+        "Entergy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/louisiana/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Maine",
+      "slug": "maine",
+      "status": "Gray area - check utility",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 24,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/maine/",
+      "last_reviewed": "2026",
+      "legislation": {
+        "bill": "LD 1730",
+        "status": "signed",
+        "date": "2026-04-06",
+        "effective": "2026-07-15",
+        "max_watts": 1200,
+        "cert_required": "UL or equivalent nationally recognized testing laboratory",
+        "signed_by": "Gov. Janet Mills",
+        "source_url": "https://pv-magazine-usa.com/2026/04/16/maines-plug-in-solar-law-takes-effect-in-july-but-some-companies-are-already-selling-products-in-the-state/",
+        "notes": "Up to 420W self-install; up to 1,200W requires a licensed electrician."
+      }
+    },
+    {
+      "state": "Maryland",
+      "slug": "maryland",
+      "status": "Gray area - check utility",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 17,
+      "main_utilities": [
+        "Pepco",
+        "BGE"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/maryland/",
+      "last_reviewed": "2026",
+      "legislation": {
+        "bill": "HB 1532",
+        "status": "signed",
+        "date": "2026-05-12",
+        "effective": "2026-05-12",
+        "max_watts": 1200,
+        "cert_required": "UL certification or equivalent safety standard",
+        "signed_by": "Gov. Wes Moore",
+        "source_url": "https://pv-magazine-usa.com/2026/04/15/bills-containing-plug-in-solar-provisions-pass-in-maryland-and-colorado/",
+        "notes": "Utility RELIEF Act; emergency clause = effective immediately on signing. One portable solar system per residential meter."
+      }
+    },
+    {
+      "state": "Massachusetts",
+      "slug": "massachusetts",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area, high rates",
+      "avg_rate_cents": 30,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/massachusetts/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Michigan",
+      "slug": "michigan",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area, higher rates",
+      "avg_rate_cents": 19,
+      "main_utilities": [
+        "DTE",
+        "Consumers Energy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/michigan/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Minnesota",
+      "slug": "minnesota",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 15,
+      "main_utilities": [
+        "Xcel Energy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/minnesota/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Mississippi",
+      "slug": "mississippi",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 13,
+      "main_utilities": [
+        "Entergy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/mississippi/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Missouri",
+      "slug": "missouri",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 13,
+      "main_utilities": [
+        "Ameren"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/missouri/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Montana",
+      "slug": "montana",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 13,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/montana/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Nebraska",
+      "slug": "nebraska",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 12,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/nebraska/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Nevada",
+      "slug": "nevada",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 15,
+      "main_utilities": [
+        "NV Energy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/nevada/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "New Hampshire",
+      "slug": "new-hampshire",
+      "status": "Gray area - check utility",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 24,
+      "main_utilities": [
+        "Eversource",
+        "Unitil"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/new-hampshire/",
+      "last_reviewed": "2026",
+      "legislation": {
+        "bill": "SB 540",
+        "status": "passed_awaiting_governor",
+        "date": "2026-05",
+        "effective": null,
+        "max_watts": 1200,
+        "cert_required": "Nationally recognized testing laboratory",
+        "signed_by": null,
+        "source_url": "https://pv-magazine-usa.com/2026/05/12/new-hampshire-legislature-advances-plug-in-solar-bill-to-governor/",
+        "notes": "Allows a single plug-in solar device up to 1,200W AC output per customer. Awaiting executive action."
+      }
+    },
+    {
+      "state": "New Jersey",
+      "slug": "new-jersey",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 18,
+      "main_utilities": [
+        "PSE&G",
+        "JCP&L"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/new-jersey/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "New Mexico",
+      "slug": "new-mexico",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 15,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/new-mexico/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "New York",
+      "slug": "new-york",
+      "status": "Passed legislature — awaiting Governor",
+      "status_badge_verbatim": "Passed legislature — awaiting Governor",
+      "avg_rate_cents": 25,
+      "main_utilities": [
+        "Con Edison",
+        "National Grid",
+        "NYSEG"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/new-york/",
+      "last_reviewed": "2026-06-13",
+      "legislation": {
+        "bill": "A.9111C / S.8512C (SUNNY Act)",
+        "status": "passed_awaiting_governor",
+        "date": "2026-05-29",
+        "effective": null,
+        "max_watts": 1200,
+        "cert_required": "Accredited testing laboratory (e.g. UL); state fire code compliance",
+        "signed_by": null,
+        "source_url": "https://www.nysenate.gov/legislation/bills/2025/S8512",
+        "notes": "Passed both chambers May 29, 2026. Senate sponsor: Sen. Liz Krueger. Awaiting Gov. Kathy Hochul's signature."
+      }
+    },
+    {
+      "state": "North Carolina",
+      "slug": "north-carolina",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area",
+      "avg_rate_cents": 14,
+      "main_utilities": [
+        "Duke Energy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/north-carolina/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "North Dakota",
+      "slug": "north-dakota",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 12,
+      "main_utilities": [
+        "Xcel Energy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/north-dakota/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Ohio",
+      "slug": "ohio",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area",
+      "avg_rate_cents": 16,
+      "main_utilities": [
+        "FirstEnergy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/ohio/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Oklahoma",
+      "slug": "oklahoma",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 13,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/oklahoma/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Oregon",
+      "slug": "oregon",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 13,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/oregon/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Pennsylvania",
+      "slug": "pennsylvania",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area",
+      "avg_rate_cents": 18,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/pennsylvania/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Rhode Island",
+      "slug": "rhode-island",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 29,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/rhode-island/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "South Carolina",
+      "slug": "south-carolina",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 15,
+      "main_utilities": [
+        "Duke Energy",
+        "Dominion Energy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/south-carolina/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "South Dakota",
+      "slug": "south-dakota",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 13,
+      "main_utilities": [
+        "Xcel Energy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/south-dakota/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Tennessee",
+      "slug": "tennessee",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 13,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/tennessee/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Texas",
+      "slug": "texas",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area",
+      "avg_rate_cents": 15,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/texas/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Utah",
+      "slug": "utah",
+      "status": "Early mover",
+      "status_badge_verbatim": "Early mover",
+      "avg_rate_cents": 11,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/utah/",
+      "last_reviewed": "2026",
+      "legislation": {
+        "bill": "HB 340",
+        "status": "signed",
+        "date": "2025-03",
+        "effective": "2025-05-07",
+        "max_watts": 1200,
+        "cert_required": "UL or equivalent nationally recognized testing laboratory",
+        "signed_by": "Gov. Spencer Cox",
+        "source_url": "https://grist.org/energy/utah-portable-plug-in-solar-law/",
+        "notes": "First U.S. state to fully legalize plug-in solar; treated legally as appliances, no interconnection agreement or fees required within cap."
+      }
+    },
+    {
+      "state": "Vermont",
+      "slug": "vermont",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 21,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/vermont/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Virginia",
+      "slug": "virginia",
+      "status": "Gray area",
+      "status_badge_verbatim": "Gray area",
+      "avg_rate_cents": 14,
+      "main_utilities": [
+        "Dominion Energy"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/virginia/",
+      "last_reviewed": "2026",
+      "legislation": {
+        "bill": "HB 395 / SB 250",
+        "status": "signed",
+        "date": "2026-04-22",
+        "effective": "2026-07-01",
+        "max_watts": 1200,
+        "cert_required": "UL or equivalent",
+        "signed_by": "Gov. Abigail Spanberger",
+        "source_url": "https://pv-magazine-usa.com/2026/03/12/virginia-becomes-second-u-s-state-to-advance-plug-in-solar-legislation-to-the-governors-desk/",
+        "notes": "Localities cannot ban balcony solar on residential structures within cap; passed House 96–0 and Senate 30–8."
+      }
+    },
+    {
+      "state": "Washington",
+      "slug": "washington",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Low rates, gray area",
+      "avg_rate_cents": 11,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/washington/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "West Virginia",
+      "slug": "west-virginia",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 15,
+      "main_utilities": [],
+      "page_url": "https://pluginsolarhub.org/state-legality/west-virginia/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Wisconsin",
+      "slug": "wisconsin",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 17,
+      "main_utilities": [
+        "Alliant Energy",
+        "We Energies"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/wisconsin/",
+      "last_reviewed": "2026",
+      "legislation": null
+    },
+    {
+      "state": "Wyoming",
+      "slug": "wyoming",
+      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status_badge_verbatim": "Gray area - check utility",
+      "avg_rate_cents": 12,
+      "main_utilities": [
+        "Rocky Mountain Power"
+      ],
+      "page_url": "https://pluginsolarhub.org/state-legality/wyoming/",
+      "last_reviewed": "2026",
+      "legislation": null
+    }
+  ]
+}
