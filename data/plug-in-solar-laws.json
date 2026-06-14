@@ -90,15 +90,15 @@
     {
       "state": "Connecticut",
       "slug": "connecticut",
-      "status": "Gray area - check utility",
-      "status_badge_verbatim": "Gray area - check utility",
+      "status": "Legal — signed (effective Oct 1, 2026)",
+      "status_badge_verbatim": "Legal — signed (effective Oct 1, 2026)",
       "avg_rate_cents": 29,
       "main_utilities": [
         "Eversource",
         "United Illuminating"
       ],
       "page_url": "https://pluginsolarhub.org/state-legality/connecticut/",
-      "last_reviewed": "2026",
+      "last_reviewed": "2026-06-14",
       "legislation": {
         "bill": "HB 5340",
         "status": "signed",
@@ -454,7 +454,7 @@
         "NYSEG"
       ],
       "page_url": "https://pluginsolarhub.org/state-legality/new-york/",
-      "last_reviewed": "2026-06-13",
+      "last_reviewed": "2026-06-14",
       "legislation": {
         "bill": "A.9111C / S.8512C (SUNNY Act)",
         "status": "passed_awaiting_governor",
