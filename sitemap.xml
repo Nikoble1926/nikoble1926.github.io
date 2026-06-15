@@ -22,7 +22,7 @@
   <url><loc>https://pluginsolarhub.org/state-legality/arkansas/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/state-legality/california/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/state-legality/colorado/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pluginsolarhub.org/state-legality/connecticut/</loc><lastmod>2026-06-14</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://pluginsolarhub.org/state-legality/connecticut/</loc><lastmod>2026-06-15</lastmod><changefreq>daily</changefreq></url>
   <url><loc>https://pluginsolarhub.org/state-legality/delaware/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/state-legality/florida/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/state-legality/georgia/</loc><changefreq>weekly</changefreq></url>
@@ -44,10 +44,10 @@
   <url><loc>https://pluginsolarhub.org/state-legality/montana/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/state-legality/nebraska/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/state-legality/nevada/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pluginsolarhub.org/state-legality/new-hampshire/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://pluginsolarhub.org/state-legality/new-hampshire/</loc><lastmod>2026-06-15</lastmod><changefreq>daily</changefreq></url>
   <url><loc>https://pluginsolarhub.org/state-legality/new-jersey/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/state-legality/new-mexico/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pluginsolarhub.org/state-legality/new-york/</loc><lastmod>2026-06-14</lastmod><changefreq>daily</changefreq></url>
+  <url><loc>https://pluginsolarhub.org/state-legality/new-york/</loc><lastmod>2026-06-15</lastmod><changefreq>daily</changefreq></url>
   <url><loc>https://pluginsolarhub.org/state-legality/north-carolina/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/state-legality/north-dakota/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/state-legality/ohio/</loc><changefreq>weekly</changefreq></url>
@@ -90,4 +90,5 @@
   <url><loc>https://pluginsolarhub.org/whole-home-backup-anker-solix/</loc><lastmod>2026-06-11</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://pluginsolarhub.org/embed-solar-calculator/</loc><lastmod>2026-06-12</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://pluginsolarhub.org/developers/</loc><lastmod>2026-06-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pluginsolarhub.org/data/plug-in-solar-laws.json</loc><lastmod>2026-06-15</lastmod><changefreq>daily</changefreq><priority>0.6</priority></url>
 </urlset>

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-06-14",
+  "last_updated": "2026-06-15",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "count": 50,
@@ -204,7 +204,7 @@
     {
       "slug": "new-hampshire",
       "state": "New Hampshire",
-      "status": "Gray area - check utility",
+      "status": "Legal — signed (effective July 27, 2026)",
       "page_url": "https://pluginsolarhub.org/state-legality/new-hampshire/",
       "file": "/data/states/new-hampshire.json"
     },

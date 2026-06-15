@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-06-14",
+  "last_updated": "2026-06-15",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "states": [
@@ -90,8 +90,8 @@
     {
       "state": "Connecticut",
       "slug": "connecticut",
-      "status": "Legal — signed (effective Oct 1, 2026)",
-      "status_badge_verbatim": "Legal — signed (effective Oct 1, 2026)",
+      "status": "Legal \u2014 signed (effective Oct 1, 2026)",
+      "status_badge_verbatim": "Legal \u2014 signed (effective Oct 1, 2026)",
       "avg_rate_cents": 29,
       "main_utilities": [
         "Eversource",
@@ -396,25 +396,25 @@
     {
       "state": "New Hampshire",
       "slug": "new-hampshire",
-      "status": "Gray area - check utility",
-      "status_badge_verbatim": "Gray area - check utility",
+      "status": "Legal \u2014 signed (effective July 27, 2026)",
+      "status_badge_verbatim": "Legal \u2014 signed (effective July 27, 2026)",
       "avg_rate_cents": 24,
       "main_utilities": [
         "Eversource",
         "Unitil"
       ],
       "page_url": "https://pluginsolarhub.org/state-legality/new-hampshire/",
-      "last_reviewed": "2026-06-14",
+      "last_reviewed": "2026-06-15",
       "legislation": {
         "bill": "SB 540",
-        "status": "passed_awaiting_governor",
-        "date": "2026-05",
-        "effective": null,
+        "status": "signed",
+        "date": "2026-05-28",
+        "effective": "2026-07-27",
         "max_watts": 1200,
         "cert_required": "Nationally recognized testing laboratory",
-        "signed_by": null,
+        "signed_by": "Gov. Kelly Ayotte",
         "source_url": "https://pv-magazine-usa.com/2026/05/12/new-hampshire-legislature-advances-plug-in-solar-bill-to-governor/",
-        "notes": "Allows a single plug-in solar device up to 1,200W AC output per customer. Awaiting executive action."
+        "notes": "New Hampshire Chapter 89 (2026). 6th U.S. state to sign a plug-in solar law and the first in the Northeast. Allows one plug-in solar device up to 1,200W AC per customer; effective July 27, 2026."
       }
     },
     {
@@ -445,8 +445,8 @@
     {
       "state": "New York",
       "slug": "new-york",
-      "status": "Passed legislature — awaiting Governor",
-      "status_badge_verbatim": "Passed legislature — awaiting Governor",
+      "status": "Passed legislature \u2014 awaiting Governor",
+      "status_badge_verbatim": "Passed legislature \u2014 awaiting Governor",
       "avg_rate_cents": 25,
       "main_utilities": [
         "Con Edison",
@@ -651,7 +651,7 @@
         "cert_required": "UL or equivalent",
         "signed_by": "Gov. Abigail Spanberger",
         "source_url": "https://pv-magazine-usa.com/2026/03/12/virginia-becomes-second-u-s-state-to-advance-plug-in-solar-legislation-to-the-governors-desk/",
-        "notes": "Localities cannot ban balcony solar on residential structures within cap; passed House 96–0 and Senate 30–8."
+        "notes": "Localities cannot ban balcony solar on residential structures within cap; passed House 96\u20130 and Senate 30\u20138."
       }
     },
     {
