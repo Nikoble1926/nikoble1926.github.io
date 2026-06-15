@@ -1,0 +1,31 @@
+Subject: NY just legalized balcony solar — first major Northeast city market
+
+Hi [[REPORTER_NAME]],
+
+Quick tip in case it's on your radar: Gov. [[GOVERNOR]] signed the SUNNY Act
+(A.9111C / S.8512C) on [[SIGN_DATE]]. New York becomes the [[STATE_ORDINAL]] U.S.
+state to legalize plug-in / balcony solar at the state level — and the first one
+that includes a 19-million-person urban market.
+
+The plug-in part:
+ - Cap [[CAP_W]]W of panel capacity per household, one device per customer.
+ - No utility approval, no interconnection paperwork, no fees within the cap.
+ - Equipment must be certified by an accredited testing laboratory (UL or
+   equivalent — i.e. UL 1741 / UL 3700).
+ - Provisions take effect [[EFFECTIVE_DATE]].
+ - Sponsored in the Senate by State Sen. Liz Krueger.
+
+Why it matters beyond NY: this puts the largest balcony / patio housing stock in
+the country (NYC alone has ~1M+ balcony-equipped units) on the same legal
+footing as Utah, Maine, Virginia, Colorado, Maryland, and Connecticut. Average
+NY residential electricity rate ~25¢/kWh means an 800W kit typically pays back
+in ~3 years (vs. 5–7 in lower-rate states).
+
+I track all 50 state laws as a structured dataset and write the plain-English
+explainer at pluginsolarhub.org/state-legality/new-york/ — happy to share data,
+quote, or background. The dataset is free JSON: pluginsolarhub.org/developers/.
+
+Best,
+Nikoble1926
+PlugInSolarHub
+https://pluginsolarhub.org

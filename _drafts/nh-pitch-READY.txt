@@ -1,0 +1,31 @@
+Subject: NH signs SB 540 — joins growing list of states legalizing plug-in solar
+
+Hi [[REPORTER_NAME]],
+
+Quick tip: Gov. [[GOVERNOR]] signed SB 540 on [[SIGN_DATE]]. New Hampshire
+becomes the [[STATE_ORDINAL]] U.S. state to legalize plug-in / balcony solar at
+the state level.
+
+The plug-in part:
+ - Cap [[CAP_W]]W of panel capacity per household, one device per customer.
+ - No utility approval, no interconnection paperwork, no fees within the cap.
+ - Equipment must be certified by an accredited testing laboratory (UL or
+   equivalent — i.e. UL 1741 / UL 3700).
+ - Provisions take effect [[EFFECTIVE_DATE]].
+
+Why it matters beyond NH: New Hampshire has some of the highest residential
+electricity rates in the U.S. (~24¢/kWh) and a large concentration of
+rate-sensitive renters in Manchester, Nashua, and the Seacoast. SB 540 makes
+plug-in solar payback ~3 years on an 800W kit (vs. 5–7 in lower-rate states),
+and adds momentum to the Northeast movement that started with Connecticut's HB
+5340 on June 4, 2026.
+
+I track all 50 state laws as a structured dataset and write the plain-English
+explainer at pluginsolarhub.org/state-legality/new-hampshire/ — happy to share
+data, quote, or background. The dataset is free JSON:
+pluginsolarhub.org/developers/.
+
+Best,
+Nikoble1926
+PlugInSolarHub
+https://pluginsolarhub.org
