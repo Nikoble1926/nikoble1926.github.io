@@ -396,25 +396,25 @@
     {
       "state": "New Hampshire",
       "slug": "new-hampshire",
-      "status": "Legal \u2014 signed (effective July 27, 2026)",
-      "status_badge_verbatim": "Legal \u2014 signed (effective July 27, 2026)",
+      "status": "Passed \u2014 awaiting Governor",
+      "status_badge_verbatim": "Passed \u2014 awaiting Governor",
       "avg_rate_cents": 24,
       "main_utilities": [
         "Eversource",
         "Unitil"
       ],
       "page_url": "https://pluginsolarhub.org/state-legality/new-hampshire/",
-      "last_reviewed": "2026-06-15",
+      "last_reviewed": "2026-06-22",
       "legislation": {
         "bill": "SB 540",
-        "status": "signed",
-        "date": "2026-05-28",
-        "effective": "2026-07-27",
+        "status": "passed_awaiting_governor",
+        "date": "2026-06-17",
+        "effective": null,
         "max_watts": 1200,
         "cert_required": "Nationally recognized testing laboratory",
-        "signed_by": "Gov. Kelly Ayotte",
-        "source_url": "https://pv-magazine-usa.com/2026/05/12/new-hampshire-legislature-advances-plug-in-solar-bill-to-governor/",
-        "notes": "New Hampshire Chapter 89 (2026). 6th U.S. state to sign a plug-in solar law and the first in the Northeast. Allows one plug-in solar device up to 1,200W AC per customer; effective July 27, 2026."
+        "signed_by": null,
+        "source_url": "https://legiscan.com/NH/bill/SB540/2026",
+        "notes": "SB 540 enrolled June 17, 2026 and awaiting Gov. Kelly Ayotte's signature (LegiScan full docket) \u2014 not yet signed. Would allow one plug-in solar device up to 1,200W per customer, certified by a nationally recognized testing laboratory, with no utility approval or fees. Provisions would take effect about July 27, 2026 if signed."
       }
     },
     {
@@ -623,13 +623,25 @@
     {
       "state": "Vermont",
       "slug": "vermont",
-      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
-      "status_badge_verbatim": "Gray area - check utility",
+      "status": "Passed — awaiting Governor",
+      "status_badge_verbatim": "Passed — awaiting Governor",
       "avg_rate_cents": 21,
-      "main_utilities": [],
+      "main_utilities": [
+        "Green Mountain Power"
+      ],
       "page_url": "https://pluginsolarhub.org/state-legality/vermont/",
-      "last_reviewed": "2026-06-14",
-      "legislation": null
+      "last_reviewed": "2026-06-22",
+      "legislation": {
+        "bill": "S.202",
+        "status": "passed_awaiting_governor",
+        "date": "2026-06-22",
+        "effective": null,
+        "max_watts": 1200,
+        "cert_required": "UL or equivalent nationally recognized testing laboratory",
+        "signed_by": null,
+        "source_url": "https://legislature.vermont.gov/bill/status/2026/S.202",
+        "notes": "S.202 passed the Vermont Senate 29-0 and is on Gov. Phil Scott's desk (around June 28, 2026) — not yet signed. Would allow plug-in solar up to 1,200W and would take effect July 1, 2026 if signed."
+      }
     },
     {
       "state": "Virginia",

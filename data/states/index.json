@@ -204,7 +204,7 @@
     {
       "slug": "new-hampshire",
       "state": "New Hampshire",
-      "status": "Legal — signed (effective July 27, 2026)",
+      "status": "Passed — awaiting Governor",
       "page_url": "https://pluginsolarhub.org/state-legality/new-hampshire/",
       "file": "/data/states/new-hampshire.json"
     },
@@ -316,7 +316,7 @@
     {
       "slug": "vermont",
       "state": "Vermont",
-      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status": "Passed — awaiting Governor",
       "page_url": "https://pluginsolarhub.org/state-legality/vermont/",
       "file": "/data/states/vermont.json"
     },
