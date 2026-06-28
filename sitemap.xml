@@ -10,12 +10,12 @@
   <url><loc>https://pluginsolarhub.org/power-stations/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/about/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/guides/how-plug-in-solar-works/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pluginsolarhub.org/guides/what-you-need-to-start/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pluginsolarhub.org/guides/roi-payback/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pluginsolarhub.org/guides/installation-basics/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pluginsolarhub.org/guides/battery-storage/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://pluginsolarhub.org/guides/what-you-need-to-start/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://pluginsolarhub.org/guides/roi-payback/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://pluginsolarhub.org/guides/installation-basics/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://pluginsolarhub.org/guides/battery-storage/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/guides/800w-limit-explained/</loc><changefreq>weekly</changefreq></url>
-  <url><loc>https://pluginsolarhub.org/guides/renters-guide/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://pluginsolarhub.org/guides/renters-guide/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/guides/panel-direction-angle/</loc><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/state-legality/alabama/</loc><lastmod>2026-06-27</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://pluginsolarhub.org/state-legality/alaska/</loc><lastmod>2026-06-27</lastmod><changefreq>weekly</changefreq></url>
@@ -95,5 +95,5 @@
   <url><loc>https://pluginsolarhub.org/data/plug-in-solar-laws.json</loc><lastmod>2026-06-15</lastmod><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://pluginsolarhub.org/best-balcony-solar-kit-under-300/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://pluginsolarhub.org/best-800w-microinverter/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://pluginsolarhub.org/reviews/anker-solix-balcony-solar/</loc><lastmod>2026-06-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pluginsolarhub.org/reviews/anker-solix-balcony-solar/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
