@@ -3,6 +3,11 @@
   "last_updated": "2026-06-15",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "PlugInSolarHub (pluginsolarhub.org)"
+  },
   "state": "New York",
   "slug": "new-york",
   "status": "Passed legislature — awaiting Governor",
@@ -14,7 +19,7 @@
     "NYSEG"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/new-york/",
-  "last_reviewed": "2026-06-21",
+  "last_reviewed": "2026-06-14",
   "legislation": {
     "bill": "A.9111C / S.8512C (SUNNY Act)",
     "status": "passed_awaiting_governor",

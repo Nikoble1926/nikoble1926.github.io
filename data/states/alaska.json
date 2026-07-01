@@ -3,6 +3,11 @@
   "last_updated": "2026-06-15",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "PlugInSolarHub (pluginsolarhub.org)"
+  },
   "state": "Alaska",
   "slug": "alaska",
   "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",

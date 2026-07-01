@@ -18,7 +18,7 @@ DATA = pathlib.Path("/root/pluginsolarhub/data")
 MASTER = DATA / "plug-in-solar-laws.json"
 OUT = DATA / "states"
 
-INHERITED_KEYS = ("schema_version", "last_updated", "source", "disclaimer")
+INHERITED_KEYS = ("schema_version", "last_updated", "source", "disclaimer", "license")
 
 
 def main() -> int:
