@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-06-15",
+  "last_updated": "2026-07-02",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -10,8 +10,8 @@
   },
   "state": "Colorado",
   "slug": "colorado",
-  "status": "Gray area",
-  "status_badge_verbatim": "Gray area",
+  "status": "Legal — signed (eff. Jan 1, 2027)",
+  "status_badge_verbatim": "Legal — signed (eff. Jan 1, 2027)",
   "avg_rate_cents": 15,
   "main_utilities": [
     "Xcel Energy"

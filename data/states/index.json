@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-06-15",
+  "last_updated": "2026-07-02",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -48,7 +48,7 @@
     {
       "slug": "colorado",
       "state": "Colorado",
-      "status": "Gray area",
+      "status": "Legal — signed (eff. Jan 1, 2027)",
       "page_url": "https://pluginsolarhub.org/state-legality/colorado/",
       "file": "/data/states/colorado.json"
     },
@@ -139,14 +139,14 @@
     {
       "slug": "maine",
       "state": "Maine",
-      "status": "Gray area - check utility",
+      "status": "Legal — signed (eff. Jul 15, 2026)",
       "page_url": "https://pluginsolarhub.org/state-legality/maine/",
       "file": "/data/states/maine.json"
     },
     {
       "slug": "maryland",
       "state": "Maryland",
-      "status": "Gray area - check utility",
+      "status": "Legal — signed",
       "page_url": "https://pluginsolarhub.org/state-legality/maryland/",
       "file": "/data/states/maryland.json"
     },
@@ -209,7 +209,7 @@
     {
       "slug": "new-hampshire",
       "state": "New Hampshire",
-      "status": "Passed — awaiting Governor",
+      "status": "Passed legislature — awaiting Governor",
       "page_url": "https://pluginsolarhub.org/state-legality/new-hampshire/",
       "file": "/data/states/new-hampshire.json"
     },
@@ -314,21 +314,21 @@
     {
       "slug": "utah",
       "state": "Utah",
-      "status": "Early mover",
+      "status": "Legal — signed (HB 340)",
       "page_url": "https://pluginsolarhub.org/state-legality/utah/",
       "file": "/data/states/utah.json"
     },
     {
       "slug": "vermont",
       "state": "Vermont",
-      "status": "Passed — awaiting Governor",
+      "status": "Legal — signed (eff. Jul 1, 2026)",
       "page_url": "https://pluginsolarhub.org/state-legality/vermont/",
       "file": "/data/states/vermont.json"
     },
     {
       "slug": "virginia",
       "state": "Virginia",
-      "status": "Gray area",
+      "status": "Legal — signed (eff. Jul 1, 2026)",
       "page_url": "https://pluginsolarhub.org/state-legality/virginia/",
       "file": "/data/states/virginia.json"
     },

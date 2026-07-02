@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-06-15",
+  "last_updated": "2026-07-02",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -10,24 +10,24 @@
   },
   "state": "Vermont",
   "slug": "vermont",
-  "status": "Passed — awaiting Governor",
-  "status_badge_verbatim": "Passed — awaiting Governor",
+  "status": "Legal — signed (eff. Jul 1, 2026)",
+  "status_badge_verbatim": "Legal — signed (eff. Jul 1, 2026)",
   "avg_rate_cents": 21,
   "main_utilities": [
     "Green Mountain Power"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/vermont/",
-  "last_reviewed": "2026-06-22",
+  "last_reviewed": "2026-07-02",
   "legislation": {
     "bill": "S.202",
-    "status": "passed_awaiting_governor",
-    "date": "2026-06-22",
-    "effective": null,
+    "status": "signed",
+    "date": "2026-06-16",
+    "effective": "2026-07-01",
     "max_watts": 1200,
     "cert_required": "UL or equivalent nationally recognized testing laboratory",
-    "signed_by": null,
-    "source_url": "https://legislature.vermont.gov/bill/status/2026/S.202",
-    "notes": "S.202 passed the Vermont Senate 29-0 and is on Gov. Phil Scott's desk (around June 28, 2026) — not yet signed. Would allow plug-in solar up to 1,200W and would take effect July 1, 2026 if signed."
+    "signed_by": "Gov. Phil Scott",
+    "source_url": "https://governor.vermont.gov/press-release/action-taken-governor-phil-scott-legislation-june-16-2026",
+    "notes": "S.202 signed by Gov. Phil Scott on June 16, 2026 (7th state to sign); plug-in provisions effective July 1, 2026. Up to a combined 1,200W per electric meter with certified equipment; no certificate of public good, interconnection agreement, or extra utility fees. Correction 2026-07-02: earlier records said awaiting governor — the Governor's office confirms signing on June 16, 2026."
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }

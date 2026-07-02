@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-06-15",
+  "last_updated": "2026-07-02",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -10,8 +10,8 @@
   },
   "state": "Utah",
   "slug": "utah",
-  "status": "Early mover",
-  "status_badge_verbatim": "Early mover",
+  "status": "Legal — signed (HB 340)",
+  "status_badge_verbatim": "Legal — signed (HB 340)",
   "avg_rate_cents": 11,
   "main_utilities": [],
   "page_url": "https://pluginsolarhub.org/state-legality/utah/",
