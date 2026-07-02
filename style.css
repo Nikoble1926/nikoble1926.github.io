@@ -308,3 +308,8 @@ th{background:transparent;border-bottom:2px solid var(--ink)}
 [data-theme="dark"] .ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input,
 [data-theme="dark"] .ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input{color:var(--ink)!important;border-bottom-color:var(--line)!important}
 /* ===== /MailerLite form skin ===== */
+/* ===== language switcher ===== */
+#langSel{margin-left:16px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:3px 10px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit}
+#langSel:focus{outline:2px solid var(--gold)}
+[data-theme="dark"] #langSel{background:var(--card);color:var(--ink);border-color:var(--line)}
+@media(max-width:900px){#langSel{margin-left:0;margin-top:4px}}

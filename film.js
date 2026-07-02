@@ -113,8 +113,22 @@ function skinMLwatch(){
   }
 }
 
+/* ── language switcher (EN/ES/DE): uses this page's hreflang alternates, falls back to language hubs ── */
+function initLang(){
+  var nav=document.querySelector('nav.main');if(!nav||document.getElementById('langSel'))return;
+  var LANGS=[['en','English','/'],['es','Español','/es/'],['de','Deutsch','/de/']];
+  var cur=(document.documentElement.getAttribute('lang')||'en').slice(0,2).toLowerCase();
+  var alt={};document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(function(l){
+    var h=l.getAttribute('hreflang').slice(0,2).toLowerCase();if(h!=='x-')alt[h]=l.getAttribute('href');});
+  var sel=document.createElement('select');sel.id='langSel';sel.setAttribute('aria-label','Language / Idioma / Sprache');
+  LANGS.forEach(function(L){var o=document.createElement('option');o.value=alt[L[0]]||L[2];o.textContent=L[1];if(L[0]===cur)o.selected=true;sel.appendChild(o);});
+  sel.addEventListener('change',function(){window.location.href=this.value});
+  nav.appendChild(sel);
+}
+
 window.addEventListener('load',function(){
   injectArt();
+  initLang();
   initMini();
   if(document.getElementById('watts'))window.miniCalc();
   skinMLwatch();
