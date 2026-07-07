@@ -1,24 +1,34 @@
-{
-  "schema_version": "1.0",
-  "last_updated": "2026-07-02",
-  "source": "https://pluginsolarhub.org/state-legality/",
-  "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
-  "license": {
-    "name": "CC BY 4.0",
-    "url": "https://creativecommons.org/licenses/by/4.0/",
-    "attribution": "PlugInSolarHub (pluginsolarhub.org)"
-  },
-  "state": "New Jersey",
-  "slug": "new-jersey",
-  "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
-  "status_badge_verbatim": "Gray area - check utility",
-  "avg_rate_cents": 18,
-  "main_utilities": [
-    "PSE&G",
-    "JCP&L"
-  ],
-  "page_url": "https://pluginsolarhub.org/state-legality/new-jersey/",
-  "last_reviewed": "2026-06-14",
-  "legislation": null,
-  "source_file": "/data/plug-in-solar-laws.json"
+﻿{
+    "schema_version":  "1.0",
+    "last_updated":  "2026-07-08",
+    "source":  "https://pluginsolarhub.org/state-legality/",
+    "disclaimer":  "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
+    "license":  {
+                    "name":  "CC BY 4.0",
+                    "url":  "https://creativecommons.org/licenses/by/4.0/",
+                    "attribution":  "PlugInSolarHub (pluginsolarhub.org)"
+                },
+    "state":  "New Jersey",
+    "slug":  "new-jersey",
+    "status":  "Passed legislature — awaiting Governor",
+    "status_badge_verbatim":  "Passed legislature — awaiting Governor",
+    "avg_rate_cents":  18,
+    "main_utilities":  [
+                           "PSE\u0026G",
+                           "JCP\u0026L"
+                       ],
+    "page_url":  "https://pluginsolarhub.org/state-legality/new-jersey/",
+    "last_reviewed":  "2026-07-08",
+    "legislation":  {
+                        "bill":  "S2368 / A4836 (Garden State Plug-In Solar Act)",
+                        "status":  "passed_awaiting_governor",
+                        "date":  "2026-06-30",
+                        "effective":  null,
+                        "max_watts":  1200,
+                        "cert_required":  "Nationally recognized testing laboratory",
+                        "signed_by":  null,
+                        "source_url":  "https://pv-magazine-usa.com/2026/07/01/new-jersey-legislature-unanimously-passes-plug-in-solar-bill/",
+                        "notes":  "Passed both chambers unanimously June 30, 2026 (Senate 40-0, Assembly 79-0); awaiting Gov. Sherrill. Effective 6 months after enactment per bill text."
+                    },
+    "source_file":  "/data/plug-in-solar-laws.json"
 }

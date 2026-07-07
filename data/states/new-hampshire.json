@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-07-02",
+  "last_updated": "2026-07-08",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -10,25 +10,25 @@
   },
   "state": "New Hampshire",
   "slug": "new-hampshire",
-  "status": "Passed legislature — awaiting Governor",
-  "status_badge_verbatim": "Passed legislature — awaiting Governor",
+  "status": "Legal — signed (eff. Jan 1, 2027)",
+  "status_badge_verbatim": "Legal — signed (effective January 1, 2027)",
   "avg_rate_cents": 24,
   "main_utilities": [
     "Eversource",
     "Unitil"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/new-hampshire/",
-  "last_reviewed": "2026-06-22",
+  "last_reviewed": "2026-07-08",
   "legislation": {
     "bill": "SB 540",
-    "status": "passed_awaiting_governor",
-    "date": "2026-06-17",
-    "effective": null,
+    "status": "signed",
+    "date": "2026-07-02",
+    "effective": "2027-01-01",
     "max_watts": 1200,
     "cert_required": "Nationally recognized testing laboratory",
-    "signed_by": null,
-    "source_url": "https://legiscan.com/NH/bill/SB540/2026",
-    "notes": "SB 540 enrolled June 17, 2026 and awaiting Gov. Kelly Ayotte's signature (LegiScan full docket) — not yet signed. Would allow one plug-in solar device up to 1,200W per customer, certified by a nationally recognized testing laboratory, with no utility approval or fees. Provisions would take effect about July 27, 2026 if signed."
+    "signed_by": "Gov. Kelly Ayotte",
+    "source_url": "https://www.governor.nh.gov/news/governor-signs-74-bills-law",
+    "notes": "SB 540 signed by Gov. Kelly Ayotte on July 2, 2026 (8th state to sign; part of a 74-bill signing). Allows one plug-in solar generation system per metered customer with a maximum inverter output of 1,200W AC, certified by a nationally recognized testing laboratory, with no utility approval, interconnection review/agreement, or fees. Main provisions take effect January 1, 2027 (final text, section 7); the building-code section takes effect when a nationally recognized standard for plug-in systems is certified. Correction 2026-07-08: earlier note estimated effective ~July 27, 2026 from secondary sources — the adopted text sets January 1, 2027."
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }
