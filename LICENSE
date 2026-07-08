@@ -1,0 +1,22 @@
+PlugInSolarHub — Data License
+=============================
+
+The plug-in / balcony solar legality dataset in this repository
+(data/plug-in-solar-laws.json and data/states/*.json) is licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+    https://creativecommons.org/licenses/by/4.0/
+
+You are free to share and adapt the data for any purpose, including
+commercially, provided you give appropriate credit to PlugInSolarHub
+(https://pluginsolarhub.org/), link to the source, and indicate any changes.
+
+Suggested attribution:
+    Data: PlugInSolarHub (pluginsolarhub.org), CC BY 4.0
+
+The data is provided "as is" without warranty of any kind. It is
+informational and not legal advice; verify with your utility and state
+authority before acting.
+
+Note: site code, page content, images and branding are not covered by this
+data license and remain © PlugInSolarHub.
