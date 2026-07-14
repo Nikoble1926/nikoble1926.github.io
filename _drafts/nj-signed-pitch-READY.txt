@@ -1,0 +1,44 @@
+Subject: New Jersey signs Garden State Plug-In Solar Act — 9th state to legalize plug-in solar
+
+Hi [[REPORTER_NAME]],
+
+Quick tip: Gov. Sherrill signed the Garden State Plug-In Solar Act
+(S2368/A4836) on [[SIGN_DATE]]. New Jersey becomes the 9th U.S. state to
+legalize plug-in / balcony solar at the state level.
+
+The plug-in part (verified from the bill):
+ - Cap 1,200W of panel capacity for a plug-in solar system.
+ - Equipment must be certified by a nationally recognized testing
+   laboratory (UL or equivalent — i.e. UL 1741 / UL 3700).
+ - Passed both chambers unanimously on June 30, 2026 (Senate 40-0,
+   Assembly 79-0) — a rare fully bipartisan energy vote.
+ - Provisions take effect [[EFFECTIVE_DATE]] (six months after enactment).
+ - Enacted citation: [[CHAPTER_OR_LAW_REF]].
+
+Why it matters beyond NJ: New Jersey is one of the most renter- and
+apartment-dense states in the country — the Jersey City / Newark commuter
+belt alone is hundreds of thousands of rental units — and residential
+electricity runs above the national average (~18¢/kWh). Plug-in solar is
+one of the only solar options open to a renter, so a statewide law here
+reaches an unusually large audience. It also extends the Northeast wave
+that ran through Connecticut (HB 5340, June 4), Vermont (S.202, June 16)
+and New Hampshire (SB 540, July 2).
+
+I track all 50 state laws as a structured dataset and write the
+plain-English explainer at
+pluginsolarhub.org/state-legality/new-jersey/ — happy to share data, a
+quote, or background. The dataset is free JSON: pluginsolarhub.org/developers/.
+
+Best,
+Nikoble1926
+PlugInSolarHub
+https://pluginsolarhub.org
+
+--- DO NOT SEND without Nikos's OK. Recipients (find current emails on the
+    day — do not guess addresses):
+      National: Grist, Solar Power World, pv magazine USA
+      NJ local: NJ Spotlight News (energy desk), NJ.com (business/energy)
+    Honest framing only. Never claim "no fees / no utility approval" for NJ
+    unless the enacted bill text confirms it — the verified facts above are
+    cap 1,200W + certified equipment + effective date. One email per outlet,
+    no follow-up spam.
