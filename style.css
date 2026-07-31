@@ -313,3 +313,8 @@ th{background:transparent;border-bottom:2px solid var(--ink)}
 #langSel:focus{outline:2px solid var(--gold)}
 [data-theme="dark"] #langSel{background:var(--card);color:var(--ink);border-color:var(--line)}
 @media(max-width:900px){#langSel{margin-left:0;margin-top:4px}}
+
+/* compact signup box above the fold: hide MailerLite's own headline/subtext */
+.email-capture-top .ml-form-embedContent h4,
+.email-capture-top .ml-form-embedContent p{display:none}
+.email-capture-top .ml-form-embedWrapper{margin:0}
