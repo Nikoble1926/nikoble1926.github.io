@@ -10,15 +10,15 @@
   },
   "state": "New Hampshire",
   "slug": "new-hampshire",
-  "status": "Legal — signed (eff. Jan 1, 2027)",
-  "status_badge_verbatim": "Legal — signed (effective January 1, 2027)",
+  "status": "Signed — takes effect 1 Jan 2027",
+  "status_badge_verbatim": "Signed — takes effect 1 Jan 2027",
   "avg_rate_cents": 24,
   "main_utilities": [
     "Eversource",
     "Unitil"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/new-hampshire/",
-  "last_reviewed": "2026-07-08",
+  "last_reviewed": "2026-08-01",
   "legislation": {
     "bill": "SB 540",
     "status": "signed",
@@ -27,8 +27,43 @@
     "max_watts": 1200,
     "cert_required": "Nationally recognized testing laboratory",
     "signed_by": "Gov. Kelly Ayotte",
-    "source_url": "https://www.governor.nh.gov/news/governor-signs-74-bills-law",
-    "notes": "SB 540 signed by Gov. Kelly Ayotte on July 2, 2026 (8th state to sign; part of a 74-bill signing). Allows one plug-in solar generation system per metered customer with a maximum inverter output of 1,200W AC, certified by a nationally recognized testing laboratory, with no utility approval, interconnection review/agreement, or fees. Main provisions take effect January 1, 2027 (final text, section 7); the building-code section takes effect when a nationally recognized standard for plug-in systems is certified. Correction 2026-07-08: earlier note estimated effective ~July 27, 2026 from secondary sources — the adopted text sets January 1, 2027."
+    "source_url": "https://gc.nh.gov/bill_status/legacy/bs2016/billText.aspx?id=1317&txtFormat=html&sy=2026",
+    "notes": "Chapter 262. RSA 362-A:1-a, IV-a defines a 'plug-in solar generation system' as a movable photovoltaic system intended to EXCLUSIVELY offset a portion of onsite consumption, connected through a receptacle or other non-permanent wiring connection. RSA 362-A:10, IV: one system per metered customer with a MAXIMUM INVERTER OUTPUT of 1,200 watts AC. The utility may not require approval, an interconnection review or agreement, a fee, or extra equipment - but 362-A:10, II lets it develop a method for the customer to report the system's wattage AFTER installation, for notification purposes only. 362-A:10, V requires the Department of Energy to publish notice that connecting an unlisted system, or one installed contrary to the state building code or manufacturer instructions, MAY AFFECT HOMEOWNERS OR RENTERS INSURANCE COVERAGE. No HOA, covenant, condominium, landlord or tenant provision appears anywhere in the act.",
+    "source_url_type": "primary - New Hampshire Laws 2026 Chapter 262 (SB 540-FN, final version)",
+    "effective_note": "262:7 II - the remainder of the act takes effect 1 January 2027. Section 3 takes effect on a CONTINGENCY with no date (see effective_delayed). Caution: the General Court's own bill-status page prints 'II. Remainder Effective 07/02/2026'; the chaptered text says January 1, 2027 and governs.",
+    "effective_delayed": [
+      {
+        "date": null,
+        "provision": "262:3 (RSA 155-A:16), commencing per 262:6",
+        "summary": "The building code review board must amend the state building code to address buildings using a plug-in system. Takes effect only when the commissioner of the Department of Energy certifies to the Office of Legislative Services and the Secretary of State that a nationally recognized standard exists authorising plug-in solar systems to be safely connected to a building's electrical system. No deadline is set."
+      }
+    ],
+    "watt_tiers": [
+      {
+        "max_watts": 1200,
+        "basis": "inverter output (AC)",
+        "provision": "RSA 362-A:10, IV",
+        "effect": "One system per metered customer. Exempt from interconnection requirements and agreements and from net energy metering under RSA 362-A:9. No utility approval, review, fee or additional utility-specified equipment."
+      }
+    ],
+    "verified_against_primary": {
+      "date": "2026-08-01",
+      "confirmed": [
+        "'a maximum inverter output of 1,200 watts AC' - RSA 362-A:10, IV",
+        "one system per metered customer",
+        "signed 2 July 2026, enacted as Chapter 262"
+      ],
+      "corrected": [
+        "badge said 'Legal - signed' while the act does not commence until 1 January 2027; the page used the present tense",
+        "'no utility paperwork is required' - 362-A:10, II permits a post-installation wattage notification",
+        "source was the Governor's press release, which does not state commencement"
+      ],
+      "added": [
+        "262:6 contingency: RSA 155-A:16 has no commencement date at all",
+        "362-A:10, V insurance warning",
+        "no HOA or covenant provision exists in this act"
+      ]
+    }
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }

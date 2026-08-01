@@ -48,14 +48,14 @@
     {
       "slug": "colorado",
       "state": "Colorado",
-      "status": "Legal — signed (eff. Jan 1, 2027)",
+      "status": "Legal — signed (eff. 12 Aug 2026)",
       "page_url": "https://pluginsolarhub.org/state-legality/colorado/",
       "file": "/data/states/colorado.json"
     },
     {
       "slug": "connecticut",
       "state": "Connecticut",
-      "status": "Legal — signed (effective Oct 1, 2026)",
+      "status": "Signed — takes effect 1 Oct 2026",
       "page_url": "https://pluginsolarhub.org/state-legality/connecticut/",
       "file": "/data/states/connecticut.json"
     },
@@ -209,7 +209,7 @@
     {
       "slug": "new-hampshire",
       "state": "New Hampshire",
-      "status": "Passed legislature — awaiting Governor",
+      "status": "Signed — takes effect 1 Jan 2027",
       "page_url": "https://pluginsolarhub.org/state-legality/new-hampshire/",
       "file": "/data/states/new-hampshire.json"
     },
@@ -328,7 +328,7 @@
     {
       "slug": "virginia",
       "state": "Virginia",
-      "status": "Legal — signed (eff. Jul 1, 2026)",
+      "status": "Signed — takes effect 1 Jan 2027",
       "page_url": "https://pluginsolarhub.org/state-legality/virginia/",
       "file": "/data/states/virginia.json"
     },
