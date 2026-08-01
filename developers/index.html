@@ -36,6 +36,7 @@
 <tr><td><code>GET <a href="/data/states/index.json">/data/states/index.json</a></code></td><td>Directory listing &mdash; one entry per state with its slug, status, and file path</td></tr>
 <tr><td><code>GET <a href="/data/states/new-york.json">/data/states/&lt;slug&gt;.json</a></code></td><td>Per-state record, self-contained. Its <code>last_updated</code> is the date that file was generated, not a value copied down from the master dataset &mdash; the two can differ, and today they do.</td></tr>
 </tbody></table>
+<p style="margin-top:14px"><strong>On optional fields.</strong> <code>effective_delayed</code> and <code>watt_tiers</code> are <em>absent</em> from most records rather than <code>null</code>. Absence means we have not established the information from the statute &mdash; it does not mean the state has a single effective date or a single tier. Treat them as present-or-missing and do not assume a default. We add them per state as each statute is read from its primary text.</p>
 <p class="tag" style="margin:8px 0 0">All responses are <code>application/json</code> served from GitHub Pages over HTTPS. No CORS restrictions for read.</p>
 
 <h2 style="margin-top:32px">Schema</h2>
@@ -61,6 +62,8 @@
 <tr><td><code>legislation.signed_by</code></td><td>string &#124; null</td><td>Governor who signed (if signed).</td></tr>
 <tr><td><code>legislation.source_url</code></td><td>string (URL)</td><td>Authoritative source for the bill information.</td></tr>
 <tr><td><code>legislation.notes</code></td><td>string</td><td>One-line context (e.g. unique aspects like Colorado&rsquo;s 1,920W cap).</td></tr>
+<tr><td><code>legislation.effective_delayed</code></td><td>array &#124; <em>absent</em></td><td><strong>Optional.</strong> Present only where parts of an act commence later than the act itself. Each entry has <code>date</code>, <code>provision</code> (the statutory citation) and <code>summary</code>. <code>effective</code> remains the date the act itself takes effect &mdash; it is never the date of a delayed subsection.</td></tr>
+<tr><td><code>legislation.watt_tiers</code></td><td>array &#124; <em>absent</em></td><td><strong>Optional.</strong> Present only where a state sets more than one threshold, or where we have confirmed from the statute what the cap actually measures. Each entry has <code>max_watts</code>, <code>basis</code> (what the watts are measured at &mdash; e.g. output to the grid, AC inverter output, export capacity), <code>provision</code> and <code>effect</code>. <code>max_watts</code> at the top level is unchanged and still carries the headline cap.</td></tr>
 </tbody></table>
 
 <h2 style="margin-top:32px">Example usage</h2>

@@ -88,7 +88,7 @@
                    {
                        "state":  "Colorado",
                        "slug":  "colorado",
-                       "status":  "Legal — signed (eff. Jan 1, 2027)",
+                       "status":  "Legal — signed (eff. 12 Aug 2026)",
                        "status_badge_verbatim":  "Legal — signed (eff. 12 Aug 2026)",
                        "avg_rate_cents":  15,
                        "main_utilities":  [
@@ -105,7 +105,33 @@
                                            "cert_required":  "Safety standards established by the law; meter-collar adapters allowed",
                                            "signed_by":  "Gov. Jared Polis",
                                            "source_url":  "https://leg.colorado.gov/laws/session-laws/HB26-1007/127/download",
-                                           "notes":  "Highest U.S. plug-in solar cap (1,920W). Defines \u0027portable-scale solar generation devices\u0027 as a formal legal category."
+                                           "notes":  "Highest U.S. plug-in cap: 1,920 W of output to the electric grid per address, per the definition at 40-2-140(1)(e)(I). A device of 391 W or less is additionally exempt under 40-2-140(5). Delayed to 1 January 2027: (6) sale of a device above 391 W that is not UL labelled and listed is prohibited; (7) covenants unreasonably prohibiting a device are void and a property owner may impose reasonable restrictions.",
+                                           "effective_delayed":  [
+                                               {
+                                                   "date":  "2027-01-01",
+                                                   "provision":  "40-2-140(6)",
+                                                   "summary":  "Sale, lease or rental of a device above 391 W that is not UL labelled and listed is prohibited."
+                                               },
+                                               {
+                                                   "date":  "2027-01-01",
+                                                   "provision":  "40-2-140(7)",
+                                                   "summary":  "A covenant unreasonably prohibiting a portable-scale solar device is unenforceable and void as a matter of public policy; a property owner may still impose reasonable restrictions on notice, fire and overload precautions, and placement."
+                                               }
+                                           ],
+                                           "watt_tiers":  [
+                                               {
+                                                   "max_watts":  1920,
+                                                   "basis":  "output to the electric grid",
+                                                   "provision":  "40-2-140(1)(e)(I)",
+                                                   "effect":  "No utility approval, interconnection paperwork or fee; must be labelled and listed by a nationally recognized testing laboratory."
+                                               },
+                                               {
+                                                   "max_watts":  391,
+                                                   "basis":  "output to the electric grid",
+                                                   "provision":  "40-2-140(5)",
+                                                   "effect":  "Additionally exempt from the state's solar PV installation requirements and from building-code provisions that would require changes to the building's wiring."
+                                               }
+                                           ]
                                        }
                    },
                    {

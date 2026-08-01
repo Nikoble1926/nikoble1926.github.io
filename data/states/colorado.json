@@ -41,7 +41,33 @@
       "corrected": [
         "effective was recorded as 2027-01-01; the act itself takes effect 2026-08-12 and only two subsections are delayed"
       ]
-    }
+    },
+    "effective_delayed": [
+      {
+        "date": "2027-01-01",
+        "provision": "40-2-140(6)",
+        "summary": "Sale, lease or rental of a device above 391 W that is not UL labelled and listed is prohibited."
+      },
+      {
+        "date": "2027-01-01",
+        "provision": "40-2-140(7)",
+        "summary": "A covenant unreasonably prohibiting a portable-scale solar device is unenforceable and void as a matter of public policy; a property owner may still impose reasonable restrictions on notice, fire and overload precautions, and placement."
+      }
+    ],
+    "watt_tiers": [
+      {
+        "max_watts": 1920,
+        "basis": "output to the electric grid",
+        "provision": "40-2-140(1)(e)(I)",
+        "effect": "No utility approval, interconnection paperwork or fee; must be labelled and listed by a nationally recognized testing laboratory."
+      },
+      {
+        "max_watts": 391,
+        "basis": "output to the electric grid",
+        "provision": "40-2-140(5)",
+        "effect": "Additionally exempt from the state's solar PV installation requirements and from building-code provisions that would require changes to the building's wiring."
+      }
+    ]
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }
