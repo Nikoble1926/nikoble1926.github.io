@@ -13,7 +13,13 @@
   "status": "Legal — signed (eff. Jul 15, 2026)",
   "status_badge_verbatim": "Legal — signed (eff. Jul 15, 2026)",
   "avg_rate_cents": 24,
-  "main_utilities": [],
+  "main_utilities": [
+    "Central Maine Power",
+    "Versant Power"
+  ],
+  "main_utilities_source": "https://www.maine.gov/mpuc/regulated-utilities/electricity/delivery-rates",
+  "main_utilities_source_name": "Maine Public Utilities Commission, Residential Electric Rates",
+  "main_utilities_verified": "2026-08-01",
   "page_url": "https://pluginsolarhub.org/state-legality/maine/",
   "last_reviewed": "2026-06-14",
   "legislation": {

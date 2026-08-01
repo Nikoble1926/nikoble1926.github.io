@@ -13,7 +13,12 @@
   "status": "Legal — signed (HB 340)",
   "status_badge_verbatim": "Legal — signed (HB 340)",
   "avg_rate_cents": 11,
-  "main_utilities": [],
+  "main_utilities": [
+    "Rocky Mountain Power"
+  ],
+  "main_utilities_source": "https://www.rockymountainpower.net/about/rates-regulation/utah-regulatory-filings.html",
+  "main_utilities_source_name": "PacifiCorp d/b/a Rocky Mountain Power, Utah regulatory filings with the Utah Public Service Commission",
+  "main_utilities_verified": "2026-08-01",
   "page_url": "https://pluginsolarhub.org/state-legality/utah/",
   "last_reviewed": "2026-06-14",
   "legislation": {
