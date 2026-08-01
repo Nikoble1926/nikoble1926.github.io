@@ -30,20 +30,28 @@
     "cert_required": "UL or equivalent nationally recognized testing laboratory",
     "signed_by": "Gov. Spencer Cox",
     "source_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0340.pdf",
-    "notes": "First U.S. state to fully legalize plug-in solar; treated legally as appliances, no interconnection agreement or fees required within cap.",
+    "notes": "H.B. 340 (2025) amends 54-15-102 and enacts 54-15-601. A 'portable solar generation device' HAS A MAXIMUM POWER OUTPUT OF NOT MORE THAN 1,200 WATTS, connects through a standard 120-volt AC outlet, meets the most recent National Electrical Code and is certified by UL or an equivalent nationally recognized testing laboratory. It is expressly excluded from the definition of 'customer generation system', so net metering does not apply to it.",
     "source_url_type": "primary - enrolled bill text, Utah State Legislature",
     "verified_against_primary": {
       "date": "2026-08-01",
       "confirmed": [
-        "status signed",
-        "effective 2025-05-07 (Section 3 of the enrolled bill)",
-        "max_watts 1200 (definition of portable solar generation device)"
+        "'has a maximum power output of not more than 1,200 watts' - 54-15-102(13)(a)",
+        "bill takes effect 7 May 2025 (Section 3)",
+        "expressly excluded from 'customer generation system', so no net metering"
       ],
-      "not_confirmed": [
-        "signed_by - the enrolled text does not name the signing governor, so that field was left as it was rather than re-asserted"
-      ],
-      "note": "le.utah.gov rejects automated requests; the enrolled text was read in a browser."
-    }
+      "corrected": [
+        "cap was described as panel capacity; the statute says power output"
+      ]
+    },
+    "effective_note": "Section 3 of H.B. 340: 'This bill takes effect on May 7, 2025.'",
+    "watt_tiers": [
+      {
+        "max_watts": 1200,
+        "basis": "power output",
+        "provision": "54-15-102(13)(a)",
+        "effect": "Exempt from the interconnection requirements of 54-15-106 and from an interconnection agreement under 54-15-103; not subject to net metering. The electrical corporation may not require approval, charge a fee, or demand extra equipment."
+      }
+    ]
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }

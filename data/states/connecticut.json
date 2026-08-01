@@ -10,15 +10,15 @@
   },
   "state": "Connecticut",
   "slug": "connecticut",
-  "status": "Legal — signed (effective Oct 1, 2026)",
-  "status_badge_verbatim": "Legal — signed (effective Oct 1, 2026)",
+  "status": "Signed — takes effect 1 Oct 2026",
+  "status_badge_verbatim": "Signed — takes effect 1 Oct 2026",
   "avg_rate_cents": 29,
   "main_utilities": [
     "Eversource",
     "United Illuminating"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/connecticut/",
-  "last_reviewed": "2026-06-14",
+  "last_reviewed": "2026-08-01",
   "legislation": {
     "bill": "HB 5340",
     "status": "signed",
@@ -27,8 +27,32 @@
     "max_watts": 1200,
     "cert_required": "Accredited testing laboratory (UL or equivalent)",
     "signed_by": "Gov. Ned Lamont",
-    "source_url": "https://pv-magazine-usa.com/2026/06/05/connecticut-governor-signs-the-states-omnibus-2026-solar-bill/",
-    "notes": "Omnibus solar bill includes plug-in / balcony solar authorization. Balcony solar rules take effect Oct 1 2026."
+    "source_url": "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00127-R00HB-05340-PA.PDF",
+    "notes": "Public Act 26-127 Sec. 9. 'Portable solar generation device' has a maximum POWER OUTPUT of not more than 1,200 watts, connects through a standard 120-volt AC outlet behind the customer's meter, and must meet the State Building Code, NEC (NFPA-70), IEEE 1547 and UL 1741. One device per meter. Sec. 9(a)(9) requires a consumer warning that generation exceeding on-site consumption is CHARGED TO THE CUSTOMER AS USAGE unless the customer has a net-metering meter. Does not exempt the device from the State Building Code, Fire Safety Code, State Fire Prevention Code or local ordinance.",
+    "source_url_type": "primary - Connecticut Public Act 26-127, enacted text",
+    "effective_note": "Sections 9 and 10 are both '(NEW) (Effective October 1, 2026)'.",
+    "watt_tiers": [
+      {
+        "max_watts": 1200,
+        "basis": "power output",
+        "provision": "PA 26-127 Sec. 9(a)(2)",
+        "effect": "Exempt from interconnection-agreement requirements imposed by PURA; the utility may not require approval, charge a fee, or demand extra controls. One device per meter."
+      }
+    ],
+    "verified_against_primary": {
+      "date": "2026-08-01",
+      "confirmed": [
+        "'a maximum power output of not more than one thousand two hundred watts'",
+        "signed as Public Act 26-127",
+        "Sec. 9 effective 1 October 2026"
+      ],
+      "corrected": [
+        "cap was described as panel capacity; the act says power output",
+        "the page said the law was already in force",
+        "the net-metering charging warning in Sec. 9(a)(9) was missing entirely",
+        "source was a pv-magazine article"
+      ]
+    }
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }

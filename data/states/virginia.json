@@ -10,14 +10,14 @@
   },
   "state": "Virginia",
   "slug": "virginia",
-  "status": "Legal — signed (eff. Jul 1, 2026)",
-  "status_badge_verbatim": "Legal — signed (eff. Jul 1, 2026)",
+  "status": "Signed — takes effect 1 Jan 2027",
+  "status_badge_verbatim": "Signed — takes effect 1 Jan 2027",
   "avg_rate_cents": 14,
   "main_utilities": [
     "Dominion Energy"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/virginia/",
-  "last_reviewed": "2026-06-14",
+  "last_reviewed": "2026-08-01",
   "legislation": {
     "bill": "HB 395 / SB 250",
     "status": "signed",
@@ -26,8 +26,56 @@
     "max_watts": 1200,
     "cert_required": "UL or equivalent",
     "signed_by": "Gov. Abigail Spanberger",
-    "source_url": "https://pv-magazine-usa.com/2026/03/12/virginia-becomes-second-u-s-state-to-advance-plug-in-solar-legislation-to-the-governors-desk/",
-    "notes": "Localities cannot ban balcony solar on residential structures within cap; passed House 96–0 and Senate 30–8."
+    "source_url": "https://law.lis.virginia.gov/vacode/title56/chapter23/section56-596.8/",
+    "notes": "Cap is 1,200 W of power output per customer, or per residential building unit in multi-family housing (56-596.8(A)). Second tier at 391 W of output to the receptacle outlet. From 1 January 2027 the customer MUST notify the utility on a State Corporation Commission form before installing; the utility has 15 days to review. 15.2-2288.7(F) expressly preserves recorded covenants, condominium instruments and POA declarations - Virginia does NOT override HOAs. No provision applies to a rental unit on a ratio utility billing system.",
+    "source_url_type": "primary - Code of Virginia as enacted by 2026 cc. 998, 1052",
+    "effective_note": "The act's own effective date is 1 July 2026, but NO plug-in provision operates until 1 January 2027 - all three sections it creates carry '(Effective January 1, 2027)' in the Code. Read effective_delayed before using effective.",
+    "effective_delayed": [
+      {
+        "date": "2027-01-01",
+        "provision": "56-596.8",
+        "summary": "Exemption from interconnection requirements, utility approval and fees; prior notification to the utility on an SCC form is required."
+      },
+      {
+        "date": "2027-01-01",
+        "provision": "55.1-1212.1",
+        "summary": "A landlord owning more than four rental units may not prohibit a tenant from installing a device on the exterior of the tenant's premises, subject to reasonable restrictions and seven days' notice."
+      },
+      {
+        "date": "2027-01-01",
+        "provision": "15.2-2288.7",
+        "summary": "A locality may not prohibit the use of a device on a residential structure. Subsection (F) expressly preserves private covenants and POA declarations."
+      }
+    ],
+    "watt_tiers": [
+      {
+        "max_watts": 1200,
+        "basis": "power output",
+        "provision": "56-596.8(A)(i)",
+        "effect": "Exempt from interconnection requirements and net energy metering provisions; no utility approval and no fee, but prior notification is required."
+      },
+      {
+        "max_watts": 391,
+        "basis": "power output to the receptacle outlet",
+        "provision": "56-596.8(A)",
+        "effect": "Additionally exempt from product listing provisions that would require alterations to the building's premises, wiring or electrical panels."
+      }
+    ],
+    "verified_against_primary": {
+      "date": "2026-08-01",
+      "confirmed": [
+        "1,200 W of power output per customer",
+        "391 W second tier, same figure as Colorado",
+        "all three sections marked '(Effective January 1, 2027)' in the Code"
+      ],
+      "corrected": [
+        "status said 'Legal - signed (eff. Jul 1, 2026)' and the page said the law was in force; no plug-in provision operates until 1 January 2027",
+        "cap was described as panel capacity; the statute measures power output",
+        "'no interconnection paperwork' was wrong - notification on an SCC form is mandatory from 1 January 2027",
+        "391 W tier was absent",
+        "source was a pv-magazine article"
+      ]
+    }
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }

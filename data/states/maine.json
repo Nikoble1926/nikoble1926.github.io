@@ -21,7 +21,7 @@
   "main_utilities_source_name": "Maine Public Utilities Commission, Residential Electric Rates",
   "main_utilities_verified": "2026-08-01",
   "page_url": "https://pluginsolarhub.org/state-legality/maine/",
-  "last_reviewed": "2026-06-14",
+  "last_reviewed": "2026-08-01",
   "legislation": {
     "bill": "LD 1730",
     "status": "signed",
@@ -30,8 +30,32 @@
     "max_watts": 1200,
     "cert_required": "UL or equivalent nationally recognized testing laboratory",
     "signed_by": "Gov. Janet Mills",
-    "source_url": "https://pv-magazine-usa.com/2026/04/16/maines-plug-in-solar-law-takes-effect-in-july-but-some-companies-are-already-selling-products-in-the-state/",
-    "notes": "Up to 420W self-install; up to 1,200W requires a licensed electrician."
+    "source_url": "https://legislature.maine.gov/legis/bills/getPDF.asp?paper=SP0676&item=5&snum=132",
+    "notes": "PL 2026 c.644, approved 6 April 2026, enacts 35-A MRSA §3475. An 'eligible system' is a plug-in photovoltaic or plug-in battery system with an EXPORT CAPACITY of 1,200 watts or less, listed or certified to UL 3700 (or a comparable standard from a nationally recognized testing laboratory), or configured per the National Electrical Code. NOT VERIFIED from the enacted text: the 420 W self-installation threshold that our page states.",
+    "source_url_type": "primary - Maine Public Law 2026 c.644, approved text",
+    "watt_tiers": [
+      {
+        "max_watts": 1200,
+        "basis": "export capacity",
+        "provision": "35-A MRSA §3475(1)(A)",
+        "effect": "Eligible system: no interconnection agreement required."
+      }
+    ],
+    "verified_against_primary": {
+      "date": "2026-08-01",
+      "confirmed": [
+        "'export capacity of 1,200 watts or less'",
+        "approved by the Governor 6 April 2026, Chapter 644",
+        "UL 3700 named explicitly in the statute"
+      ],
+      "corrected": [
+        "cap was described as panel capacity; the statute says export capacity",
+        "source was a pv-magazine article"
+      ],
+      "unverified": [
+        "The 420 W self-installation threshold stated on the page could not be located in the enacted text of c.644. Flagged on the page as unconfirmed rather than removed, pending a full read."
+      ]
+    }
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }

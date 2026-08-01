@@ -29,10 +29,27 @@
     "cert_required": "Accredited testing laboratory (e.g. UL); state fire code compliance",
     "signed_by": null,
     "source_url": "https://nyassembly.gov/leg/?Actions=Y&Memo=Y&Summary=Y&Text=Y&bn=A09111&term=2025",
-    "notes": "A9111C passed the Assembly 28 May 2026, was substituted for S8512C and passed the Senate the same day, then returned to the Assembly. No delivery to the Governor is recorded as at 1 August 2026. Takes effect on the ninetieth day after becoming law. Caution when checking: the base S8512 page on nysenate.gov still reads \"In Senate Committee\" because the active version is S8512C, which was substituted by A9111C - use the Assembly action history instead.",
+    "notes": "A9111C / S8512C. The bill limits a device to 'supplying a maximum aggregate continuous AC INVERTER NAMEPLATE OUTPUT of not more than one thousand two hundred watts TO THE UTILITY ELECTRIC GRID'. Passed both chambers; no delivery to the Governor recorded as at 1 August 2026. Takes effect on the ninetieth day after becoming law.",
     "short_title_verbatim": "Solar Up Now NY Act",
     "effective_rule": "ninetieth day after it becomes law",
-    "source_url_type": "primary - full action history, New York State Assembly"
+    "source_url_type": "primary - full action history, New York State Assembly",
+    "watt_tiers": [
+      {
+        "max_watts": 1200,
+        "basis": "AC inverter nameplate output to the utility electric grid",
+        "provision": "A9111C §(ii)",
+        "effect": "Would remove case-by-case utility approval for devices within the cap. Not law yet."
+      }
+    ],
+    "verified_against_primary": {
+      "date": "2026-08-01",
+      "confirmed": [
+        "'maximum aggregate continuous AC inverter nameplate output ... to the utility electric grid'"
+      ],
+      "corrected": [
+        "cap was described as panel capacity; the bill says AC inverter nameplate output"
+      ]
+    }
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }

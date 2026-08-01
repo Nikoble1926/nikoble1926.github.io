@@ -18,7 +18,7 @@
     "BGE"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/maryland/",
-  "last_reviewed": "2026-06-14",
+  "last_reviewed": "2026-08-01",
   "legislation": {
     "bill": "HB 1532",
     "status": "signed",
@@ -27,8 +27,31 @@
     "max_watts": 1200,
     "cert_required": "UL certification or equivalent safety standard",
     "signed_by": "Gov. Wes Moore",
-    "source_url": "https://pv-magazine-usa.com/2026/04/15/bills-containing-plug-in-solar-provisions-pass-in-maryland-and-colorado/",
-    "notes": "Utility RELIEF Act; emergency clause = effective immediately on signing. One portable solar system per residential meter."
+    "source_url": "https://mgaleg.maryland.gov/2026RS/chapters_noln/Ch_353_hb1532E.pdf",
+    "notes": "Chapter 353 §7-321. A 'portable solar energy generating system' is LIMITED TO SUPPLYING A MAXIMUM POWER OUTPUT OF NOT MORE THAN 1,200 WATTS BACK TO THE ELECTRIC SYSTEM OF THE BUILDING - the building's system, not the grid. One system per electric meter, residential use only. The system is NOT eligible for inclusion in meeting the Renewable Energy Portfolio Standard and MAY NOT GENERATE RENEWABLE ENERGY CREDITS OF ANY TYPE.",
+    "source_url_type": "primary - Maryland Laws 2026 Chapter 353, chaptered text",
+    "effective_note": "Emergency bill: effective upon enactment, 12 May 2026.",
+    "watt_tiers": [
+      {
+        "max_watts": 1200,
+        "basis": "power output back to the electric system of the building",
+        "provision": "§7-321(A)(3)",
+        "effect": "Not subject to §§ 7-306 and 7-306.1; the electric company may not require approval or charge a fee. One per meter, residential only. No RECs, does not count toward the RPS."
+      }
+    ],
+    "verified_against_primary": {
+      "date": "2026-08-01",
+      "confirmed": [
+        "'MAXIMUM POWER OUTPUT OF NOT MORE THAN 1,200 WATTS BACK TO THE ELECTRIC SYSTEM OF THE BUILDING'",
+        "one system per electric meter, residential use only",
+        "emergency clause - effective on enactment"
+      ],
+      "corrected": [
+        "cap was described as panel capacity; the statute says power output back to the building's electric system",
+        "the RPS/REC exclusion was missing",
+        "source was a pv-magazine article"
+      ]
+    }
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }

@@ -137,25 +137,33 @@
                    {
                        "state":  "Connecticut",
                        "slug":  "connecticut",
-                       "status":  "Legal — signed (effective Oct 1, 2026)",
-                       "status_badge_verbatim":  "Legal — signed (effective Oct 1, 2026)",
+                       "status":  "Signed — takes effect 1 Oct 2026",
+                       "status_badge_verbatim":  "Signed — takes effect 1 Oct 2026",
                        "avg_rate_cents":  29,
                        "main_utilities":  [
                                               "Eversource",
                                               "United Illuminating"
                                           ],
                        "page_url":  "https://pluginsolarhub.org/state-legality/connecticut/",
-                       "last_reviewed":  "2026-06-14",
+                       "last_reviewed":  "2026-08-01",
                        "legislation":  {
-                                           "bill":  "HB 5340",
-                                           "status":  "signed",
-                                           "date":  "2026-06-04",
-                                           "effective":  "2026-10-01",
-                                           "max_watts":  1200,
-                                           "cert_required":  "Accredited testing laboratory (UL or equivalent)",
-                                           "signed_by":  "Gov. Ned Lamont",
-                                           "source_url":  "https://pv-magazine-usa.com/2026/06/05/connecticut-governor-signs-the-states-omnibus-2026-solar-bill/",
-                                           "notes":  "Omnibus solar bill includes plug-in / balcony solar authorization. Balcony solar rules take effect Oct 1 2026."
+                                               "bill":  "HB 5340",
+                                               "status":  "signed",
+                                               "date":  "2026-06-04",
+                                               "effective":  "2026-10-01",
+                                               "max_watts":  1200,
+                                               "cert_required":  "Accredited testing laboratory (UL or equivalent)",
+                                               "signed_by":  "Gov. Ned Lamont",
+                                               "source_url":  "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00127-R00HB-05340-PA.PDF",
+                                               "notes":  "Public Act 26-127 Sec. 9. 'Portable solar generation device' has a maximum POWER OUTPUT of not more than 1,200 watts, connects through a standard 120-volt AC outlet behind the customer's meter, and must meet the State Building Code, NEC (NFPA-70), IEEE 1547 and UL 1741. One device per meter. Sec. 9(a)(9) requires a consumer warning that generation exceeding on-site consumption is CHARGED TO THE CUSTOMER AS USAGE unless the customer has a net-metering meter. Does not exempt the device from the State Building Code, Fire Safety Code, State Fire Prevention Code or local ordinance.",
+                                               "watt_tiers":  [
+                                                   {
+                                                       "max_watts":  1200,
+                                                       "basis":  "power output",
+                                                       "provision":  "PA 26-127 Sec. 9(a)(2)",
+                                                       "effect":  "Exempt from interconnection-agreement requirements imposed by PURA; the utility may not require approval, charge a fee, or demand extra controls. One device per meter."
+                                                   }
+                                               ]
                                        }
                    },
                    {
@@ -312,17 +320,25 @@
 
                                           ],
                        "page_url":  "https://pluginsolarhub.org/state-legality/maine/",
-                       "last_reviewed":  "2026-06-14",
+                       "last_reviewed":  "2026-08-01",
                        "legislation":  {
-                                           "bill":  "LD 1730",
-                                           "status":  "signed",
-                                           "date":  "2026-04-06",
-                                           "effective":  "2026-07-15",
-                                           "max_watts":  1200,
-                                           "cert_required":  "UL or equivalent nationally recognized testing laboratory",
-                                           "signed_by":  "Gov. Janet Mills",
-                                           "source_url":  "https://pv-magazine-usa.com/2026/04/16/maines-plug-in-solar-law-takes-effect-in-july-but-some-companies-are-already-selling-products-in-the-state/",
-                                           "notes":  "Up to 420W self-install; up to 1,200W requires a licensed electrician."
+                                               "bill":  "LD 1730",
+                                               "status":  "signed",
+                                               "date":  "2026-04-06",
+                                               "effective":  "2026-07-15",
+                                               "max_watts":  1200,
+                                               "cert_required":  "UL or equivalent nationally recognized testing laboratory",
+                                               "signed_by":  "Gov. Janet Mills",
+                                               "source_url":  "https://legislature.maine.gov/legis/bills/getPDF.asp?paper=SP0676&item=5&snum=132",
+                                               "notes":  "PL 2026 c.644, approved 6 April 2026, enacts 35-A MRSA §3475. An 'eligible system' is a plug-in photovoltaic or plug-in battery system with an EXPORT CAPACITY of 1,200 watts or less, listed or certified to UL 3700 (or a comparable standard from a nationally recognized testing laboratory), or configured per the National Electrical Code. NOT VERIFIED from the enacted text: the 420 W self-installation threshold that our page states.",
+                                               "watt_tiers":  [
+                                                   {
+                                                       "max_watts":  1200,
+                                                       "basis":  "export capacity",
+                                                       "provision":  "35-A MRSA §3475(1)(A)",
+                                                       "effect":  "Eligible system: no interconnection agreement required."
+                                                   }
+                                               ]
                                        }
                    },
                    {
@@ -336,17 +352,25 @@
                                               "BGE"
                                           ],
                        "page_url":  "https://pluginsolarhub.org/state-legality/maryland/",
-                       "last_reviewed":  "2026-06-14",
+                       "last_reviewed":  "2026-08-01",
                        "legislation":  {
-                                           "bill":  "HB 1532",
-                                           "status":  "signed",
-                                           "date":  "2026-05-12",
-                                           "effective":  "2026-05-12",
-                                           "max_watts":  1200,
-                                           "cert_required":  "UL certification or equivalent safety standard",
-                                           "signed_by":  "Gov. Wes Moore",
-                                           "source_url":  "https://pv-magazine-usa.com/2026/04/15/bills-containing-plug-in-solar-provisions-pass-in-maryland-and-colorado/",
-                                           "notes":  "Utility RELIEF Act; emergency clause = effective immediately on signing. One portable solar system per residential meter."
+                                               "bill":  "HB 1532",
+                                               "status":  "signed",
+                                               "date":  "2026-05-12",
+                                               "effective":  "2026-05-12",
+                                               "max_watts":  1200,
+                                               "cert_required":  "UL certification or equivalent safety standard",
+                                               "signed_by":  "Gov. Wes Moore",
+                                               "source_url":  "https://mgaleg.maryland.gov/2026RS/chapters_noln/Ch_353_hb1532E.pdf",
+                                               "notes":  "Chapter 353 §7-321. A 'portable solar energy generating system' is LIMITED TO SUPPLYING A MAXIMUM POWER OUTPUT OF NOT MORE THAN 1,200 WATTS BACK TO THE ELECTRIC SYSTEM OF THE BUILDING - the building's system, not the grid. One system per electric meter, residential use only. The system is NOT eligible for inclusion in meeting the Renewable Energy Portfolio Standard and MAY NOT GENERATE RENEWABLE ENERGY CREDITS OF ANY TYPE.",
+                                               "watt_tiers":  [
+                                                   {
+                                                       "max_watts":  1200,
+                                                       "basis":  "power output back to the electric system of the building",
+                                                       "provision":  "§7-321(A)(3)",
+                                                       "effect":  "Not subject to §§ 7-306 and 7-306.1; the electric company may not require approval or charge a fee. One per meter, residential only. No RECs, does not count toward the RPS."
+                                                   }
+                                               ]
                                        }
                    },
                    {
@@ -529,15 +553,25 @@
                        "page_url":  "https://pluginsolarhub.org/state-legality/new-york/",
                        "last_reviewed":  "2026-08-01",
                        "legislation":  {
-                                           "bill":  "A.9111C / S.8512C (Solar Up Now NY Act, promoted as the SUNNY Act)",
-                                           "status":  "passed_awaiting_governor",
-                                           "date":  "2026-05-28",
-                                           "effective":  null,
-                                           "max_watts":  1200,
-                                           "cert_required":  "Accredited testing laboratory (e.g. UL); state fire code compliance",
-                                           "signed_by":  null,
-                                           "source_url":  "https://nyassembly.gov/leg/?Actions=Y&Memo=Y&Summary=Y&Text=Y&bn=A09111&term=2025",
-                                           "notes":  "Passed both chambers May 29, 2026. Senate sponsor: Sen. Liz Krueger. Awaiting Gov. Kathy Hochul\u0027s signature."
+                                               "bill":  "A.9111C / S.8512C (Solar Up Now NY Act, promoted as the SUNNY Act)",
+                                               "status":  "passed_awaiting_governor",
+                                               "date":  "2026-05-28",
+                                               "effective":  null,
+                                               "max_watts":  1200,
+                                               "cert_required":  "Accredited testing laboratory (e.g. UL); state fire code compliance",
+                                               "signed_by":  null,
+                                               "source_url":  "https://nyassembly.gov/leg/?Actions=Y&Memo=Y&Summary=Y&Text=Y&bn=A09111&term=2025",
+                                               "notes":  "A9111C / S8512C. The bill limits a device to 'supplying a maximum aggregate continuous AC INVERTER NAMEPLATE OUTPUT of not more than one thousand two hundred watts TO THE UTILITY ELECTRIC GRID'. Passed both chambers; no delivery to the Governor recorded as at 1 August 2026. Takes effect on the ninetieth day after becoming law.",
+                                               "short_title_verbatim":  "Solar Up Now NY Act",
+                                               "effective_rule":  "ninetieth day after it becomes law",
+                                               "watt_tiers":  [
+                                                   {
+                                                       "max_watts":  1200,
+                                                       "basis":  "AC inverter nameplate output to the utility electric grid",
+                                                       "provision":  "A9111C §(ii)",
+                                                       "effect":  "Would remove case-by-case utility approval for devices within the cap. Not law yet."
+                                                   }
+                                               ]
                                        }
                    },
                    {
@@ -696,15 +730,23 @@
                        "page_url":  "https://pluginsolarhub.org/state-legality/utah/",
                        "last_reviewed":  "2026-08-01",
                        "legislation":  {
-                                           "bill":  "HB 340",
-                                           "status":  "signed",
-                                           "date":  "2025-03",
-                                           "effective":  "2025-05-07",
-                                           "max_watts":  1200,
-                                           "cert_required":  "UL or equivalent nationally recognized testing laboratory",
-                                           "signed_by":  "Gov. Spencer Cox",
-                                           "source_url":  "https://le.utah.gov/Session/2025/bills/enrolled/HB0340.pdf",
-                                           "notes":  "First U.S. state to fully legalize plug-in solar; treated legally as appliances, no interconnection agreement or fees required within cap."
+                                               "bill":  "HB 340",
+                                               "status":  "signed",
+                                               "date":  "2025-03",
+                                               "effective":  "2025-05-07",
+                                               "max_watts":  1200,
+                                               "cert_required":  "UL or equivalent nationally recognized testing laboratory",
+                                               "signed_by":  "Gov. Spencer Cox",
+                                               "source_url":  "https://le.utah.gov/Session/2025/bills/enrolled/HB0340.pdf",
+                                               "notes":  "H.B. 340 (2025) amends 54-15-102 and enacts 54-15-601. A 'portable solar generation device' HAS A MAXIMUM POWER OUTPUT OF NOT MORE THAN 1,200 WATTS, connects through a standard 120-volt AC outlet, meets the most recent National Electrical Code and is certified by UL or an equivalent nationally recognized testing laboratory. It is expressly excluded from the definition of 'customer generation system', so net metering does not apply to it.",
+                                               "watt_tiers":  [
+                                                   {
+                                                       "max_watts":  1200,
+                                                       "basis":  "power output",
+                                                       "provision":  "54-15-102(13)(a)",
+                                                       "effect":  "Exempt from the interconnection requirements of 54-15-106 and from an interconnection agreement under 54-15-103; not subject to net metering. The electrical corporation may not require approval, charge a fee, or demand extra equipment."
+                                                   }
+                                               ]
                                        }
                    },
                    {
@@ -733,24 +775,55 @@
                    {
                        "state":  "Virginia",
                        "slug":  "virginia",
-                       "status":  "Legal — signed (eff. Jul 1, 2026)",
-                       "status_badge_verbatim":  "Legal — signed (eff. Jul 1, 2026)",
+                       "status":  "Signed — takes effect 1 Jan 2027",
+                       "status_badge_verbatim":  "Signed — takes effect 1 Jan 2027",
                        "avg_rate_cents":  14,
                        "main_utilities":  [
                                               "Dominion Energy"
                                           ],
                        "page_url":  "https://pluginsolarhub.org/state-legality/virginia/",
-                       "last_reviewed":  "2026-06-14",
+                       "last_reviewed":  "2026-08-01",
                        "legislation":  {
-                                           "bill":  "HB 395 / SB 250",
-                                           "status":  "signed",
-                                           "date":  "2026-04-22",
-                                           "effective":  "2026-07-01",
-                                           "max_watts":  1200,
-                                           "cert_required":  "UL or equivalent",
-                                           "signed_by":  "Gov. Abigail Spanberger",
-                                           "source_url":  "https://pv-magazine-usa.com/2026/03/12/virginia-becomes-second-u-s-state-to-advance-plug-in-solar-legislation-to-the-governors-desk/",
-                                           "notes":  "Localities cannot ban balcony solar on residential structures within cap; passed House 96–0 and Senate 30–8."
+                                               "bill":  "HB 395 / SB 250",
+                                               "status":  "signed",
+                                               "date":  "2026-04-22",
+                                               "effective":  "2026-07-01",
+                                               "max_watts":  1200,
+                                               "cert_required":  "UL or equivalent",
+                                               "signed_by":  "Gov. Abigail Spanberger",
+                                               "source_url":  "https://law.lis.virginia.gov/vacode/title56/chapter23/section56-596.8/",
+                                               "notes":  "Cap is 1,200 W of power output per customer, or per residential building unit in multi-family housing (56-596.8(A)). Second tier at 391 W of output to the receptacle outlet. From 1 January 2027 the customer MUST notify the utility on a State Corporation Commission form before installing; the utility has 15 days to review. 15.2-2288.7(F) expressly preserves recorded covenants, condominium instruments and POA declarations - Virginia does NOT override HOAs. No provision applies to a rental unit on a ratio utility billing system.",
+                                               "effective_delayed":  [
+                                                   {
+                                                       "date":  "2027-01-01",
+                                                       "provision":  "56-596.8",
+                                                       "summary":  "Exemption from interconnection requirements, utility approval and fees; prior notification to the utility on an SCC form is required."
+                                                   },
+                                                   {
+                                                       "date":  "2027-01-01",
+                                                       "provision":  "55.1-1212.1",
+                                                       "summary":  "A landlord owning more than four rental units may not prohibit a tenant from installing a device on the exterior of the tenant's premises, subject to reasonable restrictions and seven days' notice."
+                                                   },
+                                                   {
+                                                       "date":  "2027-01-01",
+                                                       "provision":  "15.2-2288.7",
+                                                       "summary":  "A locality may not prohibit the use of a device on a residential structure. Subsection (F) expressly preserves private covenants and POA declarations."
+                                                   }
+                                               ],
+                                               "watt_tiers":  [
+                                                   {
+                                                       "max_watts":  1200,
+                                                       "basis":  "power output",
+                                                       "provision":  "56-596.8(A)(i)",
+                                                       "effect":  "Exempt from interconnection requirements and net energy metering provisions; no utility approval and no fee, but prior notification is required."
+                                                   },
+                                                   {
+                                                       "max_watts":  391,
+                                                       "basis":  "power output to the receptacle outlet",
+                                                       "provision":  "56-596.8(A)",
+                                                       "effect":  "Additionally exempt from product listing provisions that would require alterations to the building's premises, wiring or electrical panels."
+                                                   }
+                                               ]
                                        }
                    },
                    {
