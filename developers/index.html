@@ -34,7 +34,7 @@
 <table><caption class="sr-only">JSON endpoints</caption><thead><tr><th scope="col">Endpoint</th><th scope="col">Purpose</th></tr></thead><tbody>
 <tr><td><code>GET <a href="/data/plug-in-solar-laws.json">/data/plug-in-solar-laws.json</a></code></td><td>Full dataset &mdash; all 50 states + top-level metadata in one document</td></tr>
 <tr><td><code>GET <a href="/data/states/index.json">/data/states/index.json</a></code></td><td>Directory listing &mdash; one entry per state with its slug, status, and file path</td></tr>
-<tr><td><code>GET <a href="/data/states/new-york.json">/data/states/&lt;slug&gt;.json</a></code></td><td>Per-state record (self-contained, includes inherited schema_version + last_updated)</td></tr>
+<tr><td><code>GET <a href="/data/states/new-york.json">/data/states/&lt;slug&gt;.json</a></code></td><td>Per-state record, self-contained. Its <code>last_updated</code> is the date that file was generated, not a value copied down from the master dataset &mdash; the two can differ, and today they do.</td></tr>
 </tbody></table>
 <p class="tag" style="margin:8px 0 0">All responses are <code>application/json</code> served from GitHub Pages over HTTPS. No CORS restrictions for read.</p>
 
