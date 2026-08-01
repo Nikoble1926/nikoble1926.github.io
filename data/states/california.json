@@ -10,12 +10,24 @@
   },
   "state": "California",
   "slug": "california",
-  "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+  "status": "general interconnection rules apply; no plug-in-specific statute yet, but SB 868 is live - passed the Senate and sits in Assembly committee",
   "status_badge_verbatim": "Leaning permissive",
   "avg_rate_cents": 31,
   "main_utilities": [],
   "page_url": "https://pluginsolarhub.org/state-legality/california/",
-  "last_reviewed": "2026-06-14",
-  "legislation": null,
+  "last_reviewed": "2026-08-01",
+  "legislation": {
+    "bill": "SB 868 (Plug and Play Solar Act)",
+    "short_title_verbatim": "Plug and Play Solar Act",
+    "status": "passed_senate",
+    "date": "2026-04-21",
+    "effective": null,
+    "max_watts": 1200,
+    "cert_required": "Underwriters Laboratories or equivalent nationally recognized testing laboratory",
+    "signed_by": null,
+    "source_url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB868",
+    "source_url_type": "primary - California Legislative Information bill status",
+    "notes": "Introduced 5 January 2026 by Senator Wiener. Passed the Senate 35-1. In the Assembly it was amended 15 June 2026 and re-referred to Appropriations; the last recorded action is 29 June 2026, \"July 1 hearing postponed by committee\". Not law. Caps a portable solar generation device at 1,200 W aggregated AC output per dwelling and exempts it from interconnection requirements, while allowing a utility to require simple online registration."
+  },
   "source_file": "/data/plug-in-solar-laws.json"
 }

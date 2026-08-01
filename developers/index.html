@@ -2,7 +2,7 @@
 <html lang="en"><head><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Plug-In Solar Legality Dataset — Free Developer API (2026)</title>
-<meta name="description" content="Free, machine-readable 50-state plug-in / balcony solar legality dataset for developers and AI agents. JSON over plain HTTP, no auth, no rate limit. Updated as bills move; last data change 10 July 2026.">
+<meta name="description" content="Free, machine-readable 50-state plug-in / balcony solar legality dataset for developers and AI agents. JSON over plain HTTP, no auth, no rate limit. We update it when a bill actually moves, not on a schedule; last data change 10 July 2026.">
 <link rel="canonical" href="https://pluginsolarhub.org/developers/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Plug-In Solar Legality Dataset — Free Developer API (2026)">
@@ -27,7 +27,7 @@
 <div class="article">
 <p>A structured, version-controlled view of the <a href="/state-legality/">50-state plug-in solar legality tracker</a>. We re-check each state&rsquo;s legal status, average electricity rate, main utilities, and any in-flight plug-in solar legislation (bill number, governor, cap in watts, effective date, source URL) and publish the structured result as JSON. Each state record is fully self-contained.</p>
 <p><strong>Why it exists:</strong> plug-in solar laws are moving fast (seven states have signed plug-in solar laws — six in 2026 alone; two more are awaiting governor signatures) and most published trackers are PDFs or hand-curated tables. Agents and AI assistants need a stable JSON endpoint.</p>
-<p><strong>Update cadence:</strong> updated as bills move. The dataset&rsquo;s top-level <code>last_updated</code> reflects the latest re-verification pass.</p>
+<p><strong>Update cadence:</strong> we update the dataset when a bill actually moves, not on a schedule. <code>last_updated</code> is the date a value last changed; <code>last_reviewed</code>, which each state record carries separately, is the date that state was last re-checked whether or not anything changed. The two are not the same and we do not treat them as such. Every change is listed in the <a href="/changelog/">changelog</a>.</p>
 </div>
 
 <h2 style="margin-top:32px">Endpoints</h2>

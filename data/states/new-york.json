@@ -19,17 +19,20 @@
     "NYSEG"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/new-york/",
-  "last_reviewed": "2026-06-14",
+  "last_reviewed": "2026-08-01",
   "legislation": {
-    "bill": "A.9111C / S.8512C (SUNNY Act)",
+    "bill": "A.9111C / S.8512C (Solar Up Now NY Act, promoted as the SUNNY Act)",
     "status": "passed_awaiting_governor",
-    "date": "2026-05-29",
+    "date": "2026-05-28",
     "effective": null,
     "max_watts": 1200,
     "cert_required": "Accredited testing laboratory (e.g. UL); state fire code compliance",
     "signed_by": null,
-    "source_url": "https://www.nysenate.gov/legislation/bills/2025/S8512",
-    "notes": "Passed both chambers May 29, 2026. Senate sponsor: Sen. Liz Krueger. Awaiting Gov. Kathy Hochul's signature."
+    "source_url": "https://nyassembly.gov/leg/?Actions=Y&Memo=Y&Summary=Y&Text=Y&bn=A09111&term=2025",
+    "notes": "A9111C passed the Assembly 28 May 2026, was substituted for S8512C and passed the Senate the same day, then returned to the Assembly. No delivery to the Governor is recorded as at 1 August 2026. Takes effect on the ninetieth day after becoming law. Caution when checking: the base S8512 page on nysenate.gov still reads \"In Senate Committee\" because the active version is S8512C, which was substituted by A9111C - use the Assembly action history instead.",
+    "short_title_verbatim": "Solar Up Now NY Act",
+    "effective_rule": "ninetieth day after it becomes law",
+    "source_url_type": "primary - full action history, New York State Assembly"
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }
