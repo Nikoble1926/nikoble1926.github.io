@@ -89,22 +89,22 @@
                        "state":  "Colorado",
                        "slug":  "colorado",
                        "status":  "Legal — signed (eff. Jan 1, 2027)",
-                       "status_badge_verbatim":  "Legal — signed (eff. Jan 1, 2027)",
+                       "status_badge_verbatim":  "Legal — signed (eff. 12 Aug 2026)",
                        "avg_rate_cents":  15,
                        "main_utilities":  [
                                               "Xcel Energy"
                                           ],
                        "page_url":  "https://pluginsolarhub.org/state-legality/colorado/",
-                       "last_reviewed":  "2026-06-14",
+                       "last_reviewed":  "2026-08-01",
                        "legislation":  {
                                            "bill":  "HB26-1007",
                                            "status":  "signed",
                                            "date":  "2026-05-07",
-                                           "effective":  "2027-01-01",
+                                           "effective":  "2026-08-12",
                                            "max_watts":  1920,
                                            "cert_required":  "Safety standards established by the law; meter-collar adapters allowed",
                                            "signed_by":  "Gov. Jared Polis",
-                                           "source_url":  "https://www.solarpowerworldonline.com/2026/05/colorado-approves-balcony-solar-requires-utilities-to-accept-meter-collars/",
+                                           "source_url":  "https://leg.colorado.gov/laws/session-laws/HB26-1007/127/download",
                                            "notes":  "Highest U.S. plug-in solar cap (1,920W). Defines \u0027portable-scale solar generation devices\u0027 as a formal legal category."
                                        }
                    },

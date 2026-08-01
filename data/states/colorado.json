@@ -10,24 +10,38 @@
   },
   "state": "Colorado",
   "slug": "colorado",
-  "status": "Legal — signed (eff. Jan 1, 2027)",
-  "status_badge_verbatim": "Legal — signed (eff. Jan 1, 2027)",
+  "status": "Legal — signed (eff. 12 Aug 2026)",
+  "status_badge_verbatim": "Legal — signed (eff. 12 Aug 2026)",
   "avg_rate_cents": 15,
   "main_utilities": [
     "Xcel Energy"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/colorado/",
-  "last_reviewed": "2026-06-14",
+  "last_reviewed": "2026-08-01",
   "legislation": {
     "bill": "HB26-1007",
     "status": "signed",
     "date": "2026-05-07",
-    "effective": "2027-01-01",
+    "effective": "2026-08-12",
     "max_watts": 1920,
     "cert_required": "Safety standards established by the law; meter-collar adapters allowed",
     "signed_by": "Gov. Jared Polis",
-    "source_url": "https://www.solarpowerworldonline.com/2026/05/colorado-approves-balcony-solar-requires-utilities-to-accept-meter-collars/",
-    "notes": "Highest U.S. plug-in solar cap (1,920W). Defines 'portable-scale solar generation devices' as a formal legal category."
+    "source_url": "https://leg.colorado.gov/laws/session-laws/HB26-1007/127/download",
+    "notes": "Highest U.S. plug-in cap: 1,920 W of output to the electric grid per address, per the definition at 40-2-140(1)(e)(I). A device of 391 W or less is additionally exempt under 40-2-140(5). Delayed to 1 January 2027: (6) sale of a device above 391 W that is not UL labelled and listed is prohibited; (7) covenants unreasonably prohibiting a device are void and a property owner may impose reasonable restrictions.",
+    "effective_note": "SECTION 6 of the act: takes effect ninety days after final adjournment, stated in the act as 12 August 2026. Subsections 40-2-140(6) and (7) are delayed to 1 January 2027 - see notes. A richer structure for the delayed provisions and the 391 W tier is proposed but not yet applied.",
+    "source_url_type": "primary - chaptered text, Colorado session laws Chapter 127",
+    "verified_against_primary": {
+      "date": "2026-08-01",
+      "confirmed": [
+        "signed 7 May 2026 (\"Approved: May 7, 2026\")",
+        "1,920 W in the statutory definition",
+        "391 W second tier at 40-2-140(5)",
+        "HOA and covenant provisions at 40-2-140(7), delayed to 1 January 2027"
+      ],
+      "corrected": [
+        "effective was recorded as 2027-01-01; the act itself takes effect 2026-08-12 and only two subsections are delayed"
+      ]
+    }
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }
