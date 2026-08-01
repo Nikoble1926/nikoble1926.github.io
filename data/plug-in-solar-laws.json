@@ -463,16 +463,16 @@
                                               "JCP\u0026L"
                                           ],
                        "page_url":  "https://pluginsolarhub.org/state-legality/new-jersey/",
-                       "last_reviewed":  "2026-07-08",
+                       "last_reviewed":  "2026-08-01",
                        "legislation":  {
-                                           "bill":  "S2368 / A4836 (Garden State Plug-In Solar Act)",
+                                           "bill":  "S2368 / A4836 (Garden State Balcony Solar Act)",
                                            "status":  "passed_awaiting_governor",
                                            "date":  "2026-06-30",
                                            "effective":  null,
                                            "max_watts":  1200,
                                            "cert_required":  "Nationally recognized testing laboratory",
                                            "signed_by":  null,
-                                           "source_url":  "https://pv-magazine-usa.com/2026/07/01/new-jersey-legislature-unanimously-passes-plug-in-solar-bill/",
+                                           "source_url":  "https://pub.njleg.state.nj.us/Bills/2026/S2500/2368_R3.HTM",
                                            "notes":  "Garden State Plug-In Solar Act passed both chambers unanimously on June 30, 2026 (Senate 40-0, Assembly 79-0); awaiting Gov. Sherrill. Up to 1,200W systems; effective 6 months after enactment per bill text. To verify against NJ Legislature record before marking signed."
                                        }
                    },
@@ -501,16 +501,16 @@
                                               "NYSEG"
                                           ],
                        "page_url":  "https://pluginsolarhub.org/state-legality/new-york/",
-                       "last_reviewed":  "2026-06-14",
+                       "last_reviewed":  "2026-08-01",
                        "legislation":  {
-                                           "bill":  "A.9111C / S.8512C (SUNNY Act)",
+                                           "bill":  "A.9111C / S.8512C (Solar Up Now NY Act, promoted as the SUNNY Act)",
                                            "status":  "passed_awaiting_governor",
-                                           "date":  "2026-05-29",
+                                           "date":  "2026-05-28",
                                            "effective":  null,
                                            "max_watts":  1200,
                                            "cert_required":  "Accredited testing laboratory (e.g. UL); state fire code compliance",
                                            "signed_by":  null,
-                                           "source_url":  "https://www.nysenate.gov/legislation/bills/2025/S8512",
+                                           "source_url":  "https://nyassembly.gov/leg/?Actions=Y&Memo=Y&Summary=Y&Text=Y&bn=A09111&term=2025",
                                            "notes":  "Passed both chambers May 29, 2026. Senate sponsor: Sen. Liz Krueger. Awaiting Gov. Kathy Hochul\u0027s signature."
                                        }
                    },
@@ -668,7 +668,7 @@
 
                                           ],
                        "page_url":  "https://pluginsolarhub.org/state-legality/utah/",
-                       "last_reviewed":  "2026-06-14",
+                       "last_reviewed":  "2026-08-01",
                        "legislation":  {
                                            "bill":  "HB 340",
                                            "status":  "signed",
@@ -677,7 +677,7 @@
                                            "max_watts":  1200,
                                            "cert_required":  "UL or equivalent nationally recognized testing laboratory",
                                            "signed_by":  "Gov. Spencer Cox",
-                                           "source_url":  "https://grist.org/energy/utah-portable-plug-in-solar-law/",
+                                           "source_url":  "https://le.utah.gov/Session/2025/bills/enrolled/HB0340.pdf",
                                            "notes":  "First U.S. state to fully legalize plug-in solar; treated legally as appliances, no interconnection agreement or fees required within cap."
                                        }
                    },

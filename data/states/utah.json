@@ -20,7 +20,7 @@
   "main_utilities_source_name": "PacifiCorp d/b/a Rocky Mountain Power, Utah regulatory filings with the Utah Public Service Commission",
   "main_utilities_verified": "2026-08-01",
   "page_url": "https://pluginsolarhub.org/state-legality/utah/",
-  "last_reviewed": "2026-06-14",
+  "last_reviewed": "2026-08-01",
   "legislation": {
     "bill": "HB 340",
     "status": "signed",
@@ -29,8 +29,21 @@
     "max_watts": 1200,
     "cert_required": "UL or equivalent nationally recognized testing laboratory",
     "signed_by": "Gov. Spencer Cox",
-    "source_url": "https://grist.org/energy/utah-portable-plug-in-solar-law/",
-    "notes": "First U.S. state to fully legalize plug-in solar; treated legally as appliances, no interconnection agreement or fees required within cap."
+    "source_url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0340.pdf",
+    "notes": "First U.S. state to fully legalize plug-in solar; treated legally as appliances, no interconnection agreement or fees required within cap.",
+    "source_url_type": "primary - enrolled bill text, Utah State Legislature",
+    "verified_against_primary": {
+      "date": "2026-08-01",
+      "confirmed": [
+        "status signed",
+        "effective 2025-05-07 (Section 3 of the enrolled bill)",
+        "max_watts 1200 (definition of portable solar generation device)"
+      ],
+      "not_confirmed": [
+        "signed_by - the enrolled text does not name the signing governor, so that field was left as it was rather than re-asserted"
+      ],
+      "note": "le.utah.gov rejects automated requests; the enrolled text was read in a browser."
+    }
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }
