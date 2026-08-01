@@ -97,41 +97,41 @@
                        "page_url":  "https://pluginsolarhub.org/state-legality/colorado/",
                        "last_reviewed":  "2026-08-01",
                        "legislation":  {
-                                           "bill":  "HB26-1007",
-                                           "status":  "signed",
-                                           "date":  "2026-05-07",
-                                           "effective":  "2026-08-12",
-                                           "max_watts":  1920,
-                                           "cert_required":  "Safety standards established by the law; meter-collar adapters allowed",
-                                           "signed_by":  "Gov. Jared Polis",
-                                           "source_url":  "https://leg.colorado.gov/laws/session-laws/HB26-1007/127/download",
-                                           "notes":  "Highest U.S. plug-in cap: 1,920 W of output to the electric grid per address, per the definition at 40-2-140(1)(e)(I). A device of 391 W or less is additionally exempt under 40-2-140(5). Delayed to 1 January 2027: (6) sale of a device above 391 W that is not UL labelled and listed is prohibited; (7) covenants unreasonably prohibiting a device are void and a property owner may impose reasonable restrictions.",
-                                           "effective_delayed":  [
-                                               {
-                                                   "date":  "2027-01-01",
-                                                   "provision":  "40-2-140(6)",
-                                                   "summary":  "Sale, lease or rental of a device above 391 W that is not UL labelled and listed is prohibited."
-                                               },
-                                               {
-                                                   "date":  "2027-01-01",
-                                                   "provision":  "40-2-140(7)",
-                                                   "summary":  "A covenant unreasonably prohibiting a portable-scale solar device is unenforceable and void as a matter of public policy; a property owner may still impose reasonable restrictions on notice, fire and overload precautions, and placement."
-                                               }
-                                           ],
-                                           "watt_tiers":  [
-                                               {
-                                                   "max_watts":  1920,
-                                                   "basis":  "output to the electric grid",
-                                                   "provision":  "40-2-140(1)(e)(I)",
-                                                   "effect":  "No utility approval, interconnection paperwork or fee; must be labelled and listed by a nationally recognized testing laboratory."
-                                               },
-                                               {
-                                                   "max_watts":  391,
-                                                   "basis":  "output to the electric grid",
-                                                   "provision":  "40-2-140(5)",
-                                                   "effect":  "Additionally exempt from the state's solar PV installation requirements and from building-code provisions that would require changes to the building's wiring."
-                                               }
-                                           ]
+                                               "bill":  "HB26-1007",
+                                               "status":  "signed",
+                                               "date":  "2026-05-07",
+                                               "effective":  "2026-08-12",
+                                               "max_watts":  1920,
+                                               "cert_required":  "Safety standards established by the law; meter-collar adapters allowed",
+                                               "signed_by":  "Gov. Jared Polis",
+                                               "source_url":  "https://leg.colorado.gov/laws/session-laws/HB26-1007/127/download",
+                                               "notes":  "Highest U.S. plug-in cap: 1,920 W of output to the electric grid per address, per the definition at 40-2-140(1)(e)(I). A device of 391 W or less is additionally exempt under 40-2-140(5). Delayed to 1 January 2027: (6) sale of a device above 391 W that is not UL labelled and listed is prohibited; (7) covenants unreasonably prohibiting a device are void and a property owner may impose reasonable restrictions.",
+                                               "effective_delayed":  [
+                                                   {
+                                                       "date":  "2027-01-01",
+                                                       "provision":  "40-2-140(6)",
+                                                       "summary":  "Sale, lease or rental of a device above 391 W that is not UL labelled and listed is prohibited."
+                                                   },
+                                                   {
+                                                       "date":  "2027-01-01",
+                                                       "provision":  "40-2-140(7)",
+                                                       "summary":  "A covenant unreasonably prohibiting a portable-scale solar device is unenforceable and void as a matter of public policy; a property owner may still impose reasonable restrictions on notice, fire and overload precautions, and placement."
+                                                   }
+                                               ],
+                                               "watt_tiers":  [
+                                                   {
+                                                       "max_watts":  1920,
+                                                       "basis":  "output to the electric grid",
+                                                       "provision":  "40-2-140(1)(e)(I)",
+                                                       "effect":  "No utility approval, interconnection paperwork or fee; must be labelled and listed by a nationally recognized testing laboratory."
+                                                   },
+                                                   {
+                                                       "max_watts":  391,
+                                                       "basis":  "output to the electric grid",
+                                                       "provision":  "40-2-140(5)",
+                                                       "effect":  "Additionally exempt from the state's solar PV installation requirements and from building-code provisions that would require changes to the building's wiring."
+                                                   }
+                                               ]
                                        }
                    },
                    {
@@ -330,13 +330,19 @@
                                                "cert_required":  "UL or equivalent nationally recognized testing laboratory",
                                                "signed_by":  "Gov. Janet Mills",
                                                "source_url":  "https://legislature.maine.gov/legis/bills/getPDF.asp?paper=SP0676&item=5&snum=132",
-                                               "notes":  "PL 2026 c.644, approved 6 April 2026, enacts 35-A MRSA §3475. An 'eligible system' is a plug-in photovoltaic or plug-in battery system with an EXPORT CAPACITY of 1,200 watts or less, listed or certified to UL 3700 (or a comparable standard from a nationally recognized testing laboratory), or configured per the National Electrical Code. NOT VERIFIED from the enacted text: the 420 W self-installation threshold that our page states.",
+                                               "notes":  "PL 2026 c.644, approved 6 April 2026, enacts 35-A MRSA 3475. An 'eligible system' is a plug-in photovoltaic or plug-in battery system with an EXPORT CAPACITY of 1,200 watts or less, listed or certified to UL 3700 or a comparable standard, using inverters configured to shut off within 0.2 seconds if power is disrupted. Subsection 3 sets the tiers in COMBINED INVERTER OUTPUT measured in alternating current: up to 420 W per service address with no further condition; above 420 W and up to 1,200 W each system must be installed by an electrician licensed in the State and use a dedicated circuit with a single outlet. Subsection 5: the customer must notify the utility on a form prescribed by the Commission within 30 days of installation; the utility may not deny a compliant installation. Subsection 4: an eligible system MAY NOT be used for net energy billing under 3209-A or 3209-B. Subsection 8: a customer installing on a structure they do not own must not compromise its integrity or violate state or local building, fire or zoning codes.",
                                                "watt_tiers":  [
                                                    {
                                                        "max_watts":  1200,
-                                                       "basis":  "export capacity",
-                                                       "provision":  "35-A MRSA §3475(1)(A)",
-                                                       "effect":  "Eligible system: no interconnection agreement required."
+                                                       "basis":  "export capacity (definition) / combined inverter output in AC (capacity limits)",
+                                                       "provision":  "35-A MRSA 3475(1)(A) and 3475(3)",
+                                                       "effect":  "Above 420 W: must be installed by an electrician licensed in Maine, on a dedicated circuit with a single outlet, with notification to the utility within 30 days of installation. No interconnection application, agreement, study, fee or extra equipment. Not eligible for net energy billing."
+                                                   },
+                                                   {
+                                                       "max_watts":  420,
+                                                       "basis":  "combined inverter output, measured in alternating current",
+                                                       "provision":  "35-A MRSA 3475(3)",
+                                                       "effect":  "May be installed and operated by the customer with no electrician requirement, no dedicated-circuit requirement and no notification."
                                                    }
                                                ]
                                        }
