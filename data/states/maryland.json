@@ -51,6 +51,16 @@
         "the RPS/REC exclusion was missing",
         "source was a pv-magazine article"
       ]
+    },
+    "certification_requirement": {
+      "required": true,
+      "provision": "Md. Public Utilities §7-321(A)(4)",
+      "quote": "CERTIFIED BY UNDERWRITERS LABORATORY OR AN EQUIVALENT NATIONALLY RECOGNIZED TESTING LABORATORY",
+      "standard_named": null,
+      "effective": "2026-05-12",
+      "source_url": "https://mgaleg.maryland.gov/2026RS/chapters_noln/Ch_353_hb1532E.pdf",
+      "verified": "2026-08-02",
+      "note": "Verbatim from the primary text. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
     }
   },
   "source_file": "/data/plug-in-solar-laws.json"

@@ -52,6 +52,16 @@
         "the net-metering charging warning in Sec. 9(a)(9) was missing entirely",
         "source was a pv-magazine article"
       ]
+    },
+    "certification_requirement": {
+      "required": true,
+      "provision": "Connecticut Public Act 26-127, Sec. 9(a)(7)",
+      "quote": "is certified by Underwriters Laboratories or an equivalent nationally recognized testing laboratory, and meets the requirements set forth in Underwriters Laboratories Standard Number 1741, as amended from time to time",
+      "standard_named": "UL 1741",
+      "effective": "2026-10-01",
+      "source_url": "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00127-R00HB-05340-PA.PDF",
+      "verified": "2026-08-02",
+      "note": "Verbatim from the primary text. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
     }
   },
   "source_file": "/data/plug-in-solar-laws.json"

@@ -63,6 +63,16 @@
         "362-A:10, V insurance warning",
         "no HOA or covenant provision exists in this act"
       ]
+    },
+    "certification_requirement": {
+      "required": true,
+      "provision": "RSA 362-A:10, I",
+      "quote": "Plug-in solar generation systems shall be certified by a nationally recognized testing laboratory to meet nationally recognized safety standards applicable to distributed energy resources and plug-in solar generation systems",
+      "standard_named": null,
+      "effective": "2027-01-01",
+      "source_url": "https://gc.nh.gov/bill_status/legacy/bs2016/billText.aspx?id=1317&txtFormat=html&sy=2026",
+      "verified": "2026-08-02",
+      "note": "Verbatim from the primary text. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
     }
   },
   "source_file": "/data/plug-in-solar-laws.json"

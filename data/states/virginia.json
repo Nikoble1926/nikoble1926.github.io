@@ -75,6 +75,16 @@
         "391 W tier was absent",
         "source was a pv-magazine article"
       ]
+    },
+    "certification_requirement": {
+      "required": true,
+      "provision": "Va. Code §56-596.8(A)(v)",
+      "quote": "is certified by a nationally recognized testing laboratory, as described in 29 C.F.R. § 1910.7, or an equivalent nationally recognized testing laboratory",
+      "standard_named": null,
+      "effective": "2027-01-01",
+      "source_url": "https://law.lis.virginia.gov/vacode/title56/chapter23/section56-596.8/",
+      "verified": "2026-08-02",
+      "note": "Verbatim from the primary text. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
     }
   },
   "source_file": "/data/plug-in-solar-laws.json"

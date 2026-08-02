@@ -131,7 +131,17 @@
                                                        "provision":  "40-2-140(5)",
                                                        "effect":  "Additionally exempt from the state's solar PV installation requirements and from building-code provisions that would require changes to the building's wiring."
                                                    }
-                                               ]
+                                               ],
+                                               "certification_requirement":  {
+                                                   "required":  true,
+                                                   "provision":  "Colo. Rev. Stat. 40-2-140",
+                                                   "quote":  "labelled and listed by a nationally recognized testing laboratory",
+                                                   "standard_named":  null,
+                                                   "effective":  "2026-08-12",
+                                                   "source_url":  "https://leg.colorado.gov/laws/session-laws/HB26-1007/127/download",
+                                                   "verified":  "2026-08-02",
+                                                   "note":  "Verbatim from the primary text. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
+                                               }
                                        }
                    },
                    {
@@ -163,7 +173,17 @@
                                                        "provision":  "PA 26-127 Sec. 9(a)(2)",
                                                        "effect":  "Exempt from interconnection-agreement requirements imposed by PURA; the utility may not require approval, charge a fee, or demand extra controls. One device per meter."
                                                    }
-                                               ]
+                                               ],
+                                               "certification_requirement":  {
+                                                   "required":  true,
+                                                   "provision":  "Connecticut Public Act 26-127, Sec. 9(a)(7)",
+                                                   "quote":  "is certified by Underwriters Laboratories or an equivalent nationally recognized testing laboratory, and meets the requirements set forth in Underwriters Laboratories Standard Number 1741, as amended from time to time",
+                                                   "standard_named":  "UL 1741",
+                                                   "effective":  "2026-10-01",
+                                                   "source_url":  "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00127-R00HB-05340-PA.PDF",
+                                                   "verified":  "2026-08-02",
+                                                   "note":  "Verbatim from the primary text. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
+                                               }
                                        }
                    },
                    {
@@ -344,7 +364,17 @@
                                                        "provision":  "35-A MRSA 3475(3)",
                                                        "effect":  "May be installed and operated by the customer with no electrician requirement, no dedicated-circuit requirement and no notification."
                                                    }
-                                               ]
+                                               ],
+                                               "certification_requirement":  {
+                                                   "required":  true,
+                                                   "provision":  "35-A MRSA §3475(1)(A)",
+                                                   "quote":  "Listed or certified in accordance with UL 3700, the Outline of Investigation for Interactive Plug-in Photovoltaic Equipment and Systems ... or ... a standard comparable to UL 3700 from a nationally recognized testing laboratory",
+                                                   "standard_named":  "UL 3700",
+                                                   "effective":  "2026-07-15",
+                                                   "source_url":  "https://legislature.maine.gov/legis/bills/getPDF.asp?paper=SP0676&item=5&snum=132",
+                                                   "verified":  "2026-08-02",
+                                                   "note":  "Verbatim from the primary text. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
+                                               }
                                        }
                    },
                    {
@@ -376,7 +406,17 @@
                                                        "provision":  "§7-321(A)(3)",
                                                        "effect":  "Not subject to §§ 7-306 and 7-306.1; the electric company may not require approval or charge a fee. One per meter, residential only. No RECs, does not count toward the RPS."
                                                    }
-                                               ]
+                                               ],
+                                               "certification_requirement":  {
+                                                   "required":  true,
+                                                   "provision":  "Md. Public Utilities §7-321(A)(4)",
+                                                   "quote":  "CERTIFIED BY UNDERWRITERS LABORATORY OR AN EQUIVALENT NATIONALLY RECOGNIZED TESTING LABORATORY",
+                                                   "standard_named":  null,
+                                                   "effective":  "2026-05-12",
+                                                   "source_url":  "https://mgaleg.maryland.gov/2026RS/chapters_noln/Ch_353_hb1532E.pdf",
+                                                   "verified":  "2026-08-02",
+                                                   "note":  "Verbatim from the primary text. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
+                                               }
                                        }
                    },
                    {
@@ -520,7 +560,17 @@
                                                        "provision":  "RSA 362-A:10, IV",
                                                        "effect":  "One system per metered customer. Exempt from interconnection requirements and agreements and from net energy metering under RSA 362-A:9. No utility approval, review, fee or additional utility-specified equipment."
                                                    }
-                                               ]
+                                               ],
+                                               "certification_requirement":  {
+                                                   "required":  true,
+                                                   "provision":  "RSA 362-A:10, I",
+                                                   "quote":  "Plug-in solar generation systems shall be certified by a nationally recognized testing laboratory to meet nationally recognized safety standards applicable to distributed energy resources and plug-in solar generation systems",
+                                                   "standard_named":  null,
+                                                   "effective":  "2027-01-01",
+                                                   "source_url":  "https://gc.nh.gov/bill_status/legacy/bs2016/billText.aspx?id=1317&txtFormat=html&sy=2026",
+                                                   "verified":  "2026-08-02",
+                                                   "note":  "Verbatim from the primary text. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
+                                               }
                                        }
                    },
                    {
@@ -767,7 +817,17 @@
                                                        "provision":  "54-15-102(13)(a)",
                                                        "effect":  "Exempt from the interconnection requirements of 54-15-106 and from an interconnection agreement under 54-15-103; not subject to net metering. The electrical corporation may not require approval, charge a fee, or demand extra equipment."
                                                    }
-                                               ]
+                                               ],
+                                               "certification_requirement":  {
+                                                   "required":  true,
+                                                   "provision":  "Utah Code 54-15-102(13)(e)",
+                                                   "quote":  "is certified by Underwriters Laboratories or an equivalent nationally recognized testing laboratory",
+                                                   "standard_named":  null,
+                                                   "effective":  "2025-05-07",
+                                                   "source_url":  "https://le.utah.gov/Session/2025/bills/enrolled/HB0340.pdf",
+                                                   "verified":  "2026-08-02",
+                                                   "note":  "Verbatim from the primary text. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
+                                               }
                                        }
                    },
                    {
@@ -844,7 +904,17 @@
                                                        "provision":  "56-596.8(A)",
                                                        "effect":  "Additionally exempt from product listing provisions that would require alterations to the building's premises, wiring or electrical panels."
                                                    }
-                                               ]
+                                               ],
+                                               "certification_requirement":  {
+                                                   "required":  true,
+                                                   "provision":  "Va. Code §56-596.8(A)(v)",
+                                                   "quote":  "is certified by a nationally recognized testing laboratory, as described in 29 C.F.R. § 1910.7, or an equivalent nationally recognized testing laboratory",
+                                                   "standard_named":  null,
+                                                   "effective":  "2027-01-01",
+                                                   "source_url":  "https://law.lis.virginia.gov/vacode/title56/chapter23/section56-596.8/",
+                                                   "verified":  "2026-08-02",
+                                                   "note":  "Verbatim from the primary text. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
+                                               }
                                        }
                    },
                    {

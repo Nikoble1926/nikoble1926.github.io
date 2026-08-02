@@ -65,6 +65,16 @@
         "notification to the utility within 30 days of installation - 3475(5)",
         "an eligible system may not be used for net energy billing - 3475(4)"
       ]
+    },
+    "certification_requirement": {
+      "required": true,
+      "provision": "35-A MRSA §3475(1)(A)",
+      "quote": "Listed or certified in accordance with UL 3700, the Outline of Investigation for Interactive Plug-in Photovoltaic Equipment and Systems ... or ... a standard comparable to UL 3700 from a nationally recognized testing laboratory",
+      "standard_named": "UL 3700",
+      "effective": "2026-07-15",
+      "source_url": "https://legislature.maine.gov/legis/bills/getPDF.asp?paper=SP0676&item=5&snum=132",
+      "verified": "2026-08-02",
+      "note": "Verbatim from the primary text. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
     }
   },
   "source_file": "/data/plug-in-solar-laws.json"

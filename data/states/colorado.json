@@ -67,7 +67,17 @@
         "provision": "40-2-140(5)",
         "effect": "Additionally exempt from the state's solar PV installation requirements and from building-code provisions that would require changes to the building's wiring."
       }
-    ]
+    ],
+    "certification_requirement": {
+      "required": true,
+      "provision": "Colo. Rev. Stat. 40-2-140",
+      "quote": "labelled and listed by a nationally recognized testing laboratory",
+      "standard_named": null,
+      "effective": "2026-08-12",
+      "source_url": "https://leg.colorado.gov/laws/session-laws/HB26-1007/127/download",
+      "verified": "2026-08-02",
+      "note": "Verbatim from the primary text. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
+    }
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }
