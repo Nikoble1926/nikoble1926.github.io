@@ -1,0 +1,43 @@
+{
+  "_comment": "Where a product can actually be bought. One entry per product, written once, and the guard checks every page against it. read_on is manual on purpose: ecoflow.com serves a JS shell to a plain fetch, and a scraper that breaks silently would be worse than none.",
+  "products": {
+    "ecoflow-stream-ultra": {
+      "brand": "EcoFlow",
+      "buy_url_contains": "us.ecoflow.com/products/stream",
+      "us_status": "restricted",
+      "us_states": ["UT"],
+      "restriction_marker": "Utah",
+      "channels": ["EcoFlow US direct"],
+      "not_on": ["Amazon"],
+      "authority": "manufacturer product page",
+      "source_url": "https://us.ecoflow.com/products/stream-ultra",
+      "read_on": "2026-08-03",
+      "statements": [
+        {"scope": "sale and installation",
+         "verbatim": "Due to restrictions under the H.B. 340 Solar Power Amendments, this product is only available for sale and plug-and-play installation in Utah."},
+        {"scope": "installation only",
+         "verbatim": "Due to restrictions under the H.B. 340 Solar Power Amendments, this product is only available for plug-and-play installation within the state of Utah."}
+      ],
+      "unresolved": "The two footnotes on the same page restrict different acts. Recorded, not resolved.",
+      "divergent_sources": [
+        {"source": "EcoFlow blog", "says": "Utah and Maryland", "read_on": "2026-08-02"}
+      ]
+    },
+    "anker-solix-solarbank": {
+      "brand": "Anker",
+      "buy_url_contains": null,
+      "us_status": "not_sold",
+      "us_states": [],
+      "authority": "Amazon US and anker.com US store, neither lists it",
+      "read_on": "2026-07-28"
+    },
+    "ecoflow-powerstream": {
+      "brand": "EcoFlow",
+      "buy_url_contains": null,
+      "us_status": "not_sold",
+      "us_states": [],
+      "authority": "European product only",
+      "read_on": "2026-07-28"
+    }
+  }
+}
