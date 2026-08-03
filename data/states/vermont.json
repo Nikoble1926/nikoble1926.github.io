@@ -17,7 +17,7 @@
     "Green Mountain Power"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/vermont/",
-  "last_reviewed": "2026-07-02",
+  "last_reviewed": "2026-08-03",
   "legislation": {
     "bill": "S.202",
     "status": "signed",
@@ -27,7 +27,18 @@
     "cert_required": "UL or equivalent nationally recognized testing laboratory",
     "signed_by": "Gov. Phil Scott",
     "source_url": "https://governor.vermont.gov/press-release/action-taken-governor-phil-scott-legislation-june-16-2026",
-    "notes": "S.202 signed by Gov. Phil Scott on June 16, 2026 (7th state to sign); plug-in provisions effective July 1, 2026. Up to a combined 1,200W per electric meter with certified equipment; no certificate of public good, interconnection agreement, or extra utility fees. Correction 2026-07-02: earlier records said awaiting governor — the Governor's office confirms signing on June 16, 2026."
+    "notes": "S.202 signed by Gov. Phil Scott on June 16, 2026 (7th state to sign); plug-in provisions effective July 1, 2026. Up to a combined 1,200W per electric meter with certified equipment; no certificate of public good, interconnection agreement, or extra utility fees. Correction 2026-07-02: earlier records said awaiting governor — the Governor's office confirms signing on June 16, 2026. Sec. 2 (30 V.S.A. § 256(a)) also requires that plug-in photovoltaic devices 'shall only be connected to systems using smart meters', and that the customer ensure the device is temporarily but securely attached to the ground or a structure. Verified against Act 149 As Enacted on 3 August 2026.",
+    "certification_requirement": {
+      "required": true,
+      "provision": "30 V.S.A. § 201(9)(C), as added by Act 149 Sec. 1",
+      "quote": "complies with UL 3700 for plug-in photovoltaic systems by UL Solutions or an equivalent certification by an equivalent Nationally Recognized Testing Laboratory for use in the United States and is installed and operated in compliance with IEEE 1547-2018 and any successor standard",
+      "standard_named": "UL 3700",
+      "effective": "2026-07-01",
+      "source_url": "https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT149/ACT149%20As%20Enacted.pdf",
+      "verified": "2026-08-03",
+      "mechanism": "definitional",
+      "note": "The certification sits inside the definition of 'plug-in photovoltaic device' at 30 V.S.A. § 201(9), not in a prohibition. A device without UL 3700 or equivalent is not a plug-in photovoltaic device under the Act, so it does not receive the § 256 exemptions and falls back to section 248, an interconnection agreement and Public Utility Commission jurisdiction. Act 149 (S.202) was signed 16 June 2026 and Sec. 6 sets a single effective date of 1 July 2026 for the whole act - there is no split commencement, checked because Virginia's legislation.effective and certification_requirement.effective differ by six months."
+    }
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }
