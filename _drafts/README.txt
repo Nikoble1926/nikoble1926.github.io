@@ -178,8 +178,9 @@ DAY-OF RUNBOOK (NJ signs) — swap page + update ALL "8 -> 9" cross-refs
        git commit -m "New Jersey: Garden State Plug-In Solar Act signed — page live (9th state)"
        git push origin master
      cd D:\repos\nikoble1926.github.io; git pull
-     robocopy D:\repos\nikoble1926.github.io D:\repos\_deploy\pluginsolarhub /MIR /XD .git .wrangler
-     cd D:\repos\_deploy\pluginsolarhub
+     python _tools\predeploy.py   (must exit 0 - it blocks the deploy if not)
+robocopy D:\repos\nikoble1926.github.io D:\repos\_deploy\psh /MIR /XD .git .wrangler
+     cd D:\repos\_deploy\psh
      npx wrangler pages deploy . --project-name pluginsolarhub --commit-dirty=true
 6. Live verify: new-jersey page shows "Legal — signed" + "9th state"; homepage +
    tracker show "9 states"; NY shows "10th". 0 residual "[[".
