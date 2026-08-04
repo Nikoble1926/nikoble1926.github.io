@@ -10,7 +10,9 @@ import io, sys, os, subprocess
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 HERE = os.path.dirname(os.path.abspath(__file__))
-GUARDS = ["fo_guard.py", "anchor_guard.py", "availability_guard.py"]
+GUARDS = ["deploy_target_guard.py", "fo_guard.py", "anchor_guard.py",
+          "availability_guard.py"]
+REPORTS = ["date_report.py"]   # printed, never fatal
 
 results = []
 for g in GUARDS:
@@ -20,6 +22,13 @@ for g in GUARDS:
     print("#" * 96)
     r = subprocess.run([sys.executable, os.path.join(HERE, g)])
     results.append((g, r.returncode))
+
+for g in REPORTS:
+    print("")
+    print("#" * 96)
+    print("# %s   (report only - cannot fail the build)" % g)
+    print("#" * 96)
+    subprocess.run([sys.executable, os.path.join(HERE, g)])
 
 print("")
 print("=" * 96)

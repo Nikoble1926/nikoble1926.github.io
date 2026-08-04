@@ -13,10 +13,11 @@ Read-only unless --fix is passed. Exit 1 on any failure, so it can sit in front
 of the deploy the same way fo_guard.py does.
 """
 import io, sys, os, re, html as H
+import paths
 from collections import Counter
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
-R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+R = paths.REPO
 SKIP = {".git", ".wrangler", "node_modules", "_deploy"}
 
 # Asymmetric on purpose. The failure was one-way: the product page had borrowed

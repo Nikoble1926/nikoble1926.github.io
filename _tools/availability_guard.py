@@ -16,10 +16,11 @@ cannot skip, because it is what they look at in order to click.
 Exit 1 on any failure.
 """
 import io, sys, os, re, json, html as H
+import paths
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 HERE = os.path.dirname(os.path.abspath(__file__))
-R = os.path.dirname(HERE)
+R = paths.REPO
 SKIP = {".git", ".wrangler", "node_modules", "_deploy"}
 WINDOW = 900          # characters of page text allowed between marker and link
 

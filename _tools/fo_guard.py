@@ -9,13 +9,14 @@ instead of silent months later when FlexOffers re-checks.
 Exit code 1 if anything fails.
 """
 import io, os, sys, time, urllib.request
+import paths
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 TAG = b'<meta name="fo-verify" content="7f02fbe3-a7e7-42c6-b70d-5b03813ee93d" />'
-R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+R = paths.REPO
 FILES = [("source homepage", R + r"\index.html"),
          ("page template", R + r"\_templates\page-v2.html"),
-         ("deploy copy", r"D:\repos\_deploy\psh\index.html")]
+         ("deploy copy", os.path.join(paths.DEPLOY, "index.html"))]
 
 fail = 0
 for name, p in FILES:
