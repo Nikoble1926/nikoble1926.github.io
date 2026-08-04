@@ -5,22 +5,36 @@
       "brand": "EcoFlow",
       "buy_url_contains": "us.ecoflow.com/products/stream",
       "us_status": "restricted",
-      "us_states": ["UT"],
+      "us_states": [
+        "UT"
+      ],
       "restriction_marker": "Utah",
-      "channels": ["EcoFlow US direct"],
-      "not_on": ["Amazon"],
+      "channels": [
+        "EcoFlow US direct"
+      ],
+      "not_on": [
+        "Amazon"
+      ],
       "authority": "manufacturer product page",
       "source_url": "https://us.ecoflow.com/products/stream-ultra",
       "read_on": "2026-08-03",
       "statements": [
-        {"scope": "sale and installation",
-         "verbatim": "Due to restrictions under the H.B. 340 Solar Power Amendments, this product is only available for sale and plug-and-play installation in Utah."},
-        {"scope": "installation only",
-         "verbatim": "Due to restrictions under the H.B. 340 Solar Power Amendments, this product is only available for plug-and-play installation within the state of Utah."}
+        {
+          "scope": "sale and installation",
+          "verbatim": "Due to restrictions under the H.B. 340 Solar Power Amendments, this product is only available for sale and plug-and-play installation in Utah."
+        },
+        {
+          "scope": "installation only",
+          "verbatim": "Due to restrictions under the H.B. 340 Solar Power Amendments, this product is only available for plug-and-play installation within the state of Utah."
+        }
       ],
       "unresolved": "The two footnotes on the same page restrict different acts. Recorded, not resolved.",
       "divergent_sources": [
-        {"source": "EcoFlow blog", "says": "Utah and Maryland", "read_on": "2026-08-02"}
+        {
+          "source": "EcoFlow blog",
+          "says": "Utah and Maryland",
+          "read_on": "2026-08-02"
+        }
       ]
     },
     "anker-solix-solarbank": {
@@ -38,6 +52,93 @@
       "us_states": [],
       "authority": "European product only",
       "read_on": "2026-07-28"
+    },
+    "hoymiles-hiflow-pro": {
+      "brand": "Hoymiles",
+      "name": "Hoymiles HiFlow Pro",
+      "sku": "HMS-391-1WB-LV",
+      "buy_url_contains": null,
+      "us_status": "preorder",
+      "us_states": [],
+      "nrtl_listed": true,
+      "standards_named": [
+        "UL 3700",
+        "UL 1741",
+        "UL 1741 SB",
+        "CSA 107.1",
+        "IEEE 1547",
+        "CSA no.9",
+        "FCC",
+        "California CEC"
+      ],
+      "manufacturer_claim": "The first plug-in solar solution certified to UL 3700",
+      "watts_per_unit": 360,
+      "max_parallel": 4,
+      "max_watts": 1200,
+      "enclosure": "NEMA 6 / IP67",
+      "warranty_years": 12,
+      "anti_islanding_ms": 135,
+      "price_usd": 152.78,
+      "seller": "NAZ Solar Electric",
+      "availability_note": "Expected arrival at our warehouse is early September",
+      "authority": "manufacturer page for the certification; seller product page for price and availability",
+      "read_on": "2026-08-04",
+      "affiliate": null,
+      "affiliate_note": "No publisher programme exists. NAZ's partner programme is wholesale (installers, electricians, construction). APsystems' partner categories are distributors, financing, plug-in retailers and community - none of them publishers. To earn from a compliant product you have to be a shop, not refer to one."
+    },
+    "apsystems-ez1": {
+      "brand": "APsystems",
+      "name": "APsystems EZ1 Microinverter",
+      "buy_url_contains": null,
+      "us_status": "available",
+      "us_states": [],
+      "nrtl_listed": true,
+      "standards_named": [
+        "UL 3700"
+      ],
+      "manufacturer_claim": "CSA Certified to UL3700 standards",
+      "price_usd": 325,
+      "seller": "APsystems USA direct",
+      "authority": "product page",
+      "read_on": "2026-08-02",
+      "affiliate": null
+    },
+    "auecoor-600w-kit": {
+      "brand": "AUECOOR",
+      "name": "AUECOOR 600W Complete Grid-Tie Kit",
+      "buy_url_contains": "amazon.com/dp/B0854F9L2R",
+      "us_status": "available",
+      "nrtl_listed": false,
+      "declares": "Certification: CE",
+      "reading": "no NRTL listing stated",
+      "authority": "Amazon listing",
+      "read_on": "2026-08-02",
+      "affiliate": "amazon"
+    },
+    "yh-600w-microinverter": {
+      "brand": "Y&H",
+      "name": "Y&H 600W Grid-Tie Microinverter",
+      "buy_url_contains": "amazon.com/dp/B09N8T2741",
+      "us_status": "available",
+      "nrtl_listed": false,
+      "declares": "The inverter is not UL1741 certified.",
+      "reading": "the seller states it does not have it",
+      "authority": "Amazon listing",
+      "read_on": "2026-08-02",
+      "affiliate": "amazon"
     }
+  },
+  "nrtl_compliance": {
+    "_comment": "Which products a reader in an NRTL state can and cannot use. The state pages read this; nothing about price or arrival is typed into HTML.",
+    "meets": [
+      "hoymiles-hiflow-pro",
+      "apsystems-ez1"
+    ],
+    "does_not_meet": [
+      "auecoor-600w-kit",
+      "yh-600w-microinverter"
+    ],
+    "reviewed": "2026-08-04",
+    "note": "Amazon affiliate income only exists on the products that do not meet the requirement. As more states adopt UL 3700 the only products we earn from become the ones we should not be recommending. Recorded so the trade-off is visible rather than discovered later."
   }
 }
