@@ -90,7 +90,7 @@
       "brand": "APsystems",
       "name": "APsystems EZ1 Microinverter",
       "buy_url_contains": null,
-      "us_status": "available",
+      "us_status": "sold_direct",
       "us_states": [],
       "nrtl_listed": true,
       "standards_named": [
@@ -101,7 +101,9 @@
       "seller": "APsystems USA direct",
       "authority": "product page",
       "read_on": "2026-08-02",
-      "affiliate": null
+      "affiliate": null,
+      "stock_verified": false,
+      "stock_note": "We have checked the price and the certification, not stock or lead time. usa.apsystems.com states 'in stock and shipping now' for APmeters, not for the EZ1, and shop.apsystems.com does not resolve. Checked 4 August 2026."
     },
     "auecoor-600w-kit": {
       "brand": "AUECOOR",

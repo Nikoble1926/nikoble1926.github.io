@@ -11,7 +11,7 @@ import io, sys, os, subprocess
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 HERE = os.path.dirname(os.path.abspath(__file__))
 GUARDS = ["deploy_target_guard.py", "fo_guard.py", "anchor_guard.py",
-          "availability_guard.py"]
+          "availability_guard.py", "tracker_date_guard.py"]
 REPORTS = ["date_report.py"]   # printed, never fatal
 
 results = []
