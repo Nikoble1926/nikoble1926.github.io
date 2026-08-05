@@ -62,7 +62,8 @@ QUARANTINED = (r"D:\repos\_deploy\pluginsolarhub",
                r"D:\repos\_deploy\heatpumpgranthub",
                r"D:\repos\_deploy\_STALE_2026-08-02_DO_NOT_DEPLOY",
                r"D:\repos\_deploy\_STALE_2026-08-01_UK_DO_NOT_DEPLOY",
-               r"D:\repos\_deploy\_STALE_2026-08-05_HPGH_DO_NOT_DEPLOY")
+               r"D:\repos\_deploy\_STALE_2026-08-05_HPGH_DO_NOT_DEPLOY",
+               r"D:\repos\_deploy\_STALE_2026-08-05_ROOT_WRANGLER_DO_NOT_RESTORE")
 
 # what robocopy must exclude, spelled out so runbook and guard agree
 ROBOCOPY_XD = (".git", ".wrangler") + NEVER_PUBLIC
