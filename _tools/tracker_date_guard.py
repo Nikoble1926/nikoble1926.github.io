@@ -40,7 +40,7 @@ UK_ENTRY = re.compile(r"<tr><td><strong>(?:~\s*)?"
 US_FMT, UK_FMT = "%B %d, %Y", "%d %B %Y"
 
 SITES = [
-    dict(name="US", repo=paths.REPO,
+    dict(name="US", repo=paths.SITES["US"]["repo"],
          changelog="changelog/index.html", entry=US_ENTRY, fmt=US_FMT,
          out_fmt=lambda d: d.strftime("%B %#d, %Y") if os.name == "nt"
                            else d.strftime("%B %-d, %Y"),
@@ -49,7 +49,7 @@ SITES = [
                               r"([A-Z][a-z]+ \d{1,2}, \d{4})")),
                   ("state-legality/index.html",
                    re.compile(r"(\(last updated )([A-Z][a-z]+ \d{1,2}, \d{4})(\))"))]),
-    dict(name="UK", repo=r"D:\repos\balconysolarhub",
+    dict(name="UK", repo=paths.SITES["UK"]["repo"],
          changelog="changelog/index.html", entry=UK_ENTRY, fmt=UK_FMT,
          out_fmt=lambda d: (d.strftime("%#d %B %Y") if os.name == "nt"
                             else d.strftime("%-d %B %Y")),
