@@ -9,6 +9,17 @@ live site. Neither was ever deployed. Nothing prevented it either - in both
 cases the only protection was that nobody happened to run the command from the
 wrong folder.
 
+Extended twice more on 5 August 2026, both times because the guard itself had
+looked at the wrong place and printed reassurance:
+
+  - D:\\repos\\_deploy carries its own .wrangler cache, from a deploy run out of
+    the parent folder on 29 July. This version walked the children of the root
+    and never the root, so it looked for _deploy/.wrangler/.wrangler/cache and
+    called the root "not armed". A deploy from there would have published 712
+    files - including all three quarantine folders whole - to heatpumpgranthub.
+  - project_of() caught every exception and returned None, and the caller read
+    None as "not armed". A cache it cannot parse now says so out loud.
+
 A folder is "armed" when its .wrangler cache names a live Cloudflare project.
 Armed and unknown fails the build. Armed and quarantined warns, because the
 label is the mitigation and deletion is the fix.
@@ -43,19 +54,67 @@ def forbidden_in(root):
 
 
 def project_of(p):
-    """the Cloudflare project this folder would deploy to, or None"""
+    """What Cloudflare project would a deploy from this folder go to?
+
+    Returns (status, project):
+      ("none",       None)    no .wrangler cache - the folder is inert
+      ("armed",      "name")  the cache names a live project
+      ("half",       None)    a cache, an account, but no project chosen
+      ("unreadable", None)    a cache is there and we could not parse it
+
+    The last state is why this returns a status at all. The first version
+    caught every exception and returned None, and the caller read None as
+    "not armed". A test bait written by PowerShell 5.1 carried a UTF-8 BOM,
+    json.load raised, and the guard called an armed folder safe. Reading it
+    with utf-8-sig fixes that one bait. Refusing to be silent about a file we
+    cannot read fixes the class.
+    """
     f = os.path.join(p, ".wrangler", "cache", "pages.json")
+    if not os.path.exists(f):
+        return ("none", None)
     try:
-        with open(f, encoding="utf-8") as fh:
-            return json.load(fh).get("project_name")
-    except Exception:
-        return None
+        with open(f, encoding="utf-8-sig") as fh:
+            name = json.load(fh).get("project_name")
+    except Exception as e:
+        print("        cannot read %s: %s" % (f, e))
+        return ("unreadable", None)
+    return ("armed", name) if name else ("half", None)
 
 
 QUAR = set(key(q) for q in paths.QUARANTINED)
 KNOWN = dict((key(s["deploy"]), n) for n, s in paths.SITES.items())
 LIVE = set(s["project"] for s in paths.SITES.values())
+
 fail = []
+print("")
+print("-" * 78)
+print("folders that must not be deploy targets at all")
+
+
+def report_footprint(label, p, fatal):
+    """A wrangler cache here means someone once deployed from this folder."""
+    st, proj = project_of(p)
+    if st == "none":
+        print("  %-46s clean" % label)
+        return
+    bad = forbidden_in(p)
+    n = nfiles(p)
+    print("  %-46s %s  project %s" % (label, st, proj))
+    print("        %d file(s), %s"
+          % (n, ("carries " + ", ".join(bad)) if bad else "nothing forbidden"))
+    if st == "armed" and fatal:
+        print("        FAIL  a deploy from here publishes all of the above to %r" % proj)
+        fail.append("%s: armed, would publish %d files to %s" % (label, n, proj))
+    else:
+        print("        WARN  a wrangler cache does not belong here. Remove it.")
+
+
+# the parent of every deploy folder. It holds the quarantined copies, so a
+# deploy from here publishes everything we ever quarantined.
+report_footprint(paths.DEPLOY_ROOT, paths.DEPLOY_ROOT, fatal=True)
+# the repositories. These hold _drafts, _templates, _tools and .git.
+for name in sorted(paths.SITES):
+    report_footprint(paths.SITES[name]["repo"], paths.SITES[name]["repo"], fatal=True)
 
 print("")
 print("-" * 78)
@@ -72,10 +131,14 @@ for name in sorted(paths.SITES):
         print("        FAIL  this is a quarantined folder")
         fail.append("%s: target is quarantined" % name)
         continue
-    got = project_of(d)
+    st, got = project_of(d)
     want = paths.SITES[name]["project"]
     bad = forbidden_in(d)
     print("        files %d   project %s" % (nfiles(d), got))
+    if st == "unreadable":
+        print("        FAIL  a wrangler cache we cannot read - assume armed")
+        fail.append("%s: unreadable wrangler cache" % name)
+        continue
     if got is not None and got != want:
         print("        FAIL  wrangler cache names %r, paths.py says %r" % (got, want))
         fail.append("%s: project name mismatch" % name)
@@ -97,7 +160,7 @@ for entry in sorted(os.listdir(paths.DEPLOY_ROOT)):
     p = os.path.join(paths.DEPLOY_ROOT, entry)
     if not os.path.isdir(p) or key(p) in KNOWN:
         continue
-    proj = project_of(p)
+    st, proj = project_of(p)
     quar = key(p) in QUAR
     bad = forbidden_in(p)
     print("")
@@ -106,6 +169,10 @@ for entry in sorted(os.listdir(paths.DEPLOY_ROOT)):
           % (nfiles(p), proj, "yes" if quar else "NO"))
     if bad:
         print("        carries %s" % ", ".join(bad))
+    if st == "unreadable":
+        print("        FAIL  a wrangler cache we cannot read - assume armed")
+        fail.append("%s: unreadable wrangler cache" % entry)
+        continue
     if proj in LIVE:
         if quar:
             print("        WARN  armed but labelled. Delete it.")
