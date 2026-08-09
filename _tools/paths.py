@@ -65,13 +65,31 @@ QUARANTINED = (r"D:\repos\_deploy\pluginsolarhub",
                r"D:\repos\_deploy\_STALE_2026-08-05_HPGH_DO_NOT_DEPLOY",
                r"D:\repos\_deploy\_STALE_2026-08-05_ROOT_WRANGLER_DO_NOT_RESTORE")
 
+# Deleted 9 August 2026 after a content audit: no .git, no file whose path did
+# not also exist live, and the only bytes unique to them were the armed wrangler
+# caches that were the reason for deleting. The four quarantine notes were kept
+# in D:\solarhub-work\quarantine-notes.
+#
+# These stay in QUARANTINED above as well. This tuple says something stronger:
+# we removed them, so their reappearance has no innocent explanation. Existence
+# alone fails the build - armed or not, empty or not. That is deliberately
+# harsher than the rule for a NEW _STALE_* folder, which still only warns,
+# because the quarantine workflow has to survive closing this hole.
+DELETED_2026_08_09 = (r"D:\repos\_deploy\_STALE_2026-08-01_UK_DO_NOT_DEPLOY",
+                      r"D:\repos\_deploy\_STALE_2026-08-02_DO_NOT_DEPLOY",
+                      r"D:\repos\_deploy\_STALE_2026-08-05_HPGH_DO_NOT_DEPLOY",
+                      r"D:\repos\_deploy\_STALE_2026-08-05_ROOT_WRANGLER_DO_NOT_RESTORE")
+
 # what robocopy must exclude, spelled out so runbook and guard agree
 ROBOCOPY_XD = (".git", ".wrangler") + NEVER_PUBLIC
 
 
 def describe():
+    gone = sum(os.path.isdir(x) for x in DELETED_2026_08_09)
     out = ["  DEPLOY_ROOT %s" % DEPLOY_ROOT,
-           "  never public: %s" % ", ".join(NEVER_PUBLIC), ""]
+           "  never public: %s" % ", ".join(NEVER_PUBLIC),
+           "  deleted 2026-08-09: %d path(s), %d present (must be 0)"
+           % (len(DELETED_2026_08_09), gone), ""]
     for name in sorted(SITES):
         s = SITES[name]
         out.append("  %-5s repo   %s" % (name, s["repo"]))

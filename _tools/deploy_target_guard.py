@@ -86,6 +86,23 @@ KNOWN = dict((key(s["deploy"]), n) for n, s in paths.SITES.items())
 LIVE = set(s["project"] for s in paths.SITES.values())
 
 fail = []
+
+# Folders we deleted ourselves on 9 August 2026. Everything below asks "is it
+# armed?" - this one does not. We removed these; if one is back, either someone
+# restored a backup over the top of _deploy or a script we do not know about
+# recreated it. Both are reasons to stop, and neither becomes safe by the folder
+# happening to be empty today.
+print("")
+print("-" * 78)
+print("folders deleted on 9 August 2026 - existence alone fails")
+for q in paths.DELETED_2026_08_09:
+    if os.path.isdir(q):
+        st, proj = project_of(q)
+        print("  %-58s PRESENT  (%s, %d file(s))" % (q, st, nfiles(q)))
+        print("        FAIL  this folder was deleted on 9 Aug 2026. It is back.")
+        fail.append("%s: deleted folder has reappeared" % os.path.basename(q))
+    else:
+        print("  %-58s absent" % q)
 print("")
 print("-" * 78)
 print("folders that must not be deploy targets at all")
