@@ -80,8 +80,18 @@ DELETED_2026_08_09 = (r"D:\repos\_deploy\_STALE_2026-08-01_UK_DO_NOT_DEPLOY",
                       r"D:\repos\_deploy\_STALE_2026-08-05_HPGH_DO_NOT_DEPLOY",
                       r"D:\repos\_deploy\_STALE_2026-08-05_ROOT_WRANGLER_DO_NOT_RESTORE")
 
-# what robocopy must exclude, spelled out so runbook and guard agree
+# what robocopy must exclude, spelled out so runbook and guard agree.
+# XD is directories, XF is files - robocopy will not exclude a file named
+# in /XD, it simply ignores it, so LICENSE.txt in the XD list would have
+# been a silent no-op.
 ROBOCOPY_XD = (".git", ".wrangler") + NEVER_PUBLIC
+
+# Files at the repository root that must not ship. LICENSE.txt because the
+# licence already has a page at /license/ and the repository is public on
+# GitHub, so a second bare URL adds a duplicate with no navigation and no
+# canonical. The three generators because they are internal tooling and were
+# being served: pluginsolarhub.org/gen_pins.py returned 200 and the file.
+ROBOCOPY_XF = ("LICENSE.txt", "gen_pins.py", "gen_pins2.py", "gen_og_image.py")
 
 
 def describe():
