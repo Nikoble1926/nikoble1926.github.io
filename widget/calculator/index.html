@@ -13,7 +13,12 @@ h1{font-size:20px;margin:0 0 4px;line-height:1.25}
 label{display:block;font-size:13px;color:var(--mut);margin:10px 0 4px}
 select,input{width:100%;padding:9px 10px;font-size:15px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font-family:inherit}
 select:focus,input:focus{outline:none;border-color:var(--sky);box-shadow:0 0 0 3px rgba(14,165,233,.18)}
-.out{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0 10px;background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px}
+.sticky{position:sticky;top:0;z-index:2;background:var(--bg);padding:8px 0 10px;margin:0 0 4px;border-bottom:1px solid var(--line)}
+.out{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0;background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px}
+.why{font-size:12px;color:var(--mut);margin:6px 0 0;line-height:1.35}
+.pb{font-size:12px;margin:6px 0 0}
+.pb a{color:var(--ink);font-weight:600;text-decoration:none}
+.pb a:hover{text-decoration:underline}
 .o{text-align:center}
 .v{font-size:20px;font-weight:700;color:var(--ink);line-height:1.15}
 .l{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
@@ -37,6 +42,7 @@ function calc(){
  document.getElementById('o_kwh').textContent=fmt(kwh)+' kWh';
  document.getElementById('o_save').textContent='$'+fmt(Math.round(save));
  document.getElementById('o_pay').textContent=(pay>0?pay.toFixed(1)+' yrs':'—');
+ document.getElementById('o_why').textContent=fmt(w)+' W \u00d7 '+perW.toFixed(2)+' kWh/W at '+Math.round(rate*100)+'\u00a2/kWh';
 }
 document.addEventListener('DOMContentLoaded',function(){
  ['rate','watts','price','perw'].forEach(function(id){document.getElementById(id).addEventListener('input',calc);});
@@ -49,6 +55,15 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="wrap">
 <h1>Solar Savings Calculator</h1>
 <p class="sub">Estimate yearly savings &amp; payback time for a plug-in solar kit.</p>
+<div class="sticky">
+<div class="out" aria-live="polite">
+<div class="o"><div class="v" id="o_kwh">&mdash;</div><div class="l">Yearly production</div></div>
+<div class="o"><div class="v" id="o_save">&mdash;</div><div class="l">Yearly savings</div></div>
+<div class="o"><div class="v" id="o_pay">&mdash;</div><div class="l">Payback</div></div>
+</div>
+<p class="why" id="o_why"></p>
+<p class="pb"><a href="https://pluginsolarhub.org/savings-calculator/?utm_source=widget" target="_blank" rel="noopener">Powered by PlugInSolarHub &rarr;</a></p>
+</div>
 <label for="rate">Your state (sets electricity rate)</label>
 <select id="rate"><option value="17">US average</option><option value="15">Alabama</option><option value="24">Alaska</option><option value="15">Arizona</option><option value="13">Arkansas</option><option value="31">California</option><option value="15">Colorado</option><option value="29">Connecticut</option><option value="17">Delaware</option><option value="15">Florida</option><option value="14">Georgia</option><option value="42">Hawaii</option><option value="11">Idaho</option><option value="17">Illinois</option><option value="16">Indiana</option><option value="14">Iowa</option><option value="14">Kansas</option><option value="13">Kentucky</option><option value="12">Louisiana</option><option value="24">Maine</option><option value="17">Maryland</option><option value="30">Massachusetts</option><option value="19">Michigan</option><option value="15">Minnesota</option><option value="13">Mississippi</option><option value="13">Missouri</option><option value="13">Montana</option><option value="12">Nebraska</option><option value="15">Nevada</option><option value="24">New Hampshire</option><option value="18">New Jersey</option><option value="15">New Mexico</option><option value="25">New York</option><option value="14">North Carolina</option><option value="12">North Dakota</option><option value="16">Ohio</option><option value="13">Oklahoma</option><option value="13">Oregon</option><option value="18">Pennsylvania</option><option value="29">Rhode Island</option><option value="15">South Carolina</option><option value="13">South Dakota</option><option value="13">Tennessee</option><option value="15">Texas</option><option value="11">Utah</option><option value="21">Vermont</option><option value="14">Virginia</option><option value="11">Washington</option><option value="15">West Virginia</option><option value="17">Wisconsin</option><option value="12">Wyoming</option></select>
 <label for="watts">System size (watts)</label>
@@ -57,12 +72,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <input id="price" type="number" value="600" min="0" step="50">
 <label for="perw">Annual production per watt (kWh/W) &mdash; 0.8&ndash;1.2 typical</label>
 <input id="perw" type="number" value="1.0" min="0.3" max="1.6" step="0.05">
-<div class="out" aria-live="polite">
-<div class="o"><div class="v" id="o_kwh">&mdash;</div><div class="l">Yearly production</div></div>
-<div class="o"><div class="v" id="o_save">&mdash;</div><div class="l">Yearly savings</div></div>
-<div class="o"><div class="v" id="o_pay">&mdash;</div><div class="l">Payback</div></div>
-</div>
+
 <p class="disc">Estimates only. Actual rate, sun exposure, panel angle &amp; shading vary.</p>
-<p class="foot">Calculator by <a href="https://pluginsolarhub.org/savings-calculator/?utm_source=widget" target="_blank" rel="noopener">PlugInSolarHub</a></p>
 </div>
 </body></html>
