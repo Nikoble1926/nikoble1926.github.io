@@ -1,2 +1,18 @@
 __pycache__/
 *.pyc
+
+# Cloudflare Wrangler local state and local secrets
+.wrangler/
+.dev.vars
+.dev.vars.*
+
+# environment / secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# deploy mirror (lives at D:\repos\_deploy, listed defensively in case it is
+# ever created inside the repo)
+_deploy/
