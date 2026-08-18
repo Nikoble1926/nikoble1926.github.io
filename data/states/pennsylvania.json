@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-07-02",
+  "last_updated": "2026-08-18",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -10,12 +10,22 @@
   },
   "state": "Pennsylvania",
   "slug": "pennsylvania",
-  "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+  "status": "general interconnection rules apply; no plug-in-specific statute; HB 1971 was referred to committee in October 2025 and has not moved since",
   "status_badge_verbatim": "Gray area",
   "avg_rate_cents": 18,
   "main_utilities": [],
   "page_url": "https://pluginsolarhub.org/state-legality/pennsylvania/",
-  "last_reviewed": "2026-06-14",
-  "legislation": null,
+  "last_reviewed": "2026-08-18",
+  "legislation": {
+    "bill": "HB 1971",
+    "status": "referred_to_committee",
+    "date": "2025-10-28",
+    "effective": null,
+    "max_watts": null,
+    "cert_required": null,
+    "signed_by": null,
+    "source_url": "https://www.palegis.us/legislation/bills/2025/hb1971",
+    "notes": "Introduced by Rep. Chris Pielli, D-156, with 38 co-sponsors. Sponsorship memo titled 'Reducing Barriers to Plug-In Solar'. Amends Title 66 (Public Utilities) to provide definitions and provisions for portable solar. Referred to the House Energy Committee on 28 October 2025, printer's number 2530. That remains the last recorded action; no votes and no committee meetings. Verified against palegis.us on 18 August 2026."
+  },
   "source_file": "/data/plug-in-solar-laws.json"
 }

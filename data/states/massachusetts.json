@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-07-02",
+  "last_updated": "2026-08-18",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -10,12 +10,22 @@
   },
   "state": "Massachusetts",
   "slug": "massachusetts",
-  "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
-  "status_badge_verbatim": "Gray area, high rates",
+  "status": "general interconnection rules apply; no plug-in-specific statute yet, but H.5175 is live - passed both chambers in different forms and sits in a conference committee",
+  "status_badge_verbatim": "Bill pending — not law",
   "avg_rate_cents": 30,
   "main_utilities": [],
   "page_url": "https://pluginsolarhub.org/state-legality/massachusetts/",
-  "last_reviewed": "2026-06-14",
-  "legislation": null,
+  "last_reviewed": "2026-08-18",
+  "legislation": {
+    "bill": "H.5175 (Senate engrossed text S.3166; Senate Ways and Means draft S.3143)",
+    "status": "in_conference_committee",
+    "date": "2026-07-16",
+    "effective": null,
+    "max_watts": null,
+    "cert_required": null,
+    "signed_by": null,
+    "source_url": "https://malegislature.gov/Bills/194/H5175",
+    "notes": "House passed H.5175 on 26 February 2026, 128-27, Roll Call No. 141. Senate struck the text and substituted S.3143 on 1 July 2026, reprinted as S.3166, and passed it 32-8, Roll Call #205. House non-concurred on 16 July 2026; conference committee appointed the same day, Cusack-Michlewitz-Jones for the House and Barrett-Creem-Tarr for the Senate. No action since. The Legislature's own full-text search returns S.3166 as the only document in the 194th General Court containing the phrase 'plug-in solar', so the plug-in solar language sits in the Senate version that the House has not accepted. The section itself has not been read; no wattage limit or certification standard is recorded here. Verified against malegislature.gov on 18 August 2026."
+  },
   "source_file": "/data/plug-in-solar-laws.json"
 }

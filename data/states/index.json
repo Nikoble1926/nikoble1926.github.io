@@ -153,7 +153,7 @@
     {
       "slug": "massachusetts",
       "state": "Massachusetts",
-      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status": "general interconnection rules apply; no plug-in-specific statute yet, but H.5175 is live - passed both chambers in different forms and sits in a conference committee",
       "page_url": "https://pluginsolarhub.org/state-legality/massachusetts/",
       "file": "/data/states/massachusetts.json"
     },
@@ -272,7 +272,7 @@
     {
       "slug": "pennsylvania",
       "state": "Pennsylvania",
-      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status": "general interconnection rules apply; no plug-in-specific statute; HB 1971 was referred to committee in October 2025 and has not moved since",
       "page_url": "https://pluginsolarhub.org/state-legality/pennsylvania/",
       "file": "/data/states/pennsylvania.json"
     },
