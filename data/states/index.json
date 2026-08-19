@@ -8,7 +8,7 @@
     "url": "https://creativecommons.org/licenses/by/4.0/",
     "attribution": "PlugInSolarHub (pluginsolarhub.org)"
   },
-  "count": 50,
+  "count": 51,
   "states": [
     {
       "slug": "alabama",
@@ -65,6 +65,13 @@
       "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
       "page_url": "https://pluginsolarhub.org/state-legality/delaware/",
       "file": "/data/states/delaware.json"
+    },
+    {
+      "slug": "district-of-columbia",
+      "state": "District of Columbia",
+      "status": "general interconnection rules apply; no plug-in-specific statute; B26-0602 (GRID Amendment Act of 2026) is under Council review and, as introduced, sets no power cap",
+      "page_url": "https://pluginsolarhub.org/state-legality/district-of-columbia/",
+      "file": "/data/states/district-of-columbia.json"
     },
     {
       "slug": "florida",

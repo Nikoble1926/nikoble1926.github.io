@@ -1,6 +1,6 @@
 {
     "schema_version":  "1.0",
-    "last_updated":  "2026-08-18",
+    "last_updated":  "2026-08-19",
     "source":  "https://pluginsolarhub.org/state-legality/",
     "disclaimer":  "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
     "license":  {
@@ -1000,6 +1000,29 @@
                        "page_url":  "https://pluginsolarhub.org/state-legality/wyoming/",
                        "last_reviewed":  "2026-06-14",
                        "legislation":  null
+                   },
+                   {
+                       "state":  "District of Columbia",
+                       "slug":  "district-of-columbia",
+                       "status":  "general interconnection rules apply; no plug-in-specific statute; B26-0602 (GRID Amendment Act of 2026) is under Council review and, as introduced, sets no power cap",
+                       "status_badge_verbatim":  "Bill pending — not law",
+                       "avg_rate_cents":  null,
+                       "main_utilities":  [
+
+                                          ],
+                       "page_url":  "https://pluginsolarhub.org/state-legality/district-of-columbia/",
+                       "last_reviewed":  "2026-08-19",
+                       "legislation":  {
+                                           "bill":  "B26-0602 (GRID Amendment Act of 2026)",
+                                           "status":  "in_council_review",
+                                           "date":  "2026-02-24",
+                                           "effective":  null,
+                                           "max_watts":  null,
+                                           "cert_required":  "National Electrical Code + Underwriters Laboratories or equivalent nationally recognized testing laboratory",
+                                           "signed_by":  null,
+                                           "source_url":  "https://lims.dccouncil.gov/Legislation/B26-0602",
+                                           "notes":  "Introduced 24 February 2026 by Councilmember Allen with Frumin, Lewis George, Nadeau, Parker, Pinto and R. White. Referred to the Committee on Transportation and the Environment 3 March 2026; public hearing 26 March 2026. Adds a new subsection defining a portable solar generation device and exempting it from interconnection and net-metering requirements unless the owner opts in; the Electric Company may not require approval, a fee, or extra controls, and is not liable. The device must meet the most recent National Electrical Code, be certified by UL or an equivalent nationally recognized testing laboratory, and include an anti-islanding feature. As introduced the bill sets no power cap - no wattage limit appears in the provision. Status: Under Council Review, no vote recorded. Verified against lims.dccouncil.gov on 19 August 2026."
+                                       }
                    }
                ]
 }
