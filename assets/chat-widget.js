@@ -1,49 +1,78 @@
-/* PlugInSolarHub chat widget - vanilla JS, no deps.
-   Talks to /api/chat (AI Search over this site's pages only). */
+/* PlugInSolarHub — Solar Assistant widget v2 (per Figma "Chat Widget v2").
+   Vanilla JS, no deps. Talks to /api/chat. Sources arrive as [{url,title}]. */
 (function () {
   "use strict";
-  if (window.__pshChat) return; window.__pshChat = 1;
+  if (window.__pshChat) return; window.__pshChat = 2;
 
   var css = ""
-    + "#psh-chat-btn{position:fixed;bottom:18px;right:18px;z-index:9999;background:#0ea5e9;color:#fff;"
-    + "border:none;border-radius:24px;padding:11px 17px;font:600 14px/1 system-ui,sans-serif;cursor:pointer;"
-    + "box-shadow:0 3px 12px rgba(0,0,0,.25)}"
-    + "#psh-chat-btn:hover{background:#0284c7}"
-    + "#psh-chat{position:fixed;bottom:70px;right:18px;z-index:9999;width:min(360px,calc(100vw - 28px));"
-    + "max-height:70vh;display:none;flex-direction:column;background:#fff;color:#111;border:1px solid #d1d5db;"
-    + "border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.3);font:14px/1.45 system-ui,sans-serif;overflow:hidden}"
-    + "#psh-chat.open{display:flex}"
-    + "#psh-chat header{background:#0ea5e9;color:#fff;padding:10px 12px;font-weight:600;display:flex;justify-content:space-between;align-items:center}"
-    + "#psh-chat header button{background:none;border:none;color:#fff;font-size:18px;cursor:pointer;line-height:1}"
-    + "#psh-log{flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px}"
-    + ".psh-m{padding:8px 11px;border-radius:10px;max-width:88%;white-space:pre-wrap;word-wrap:break-word}"
-    + ".psh-q{align-self:flex-end;background:#e0f2fe}"
-    + ".psh-a{align-self:flex-start;background:#f3f4f6}"
-    + ".psh-a a{color:#0369a1;word-break:break-all}"
-    + ".psh-src{font-size:12px;margin-top:6px}"
-    + "#psh-form{display:flex;gap:6px;padding:10px;border-top:1px solid #e5e7eb}"
-    + "#psh-in{flex:1;border:1px solid #d1d5db;border-radius:8px;padding:8px 10px;font:inherit}"
-    + "#psh-send{background:#0ea5e9;color:#fff;border:none;border-radius:8px;padding:8px 14px;font:inherit;cursor:pointer}"
+    /* launcher: orange pill, soft glow, hover lift */
+    + "#psh-chat-btn{position:fixed;bottom:18px;right:18px;z-index:9999;background:#f59e0b;color:#10141b;"
+    + "border:none;border-radius:24px;padding:12px 20px;font:600 14px/1 system-ui,sans-serif;cursor:pointer;"
+    + "box-shadow:0 0 18px rgba(245,158,11,.45),0 3px 10px rgba(0,0,0,.35);transition:transform .15s ease,box-shadow .15s ease}"
+    + "#psh-chat-btn:hover{transform:translateY(-2px);box-shadow:0 0 26px rgba(245,158,11,.6),0 6px 14px rgba(0,0,0,.4)}"
+    /* panel */
+    + "#psh-chat{position:fixed;bottom:74px;right:18px;z-index:9999;width:min(380px,calc(100vw - 28px));"
+    + "max-height:72vh;display:none;flex-direction:column;background:#161b24;color:#e5e7eb;border:1px solid #2b3444;"
+    + "border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.55);font:14px/1.5 system-ui,sans-serif;overflow:hidden;"
+    + "opacity:0;transform:translateY(14px)}"
+    + "#psh-chat.open{display:flex;animation:pshin .2s ease forwards}"
+    + "@keyframes pshin{to{opacity:1;transform:translateY(0)}}"
+    + "@media(prefers-reduced-motion:reduce){#psh-chat.open{animation:none;opacity:1;transform:none}"
+    + "#psh-chat-btn{transition:none}.psh-dots span{animation:none!important;opacity:.8}}"
+    /* header */
+    + "#psh-hd{background:#10141b;padding:12px 14px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #2b3444}"
+    + "#psh-sun{width:34px;height:34px;border-radius:50%;background:#f59e0b;display:flex;align-items:center;"
+    + "justify-content:center;font-size:17px;flex:0 0 34px}"
+    + "#psh-ttl{flex:1;min-width:0}"
+    + "#psh-ttl b{display:block;font-size:15px;font-weight:600;color:#e5e7eb}"
+    + "#psh-ttl span{display:block;font-size:11px;color:#34d399;margin-top:1px}"
+    + "#psh-x{background:none;border:none;color:#9ca3af;font-size:19px;cursor:pointer;line-height:1;padding:4px}"
+    + "#psh-x:hover{color:#e5e7eb}"
+    /* log + bubbles */
+    + "#psh-log{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px;background:#161b24}"
+    + ".psh-m{padding:9px 13px;border-radius:14px;max-width:86%;white-space:pre-wrap;word-wrap:break-word;font-size:14px}"
+    + ".psh-q{align-self:flex-end;background:#2a3547;border-bottom-right-radius:4px}"
+    + ".psh-a{align-self:flex-start;background:#1f2733;border-bottom-left-radius:4px}"
+    /* source chips */
+    + ".psh-src{display:flex;flex-wrap:wrap;gap:6px;align-self:flex-start;max-width:88%}"
+    + ".psh-chip{display:inline-flex;align-items:center;gap:5px;border:1px solid #f59e0b;color:#f59e0b;"
+    + "border-radius:24px;padding:4px 11px;font-size:12px;text-decoration:none;background:transparent;transition:background .12s}"
+    + ".psh-chip:hover{background:rgba(245,158,11,.12)}"
+    /* typing dots */
+    + ".psh-dots{align-self:flex-start;background:#1f2733;border-radius:14px;border-bottom-left-radius:4px;"
+    + "padding:11px 14px;display:inline-flex;gap:5px}"
+    + ".psh-dots span{width:7px;height:7px;border-radius:50%;background:#f59e0b;display:inline-block;"
+    + "animation:pshdot 1.1s ease-in-out infinite}"
+    + ".psh-dots span:nth-child(2){animation-delay:.18s}.psh-dots span:nth-child(3){animation-delay:.36s;background:#4b5563}"
+    + "@keyframes pshdot{0%,100%{opacity:.35;transform:translateY(0)}50%{opacity:1;transform:translateY(-3px)}}"
+    /* input row */
+    + "#psh-form{display:flex;gap:8px;padding:12px;background:#10141b;border-top:1px solid #2b3444;align-items:center}"
+    + "#psh-in{flex:1;border:1px solid #2b3444;background:#161b24;color:#e5e7eb;border-radius:24px;"
+    + "padding:10px 15px;font:inherit;outline:none}"
+    + "#psh-in::placeholder{color:#9ca3af}"
+    + "#psh-in:focus{border-color:#f59e0b}"
+    + "#psh-send{background:#f59e0b;color:#10141b;border:none;border-radius:24px;width:42px;height:42px;"
+    + "font-size:16px;cursor:pointer;flex:0 0 42px;display:flex;align-items:center;justify-content:center}"
     + "#psh-send[disabled]{opacity:.5;cursor:wait}"
-    + "#psh-note{font-size:11px;color:#6b7280;text-align:center;padding:0 10px 8px}"
-    + ".psh-wait{align-self:flex-start;background:#f3f4f6;color:#6b7280;animation:pshpulse 1.2s ease-in-out infinite}"
-    + "@keyframes pshpulse{0%,100%{opacity:.45}50%{opacity:1}}";
+    /* mobile */
+    + "@media(max-width:480px){#psh-chat{width:calc(100vw - 16px);right:8px;max-height:70vh}}";
 
   var style = document.createElement("style"); style.textContent = css;
   document.head.appendChild(style);
 
   var btn = document.createElement("button");
   btn.id = "psh-chat-btn"; btn.type = "button";
-  btn.textContent = "Ask about plug-in solar";
+  btn.textContent = "☀ Ask Solar Assistant";
   document.body.appendChild(btn);
 
   var panel = document.createElement("div"); panel.id = "psh-chat";
-  panel.innerHTML = '<header><span>Ask about plug-in solar</span>'
-    + '<button type="button" id="psh-x" aria-label="Close">×</button></header>'
+  panel.innerHTML =
+      '<div id="psh-hd"><div id="psh-sun">☀️</div>'
+    + '<div id="psh-ttl"><b>Solar Assistant</b><span>● Answers only from verified pages</span></div>'
+    + '<button type="button" id="psh-x" aria-label="Close">✕</button></div>'
     + '<div id="psh-log"></div>'
-    + '<form id="psh-form"><input id="psh-in" maxlength="300" placeholder="e.g. Is plug-in solar legal in Kansas?" autocomplete="off">'
-    + '<button id="psh-send" type="submit">Ask</button></form>'
-    + '<div id="psh-note">Answers come only from this site’s verified pages.</div>';
+    + '<form id="psh-form"><input id="psh-in" maxlength="300" placeholder="Ask anything about plug-in solar…" autocomplete="off">'
+    + '<button id="psh-send" type="submit" aria-label="Send">➤</button></form>';
   document.body.appendChild(panel);
 
   var log = panel.querySelector("#psh-log");
@@ -56,37 +85,37 @@
 
   function esc(s) { var d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
 
-  function add(kind, text, sources) {
+  function addMsg(kind, text) {
     var m = document.createElement("div"); m.className = "psh-m psh-" + kind;
     m.innerHTML = esc(text);
-    if (sources && sources.length) {
-      var s = document.createElement("div"); s.className = "psh-src";
-      s.appendChild(document.createTextNode("Sources: "));
-      sources.forEach(function (u, i) {
-        if (i) s.appendChild(document.createTextNode(" · "));
-        var a = document.createElement("a"); a.href = u; a.target = "_blank"; a.rel = "noopener";
-        a.textContent = u.replace("https://pluginsolarhub.org", "");
-        s.appendChild(a);
-      });
-      m.appendChild(s);
-    }
     log.appendChild(m); log.scrollTop = log.scrollHeight;
+  }
+  function addChips(sources) {
+    if (!sources || !sources.length) return;
+    var row = document.createElement("div"); row.className = "psh-src";
+    sources.forEach(function (s) {
+      var url = (typeof s === "string") ? s : s.url;
+      var title = (typeof s === "string") ? s.replace("https://pluginsolarhub.org", "") : (s.title || "Verified page");
+      var a = document.createElement("a"); a.className = "psh-chip";
+      a.href = url; a.target = "_blank"; a.rel = "noopener";
+      a.innerHTML = "📄 " + esc(title);
+      row.appendChild(a);
+    });
+    log.appendChild(row); log.scrollTop = log.scrollHeight;
   }
 
   form.addEventListener("submit", function (ev) {
     ev.preventDefault();
     var q = input.value.trim();
     if (!q || send.disabled) return;
-    add("q", q); input.value = ""; send.disabled = true;
+    addMsg("q", q); input.value = ""; send.disabled = true;
 
-    // Sign of life while we wait.
     var wait = document.createElement("div");
-    wait.className = "psh-m psh-wait";
-    wait.textContent = "Searching verified pages…";
+    wait.className = "psh-dots";
+    wait.innerHTML = "<span></span><span></span><span></span>";
     log.appendChild(wait); log.scrollTop = log.scrollHeight;
     function clearWait() { if (wait) { wait.remove(); wait = null; } }
 
-    // Own timeout: never hang forever.
     var ctrl = ("AbortController" in window) ? new AbortController() : null;
     var timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 75000);
 
@@ -98,15 +127,15 @@
     }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, status: r.status, j: j }; }); })
       .then(function (res) {
         clearWait();
-        if (res.ok) add("a", res.j.answer || "", res.j.sources || []);
-        else if (res.status === 503) add("a", res.j.answer || "The assistant is busy right now — please try again in a few seconds.");
-        else if (res.status === 429) add("a", "Slow down a little — 10 questions per minute is the limit.");
-        else add("a", "Something went wrong (" + (res.j.error || res.status) + "). Try again.");
+        if (res.ok) { addMsg("a", res.j.answer || ""); addChips(res.j.sources); }
+        else if (res.status === 503) addMsg("a", res.j.answer || "The assistant is busy right now — please try again in a few seconds.");
+        else if (res.status === 429) addMsg("a", "Slow down a little — 10 questions per minute is the limit.");
+        else addMsg("a", "Something went wrong (" + (res.j.error || res.status) + "). Try again.");
       })
       .catch(function (e) {
         clearWait();
-        if (e && e.name === "AbortError") add("a", "Taking too long — try again.");
-        else add("a", "Network error — try again.");
+        if (e && e.name === "AbortError") addMsg("a", "Taking too long — try again.");
+        else addMsg("a", "Network error — try again.");
       })
       .then(function () { clearTimeout(timer); send.disabled = false; input.focus(); });
   });
