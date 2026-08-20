@@ -135,3 +135,4 @@ window.addEventListener('load',function(){
   setTimeout(playFilm,300);
 });
 })();
+if(location.pathname.indexOf('/embed-solar-calculator')!==0){var _ps=document.createElement('script');_ps.defer=true;_ps.src='/assets/chat-widget.js';document.head.appendChild(_ps);}
