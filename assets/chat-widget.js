@@ -25,7 +25,9 @@
     + "#psh-in{flex:1;border:1px solid #d1d5db;border-radius:8px;padding:8px 10px;font:inherit}"
     + "#psh-send{background:#0ea5e9;color:#fff;border:none;border-radius:8px;padding:8px 14px;font:inherit;cursor:pointer}"
     + "#psh-send[disabled]{opacity:.5;cursor:wait}"
-    + "#psh-note{font-size:11px;color:#6b7280;text-align:center;padding:0 10px 8px}";
+    + "#psh-note{font-size:11px;color:#6b7280;text-align:center;padding:0 10px 8px}"
+    + ".psh-wait{align-self:flex-start;background:#f3f4f6;color:#6b7280;animation:pshpulse 1.2s ease-in-out infinite}"
+    + "@keyframes pshpulse{0%,100%{opacity:.45}50%{opacity:1}}";
 
   var style = document.createElement("style"); style.textContent = css;
   document.head.appendChild(style);
@@ -76,17 +78,36 @@
     var q = input.value.trim();
     if (!q || send.disabled) return;
     add("q", q); input.value = ""; send.disabled = true;
+
+    // Sign of life while we wait.
+    var wait = document.createElement("div");
+    wait.className = "psh-m psh-wait";
+    wait.textContent = "Searching verified pages…";
+    log.appendChild(wait); log.scrollTop = log.scrollHeight;
+    function clearWait() { if (wait) { wait.remove(); wait = null; } }
+
+    // Own timeout: never hang forever.
+    var ctrl = ("AbortController" in window) ? new AbortController() : null;
+    var timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 75000);
+
     fetch("/api/chat", {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ question: q })
+      body: JSON.stringify({ question: q }),
+      signal: ctrl ? ctrl.signal : undefined
     }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, status: r.status, j: j }; }); })
       .then(function (res) {
+        clearWait();
         if (res.ok) add("a", res.j.answer || "", res.j.sources || []);
+        else if (res.status === 503) add("a", res.j.answer || "The assistant is busy right now — please try again in a few seconds.");
         else if (res.status === 429) add("a", "Slow down a little — 10 questions per minute is the limit.");
         else add("a", "Something went wrong (" + (res.j.error || res.status) + "). Try again.");
       })
-      .catch(function () { add("a", "Network error — try again."); })
-      .then(function () { send.disabled = false; input.focus(); });
+      .catch(function (e) {
+        clearWait();
+        if (e && e.name === "AbortError") add("a", "Taking too long — try again.");
+        else add("a", "Network error — try again.");
+      })
+      .then(function () { clearTimeout(timer); send.disabled = false; input.focus(); });
   });
 })();
