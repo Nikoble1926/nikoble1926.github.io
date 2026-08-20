@@ -1,4 +1,4 @@
-/* PlugInSolarHub — Solar Assistant widget v2 (per Figma "Chat Widget v2").
+/* PlugInSolarHub â€” Solar Assistant widget v2 (per Figma "Chat Widget v2").
    Vanilla JS, no deps. Talks to /api/chat. Sources arrive as [{url,title}]. */
 (function () {
   "use strict";
@@ -36,7 +36,7 @@
     /* source chips */
     + ".psh-src{display:flex;flex-wrap:wrap;gap:6px;align-self:flex-start;max-width:88%}"
     + ".psh-chip{display:inline-flex;align-items:center;gap:5px;border:1px solid #f59e0b;color:#f59e0b;"
-    + "border-radius:24px;padding:4px 11px;font-size:12px;text-decoration:none;background:transparent;transition:background .12s}"
+    + "border-radius:24px;padding:4px 11px;font-size:12px;text-decoration:none;background:transparent;transition:background .12s;color:#f59e0b!important}"
     + ".psh-chip:hover{background:rgba(245,158,11,.12)}"
     /* typing dots */
     + ".psh-dots{align-self:flex-start;background:#1f2733;border-radius:14px;border-bottom-left-radius:4px;"
@@ -62,17 +62,17 @@
 
   var btn = document.createElement("button");
   btn.id = "psh-chat-btn"; btn.type = "button";
-  btn.textContent = "☀ Ask Solar Assistant";
+  btn.textContent = "â˜€ Ask Solar Assistant";
   document.body.appendChild(btn);
 
   var panel = document.createElement("div"); panel.id = "psh-chat";
   panel.innerHTML =
-      '<div id="psh-hd"><div id="psh-sun">☀️</div>'
-    + '<div id="psh-ttl"><b>Solar Assistant</b><span>● Answers only from verified pages</span></div>'
-    + '<button type="button" id="psh-x" aria-label="Close">✕</button></div>'
+      '<div id="psh-hd"><div id="psh-sun">â˜€ï¸</div>'
+    + '<div id="psh-ttl"><b>Solar Assistant</b><span>â— Answers only from verified pages</span></div>'
+    + '<button type="button" id="psh-x" aria-label="Close">âœ•</button></div>'
     + '<div id="psh-log"></div>'
-    + '<form id="psh-form"><input id="psh-in" maxlength="300" placeholder="Ask anything about plug-in solar…" autocomplete="off">'
-    + '<button id="psh-send" type="submit" aria-label="Send">➤</button></form>';
+    + '<form id="psh-form"><input id="psh-in" maxlength="300" placeholder="Ask anything about plug-in solarâ€¦" autocomplete="off">'
+    + '<button id="psh-send" type="submit" aria-label="Send">âž¤</button></form>';
   document.body.appendChild(panel);
 
   var log = panel.querySelector("#psh-log");
@@ -98,7 +98,7 @@
       var title = (typeof s === "string") ? s.replace("https://pluginsolarhub.org", "") : (s.title || "Verified page");
       var a = document.createElement("a"); a.className = "psh-chip";
       a.href = url; a.target = "_blank"; a.rel = "noopener";
-      a.innerHTML = "📄 " + esc(title);
+      a.innerHTML = "ðŸ“„ " + esc(title);
       row.appendChild(a);
     });
     log.appendChild(row); log.scrollTop = log.scrollHeight;
@@ -128,14 +128,14 @@
       .then(function (res) {
         clearWait();
         if (res.ok) { addMsg("a", res.j.answer || ""); addChips(res.j.sources); }
-        else if (res.status === 503) addMsg("a", res.j.answer || "The assistant is busy right now — please try again in a few seconds.");
-        else if (res.status === 429) addMsg("a", "Slow down a little — 10 questions per minute is the limit.");
+        else if (res.status === 503) addMsg("a", res.j.answer || "The assistant is busy right now â€” please try again in a few seconds.");
+        else if (res.status === 429) addMsg("a", "Slow down a little â€” 10 questions per minute is the limit.");
         else addMsg("a", "Something went wrong (" + (res.j.error || res.status) + "). Try again.");
       })
       .catch(function (e) {
         clearWait();
-        if (e && e.name === "AbortError") addMsg("a", "Taking too long — try again.");
-        else addMsg("a", "Network error — try again.");
+        if (e && e.name === "AbortError") addMsg("a", "Taking too long â€” try again.");
+        else addMsg("a", "Network error â€” try again.");
       })
       .then(function () { clearTimeout(timer); send.disabled = false; input.focus(); });
   });
