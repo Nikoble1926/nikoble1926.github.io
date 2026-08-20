@@ -1,5 +1,6 @@
-/* PlugInSolarHub â€” Solar Assistant widget v2 (per Figma "Chat Widget v2").
-   Vanilla JS, no deps. Talks to /api/chat. Sources arrive as [{url,title}]. */
+/* PlugInSolarHub - Solar Assistant widget v2 (per Figma "Chat Widget v2").
+   Vanilla JS, no deps. Talks to /api/chat. Sources arrive as [{url,title}].
+   All non-ASCII glyphs are HTML entities / escapes so encoding round-trips safely. */
 (function () {
   "use strict";
   if (window.__pshChat) return; window.__pshChat = 2;
@@ -22,7 +23,7 @@
     /* header */
     + "#psh-hd{background:#10141b;padding:12px 14px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #2b3444}"
     + "#psh-sun{width:34px;height:34px;border-radius:50%;background:#f59e0b;display:flex;align-items:center;"
-    + "justify-content:center;font-size:17px;flex:0 0 34px}"
+    + "justify-content:center;font-size:17px;flex:0 0 34px;color:#10141b}"
     + "#psh-ttl{flex:1;min-width:0}"
     + "#psh-ttl b{display:block;font-size:15px;font-weight:600;color:#e5e7eb}"
     + "#psh-ttl span{display:block;font-size:11px;color:#34d399;margin-top:1px}"
@@ -35,8 +36,8 @@
     + ".psh-a{align-self:flex-start;background:#1f2733;border-bottom-left-radius:4px}"
     /* source chips */
     + ".psh-src{display:flex;flex-wrap:wrap;gap:6px;align-self:flex-start;max-width:88%}"
-    + ".psh-chip{display:inline-flex;align-items:center;gap:5px;border:1px solid #f59e0b;color:#f59e0b;"
-    + "border-radius:24px;padding:4px 11px;font-size:12px;text-decoration:none;background:transparent;transition:background .12s;color:#f59e0b!important}"
+    + ".psh-chip{display:inline-flex;align-items:center;gap:5px;border:1px solid #f59e0b;color:#f59e0b!important;"
+    + "border-radius:24px;padding:4px 11px;font-size:12px;text-decoration:none;background:transparent;transition:background .12s}"
     + ".psh-chip:hover{background:rgba(245,158,11,.12)}"
     /* typing dots */
     + ".psh-dots{align-self:flex-start;background:#1f2733;border-radius:14px;border-bottom-left-radius:4px;"
@@ -52,7 +53,7 @@
     + "#psh-in::placeholder{color:#9ca3af}"
     + "#psh-in:focus{border-color:#f59e0b}"
     + "#psh-send{background:#f59e0b;color:#10141b;border:none;border-radius:24px;width:42px;height:42px;"
-    + "font-size:16px;cursor:pointer;flex:0 0 42px;display:flex;align-items:center;justify-content:center}"
+    + "font-size:19px;font-weight:700;cursor:pointer;flex:0 0 42px;display:flex;align-items:center;justify-content:center}"
     + "#psh-send[disabled]{opacity:.5;cursor:wait}"
     /* mobile */
     + "@media(max-width:480px){#psh-chat{width:calc(100vw - 16px);right:8px;max-height:70vh}}";
@@ -62,17 +63,17 @@
 
   var btn = document.createElement("button");
   btn.id = "psh-chat-btn"; btn.type = "button";
-  btn.textContent = "â˜€ Ask Solar Assistant";
+  btn.innerHTML = "&#9728; Ask Solar Assistant"; /* sun glyph */
   document.body.appendChild(btn);
 
   var panel = document.createElement("div"); panel.id = "psh-chat";
   panel.innerHTML =
-      '<div id="psh-hd"><div id="psh-sun">â˜€ï¸</div>'
-    + '<div id="psh-ttl"><b>Solar Assistant</b><span>â— Answers only from verified pages</span></div>'
-    + '<button type="button" id="psh-x" aria-label="Close">âœ•</button></div>'
+      '<div id="psh-hd"><div id="psh-sun">&#9728;</div>'
+    + '<div id="psh-ttl"><b>Solar Assistant</b><span>&#9679; Answers only from verified pages</span></div>'
+    + '<button type="button" id="psh-x" aria-label="Close">&#10005;</button></div>'
     + '<div id="psh-log"></div>'
-    + '<form id="psh-form"><input id="psh-in" maxlength="300" placeholder="Ask anything about plug-in solarâ€¦" autocomplete="off">'
-    + '<button id="psh-send" type="submit" aria-label="Send">âž¤</button></form>';
+    + '<form id="psh-form"><input id="psh-in" maxlength="300" placeholder="Ask anything about plug-in solar&#8230;" autocomplete="off">'
+    + '<button id="psh-send" type="submit" aria-label="Send">&#8594;</button></form>';
   document.body.appendChild(panel);
 
   var log = panel.querySelector("#psh-log");
@@ -98,7 +99,7 @@
       var title = (typeof s === "string") ? s.replace("https://pluginsolarhub.org", "") : (s.title || "Verified page");
       var a = document.createElement("a"); a.className = "psh-chip";
       a.href = url; a.target = "_blank"; a.rel = "noopener";
-      a.innerHTML = "ðŸ“„ " + esc(title);
+      a.innerHTML = "&#128196; " + esc(title); /* page icon */
       row.appendChild(a);
     });
     log.appendChild(row); log.scrollTop = log.scrollHeight;
@@ -128,14 +129,14 @@
       .then(function (res) {
         clearWait();
         if (res.ok) { addMsg("a", res.j.answer || ""); addChips(res.j.sources); }
-        else if (res.status === 503) addMsg("a", res.j.answer || "The assistant is busy right now â€” please try again in a few seconds.");
-        else if (res.status === 429) addMsg("a", "Slow down a little â€” 10 questions per minute is the limit.");
+        else if (res.status === 503) addMsg("a", res.j.answer || "The assistant is busy right now - please try again in a few seconds.");
+        else if (res.status === 429) addMsg("a", "Slow down a little - 10 questions per minute is the limit.");
         else addMsg("a", "Something went wrong (" + (res.j.error || res.status) + "). Try again.");
       })
       .catch(function (e) {
         clearWait();
-        if (e && e.name === "AbortError") addMsg("a", "Taking too long â€” try again.");
-        else addMsg("a", "Network error â€” try again.");
+        if (e && e.name === "AbortError") addMsg("a", "Taking too long - try again.");
+        else addMsg("a", "Network error - try again.");
       })
       .then(function () { clearTimeout(timer); send.disabled = false; input.focus(); });
   });
