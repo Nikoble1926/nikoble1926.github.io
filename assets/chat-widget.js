@@ -77,7 +77,7 @@
     + '<button type="button" id="psh-x" aria-label="Close">&#10005;</button></div>'
     + '<div id="psh-log"></div>'
     + '<form id="psh-form"><input id="psh-in" maxlength="300" placeholder="Ask anything about plug-in solar&#8230;" autocomplete="off">'
-    + '<button id="psh-send" type="submit" aria-label="Send">&#8594;</button></form>';
+    + '<button id="psh-send" type="submit" aria-label="Send">&#8594;&#xFE0E;</button></form>';
   document.body.appendChild(panel);
 
   var log = panel.querySelector("#psh-log");
