@@ -55,6 +55,10 @@
     + "#psh-send{background:#f59e0b;color:#10141b;border:none;border-radius:24px;width:42px;height:42px;"
     + "font-size:19px;font-weight:700;cursor:pointer;flex:0 0 42px;display:flex;align-items:center;justify-content:center}"
     + "#psh-send[disabled]{opacity:.5;cursor:wait}"
+    /* suggestions */
+    + "#psh-sugg{padding:2px 0}"
+    + "#psh-sugg .psh-sh{font-size:12px;color:#9ca3af;margin:2px 0 8px}"
+    + "#psh-sugg .psh-chip{margin:0 6px 6px 0;cursor:pointer}"
     /* mobile */
     + "@media(max-width:480px){#psh-chat{width:calc(100vw - 16px);right:8px;max-height:70vh}}";
 
@@ -81,7 +85,35 @@
   var input = panel.querySelector("#psh-in");
   var send = panel.querySelector("#psh-send");
 
-  btn.addEventListener("click", function () { panel.classList.toggle("open"); if (panel.classList.contains("open")) input.focus(); });
+  // Popular questions: fetched once, shown while the log is empty, hidden after
+  // the first question. 8 random picks per open (rotation).
+  var suggBox = null, suggLoaded = false;
+  function killSugg() { if (suggBox) { suggBox.remove(); suggBox = null; } }
+  function showSugg() {
+    if (log.children.length || suggBox) return;
+    fetch("/api/chat/suggestions").then(function (r) { return r.json(); }).then(function (j) {
+      if (suggLoaded || log.children.length) return;
+      var qs = (j.suggestions || []).slice();
+      for (var i = qs.length - 1; i > 0; i--) { var k = Math.floor(Math.random() * (i + 1)); var t = qs[i]; qs[i] = qs[k]; qs[k] = t; }
+      qs = qs.slice(0, 8);
+      if (!qs.length) return;
+      suggLoaded = true;
+      suggBox = document.createElement("div"); suggBox.id = "psh-sugg";
+      var h = document.createElement("div"); h.className = "psh-sh"; h.textContent = "Popular questions";
+      suggBox.appendChild(h);
+      qs.forEach(function (q) {
+        var c = document.createElement("a"); c.className = "psh-chip"; c.textContent = q;
+        c.addEventListener("click", function () { input.value = q; form.dispatchEvent(new Event("submit", { cancelable: true })); });
+        suggBox.appendChild(c);
+      });
+      log.appendChild(suggBox);
+    }).catch(function () {});
+  }
+
+  btn.addEventListener("click", function () {
+    panel.classList.toggle("open");
+    if (panel.classList.contains("open")) { input.focus(); showSugg(); }
+  });
   panel.querySelector("#psh-x").addEventListener("click", function () { panel.classList.remove("open"); });
 
   function esc(s) { var d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
@@ -109,6 +141,7 @@
     ev.preventDefault();
     var q = input.value.trim();
     if (!q || send.disabled) return;
+    killSugg();
     addMsg("q", q); input.value = ""; send.disabled = true;
 
     var wait = document.createElement("div");
