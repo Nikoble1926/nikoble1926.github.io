@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-07-02",
+  "last_updated": "2026-08-23",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -10,7 +10,7 @@
   },
   "state": "Illinois",
   "slug": "illinois",
-  "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+  "status": "general interconnection rules apply; SB 3104 passed committee 9-4 and second reading, stalled 2026-05-22 under Senate Rule 3-9(a) (not law)",
   "status_badge_verbatim": "Gray area",
   "avg_rate_cents": 17,
   "main_utilities": [
@@ -18,7 +18,17 @@
     "Ameren"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/illinois/",
-  "last_reviewed": "2026-06-14",
-  "legislation": null,
+  "last_reviewed": "2026-08-23",
+  "legislation": {
+    "bill": "SB 3104",
+    "status": "stalled_after_second_reading",
+    "date": "2026-01-29",
+    "effective": null,
+    "max_watts": 391,
+    "cert_required": "Underwriters Laboratories or an equivalent nationally recognized testing laboratory",
+    "signed_by": null,
+    "source_url": "https://www.ilga.gov/legislation/BillStatus?DocTypeID=SB&DocNum=3104&GAID=18&SessionID=114&LegID=165712",
+    "notes": "Plug-in solar energy systems. Filed by Sen. Rachel Ventura 29 January 2026 with 17 Senate sponsors. Do Pass as Amended by Energy and Public Utilities 9-4 on 12 March 2026; second reading 25 March. Third-reading deadline extended three times (8, 15, 22 May) and on 22 May 2026 re-referred to Assignments under Senate Rule 3-9(a); no third reading and no floor vote. Senate Committee Amendment No. 2 (adopted 12 March) exempts systems of 391 W or less to a receptacle outlet from building safety code and product listing provisions requiring alterations to premises, wiring or panels, and prohibits installation above 391 W until the NFPA adopts an NEC standard; UL or equivalent NRTL certification required; label required on systems manufactured on or after 1 January 2027, a violation being an unlawful practice under the Consumer Fraud Act; provider notification within 30 days; no net metering and no distributed generation rebate; HOAs, condominium associations and landlords may not prohibit. Verified against ilga.gov on 23 August 2026."
+  },
   "source_file": "/data/plug-in-solar-laws.json"
 }

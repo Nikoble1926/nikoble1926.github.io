@@ -104,7 +104,7 @@
     {
       "slug": "illinois",
       "state": "Illinois",
-      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status": "general interconnection rules apply; SB 3104 passed committee 9-4 and second reading, stalled 2026-05-22 under Senate Rule 3-9(a) (not law)",
       "page_url": "https://pluginsolarhub.org/state-legality/illinois/",
       "file": "/data/states/illinois.json"
     },
@@ -167,7 +167,7 @@
     {
       "slug": "michigan",
       "state": "Michigan",
-      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status": "general interconnection rules apply; HB 5764 introduced 2026-03-19 and pending in the House Energy Committee (not law)",
       "page_url": "https://pluginsolarhub.org/state-legality/michigan/",
       "file": "/data/states/michigan.json"
     },
@@ -258,7 +258,7 @@
     {
       "slug": "ohio",
       "state": "Ohio",
-      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status": "general interconnection rules apply; HB 755 pending in the House Energy Committee, not reported out (not law)",
       "page_url": "https://pluginsolarhub.org/state-legality/ohio/",
       "file": "/data/states/ohio.json"
     },

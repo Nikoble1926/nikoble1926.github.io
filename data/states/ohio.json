@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-07-02",
+  "last_updated": "2026-08-23",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -10,14 +10,24 @@
   },
   "state": "Ohio",
   "slug": "ohio",
-  "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+  "status": "general interconnection rules apply; HB 755 pending in the House Energy Committee, not reported out (not law)",
   "status_badge_verbatim": "Gray area",
   "avg_rate_cents": 16,
   "main_utilities": [
     "FirstEnergy"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/ohio/",
-  "last_reviewed": "2026-06-14",
-  "legislation": null,
+  "last_reviewed": "2026-08-23",
+  "legislation": {
+    "bill": "HB 755",
+    "status": "in_committee",
+    "date": null,
+    "effective": null,
+    "max_watts": null,
+    "cert_required": null,
+    "signed_by": null,
+    "source_url": "https://www.legislature.ohio.gov/legislation/136/hb755",
+    "notes": "Regards portable solar generation devices; amends 4928.01 and enacts 4928.74, 4928.741 and 4928.742. Primary sponsors Tristan Rader and Chris Glassburn. The official tracker shows Introduced In House and In House Committee (House Energy Committee) completed; Reported By Committee not reached. Secondary coverage describing it as in the Senate Energy Committee is not supported by the official page. Verified against legislature.ohio.gov on 23 August 2026."
+  },
   "source_file": "/data/plug-in-solar-laws.json"
 }

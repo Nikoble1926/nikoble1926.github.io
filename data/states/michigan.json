@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-07-02",
+  "last_updated": "2026-08-23",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -10,7 +10,7 @@
   },
   "state": "Michigan",
   "slug": "michigan",
-  "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+  "status": "general interconnection rules apply; HB 5764 introduced 2026-03-19 and pending in the House Energy Committee (not law)",
   "status_badge_verbatim": "Gray area, higher rates",
   "avg_rate_cents": 19,
   "main_utilities": [
@@ -18,7 +18,17 @@
     "Consumers Energy"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/michigan/",
-  "last_reviewed": "2026-06-14",
-  "legislation": null,
+  "last_reviewed": "2026-08-23",
+  "legislation": {
+    "bill": "HB 5764",
+    "status": "in_committee",
+    "date": "2026-03-19",
+    "effective": null,
+    "max_watts": null,
+    "cert_required": null,
+    "signed_by": null,
+    "source_url": "https://legislature.mi.gov/Bills/Bill?ObjectName=2026-HB-5764",
+    "notes": "Amends 2008 PA 295 by adding sec. 115 on small portable solar generation devices. Introduced by Rep. Will Snyder 19 March 2026, read a first time and referred to the House Committee on Energy; 15 sponsors from both parties. Last recorded action 14 April 2026. Not reported out of committee. Verified against legislature.mi.gov on 23 August 2026."
+  },
   "source_file": "/data/plug-in-solar-laws.json"
 }
