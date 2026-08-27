@@ -1,6 +1,6 @@
 {
     "schema_version":  "1.0",
-    "last_updated":  "2026-08-23",
+    "last_updated":  "2026-08-25",
     "source":  "https://pluginsolarhub.org/state-legality/",
     "disclaimer":  "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
     "license":  {
@@ -65,24 +65,25 @@
                    {
                        "state":  "California",
                        "slug":  "california",
-                       "status":  "general interconnection rules apply; no plug-in-specific statute yet, but SB 868 is live - passed the Senate and sits in Assembly committee",
+                       "status":  "general interconnection rules apply; no plug-in-specific statute yet, but SB 868 is live - passed the Senate and is on Assembly third reading",
                        "status_badge_verbatim":  "Bill pending — not law",
                        "avg_rate_cents":  31,
                        "main_utilities":  [
 
                                           ],
                        "page_url":  "https://pluginsolarhub.org/state-legality/california/",
-                       "last_reviewed":  "2026-08-01",
+                       "last_reviewed":  "2026-08-25",
                        "legislation":  {
                                            "bill":  "SB 868 (Plug and Play Solar Act)",
-                                           "status":  "passed_senate",
-                                           "date":  "2026-04-21",
+                                           "status":  "on_assembly_third_reading",
+                                           "date":  "2026-08-20",
                                            "effective":  null,
+                                           "sunset":  "2030-01-01",
                                            "max_watts":  1200,
                                            "cert_required":  "Underwriters Laboratories or equivalent nationally recognized testing laboratory",
                                            "signed_by":  null,
                                            "source_url":  "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB868",
-                                           "notes":  "Passed the Senate 35-1 on 21 April 2026. Amended in the Assembly 15 June and re-referred to Appropriations; last action 29 June 2026, July 1 hearing postponed. Not law."
+                                           "notes":  "Introduced 5 January 2026 by Senator Wiener. Passed the Senate 35-1 on 21 April 2026. In the Assembly: amended 15 June 2026 and re-referred to Appropriations; placed on the suspense file 5 August 2026; reported from committee \"Do pass as amended\" (Ayes 11, Noes 0) with Assembly Rule 63 suspended on 17 August 2026; read second time and amended 17 and 18 August; read third time and amended, then ordered to third reading, on 20 August 2026. Not law. Caps a portable solar generation device at 1,200 W aggregated AC output per dwelling, requires certification as a plug-in photovoltaic system by Underwriters Laboratories or an equivalent nationally recognized testing laboratory plus a certified feature that isolates the device to prevent backfeeding during an outage, and exempts it from interconnection requirements; a utility may require a simple online registration but the notification \"shall not require approval\" and no fee may be charged. The current text carries a sunset: \"This section shall remain in effect only until January 1, 2030, and as of that date is repealed.\" We have not found an express operative date in the current text, so we do not state when it would take effect. Verified against leginfo.legislature.ca.gov on 25 August 2026."
                                        }
                    },
                    {
@@ -272,7 +273,7 @@
                                            "cert_required":  "Underwriters Laboratories or an equivalent nationally recognized testing laboratory",
                                            "signed_by":  null,
                                            "source_url":  "https://www.ilga.gov/legislation/BillStatus?DocTypeID=SB&DocNum=3104&GAID=18&SessionID=114&LegID=165712",
-                                           "notes":  "Plug-in solar energy systems. Filed by Sen. Rachel Ventura 29 January 2026 with 17 Senate sponsors. Do Pass as Amended by Energy and Public Utilities 9-4 on 12 March 2026; second reading 25 March. Third-reading deadline extended three times (8, 15, 22 May) and on 22 May 2026 re-referred to Assignments under Senate Rule 3-9(a); no third reading and no floor vote. Senate Committee Amendment No. 2 (adopted 12 March) exempts systems of 391 W or less to a receptacle outlet from building safety code and product listing provisions requiring alterations to premises, wiring or panels, and prohibits installation above 391 W until the NFPA adopts an NEC standard; UL or equivalent NRTL certification required; label required on systems manufactured on or after 1 January 2027, a violation being an unlawful practice under the Consumer Fraud Act; provider notification within 30 days; no net metering and no distributed generation rebate; HOAs, condominium associations and landlords may not prohibit. Verified against ilga.gov on 23 August 2026."
+                                           "notes":  "Plug-in solar energy systems. Filed by Sen. Rachel Ventura 29 January 2026 with 17 Senate sponsors. Do Pass as Amended by Energy and Public Utilities 9-4 on 12 March 2026; second reading 25 March. Third-reading deadline extended three times (8, 15, 22 May) and on 22 May 2026 re-referred to Assignments under Senate Rule 3-9(a); no third reading and no floor vote. Three further procedural actions followed on 2 July 2026: Senate Floor Amendments 4, 5 and 7 were re-referred to Assignments under Senate Rule 3-9(b). The last substantive action remains 22 May 2026. Senate Committee Amendment No. 2 (adopted 12 March) exempts systems of 391 W or less to a receptacle outlet from building safety code and product listing provisions requiring alterations to premises, wiring or panels, and prohibits installation above 391 W until the NFPA adopts an NEC standard; UL or equivalent NRTL certification required; label required on systems manufactured on or after 1 January 2027, a violation being an unlawful practice under the Consumer Fraud Act; provider notification within 30 days; no net metering and no distributed generation rebate; HOAs, condominium associations and landlords may not prohibit. Verified against ilga.gov on 23 August 2026."
                                        }
                    },
                    {

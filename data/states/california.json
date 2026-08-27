@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-07-02",
+  "last_updated": "2026-08-25",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -10,24 +10,25 @@
   },
   "state": "California",
   "slug": "california",
-  "status": "general interconnection rules apply; no plug-in-specific statute yet, but SB 868 is live - passed the Senate and sits in Assembly committee",
+  "status": "general interconnection rules apply; no plug-in-specific statute yet, but SB 868 is live - passed the Senate and is on Assembly third reading",
   "status_badge_verbatim": "Bill pending — not law",
   "avg_rate_cents": 31,
   "main_utilities": [],
   "page_url": "https://pluginsolarhub.org/state-legality/california/",
-  "last_reviewed": "2026-08-01",
+  "last_reviewed": "2026-08-25",
   "legislation": {
     "bill": "SB 868 (Plug and Play Solar Act)",
     "short_title_verbatim": "Plug and Play Solar Act",
-    "status": "passed_senate",
-    "date": "2026-04-21",
+    "status": "on_assembly_third_reading",
+    "date": "2026-08-20",
     "effective": null,
+    "sunset": "2030-01-01",
     "max_watts": 1200,
     "cert_required": "Underwriters Laboratories or equivalent nationally recognized testing laboratory",
     "signed_by": null,
     "source_url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB868",
     "source_url_type": "primary - California Legislative Information bill status",
-    "notes": "Introduced 5 January 2026 by Senator Wiener. Passed the Senate 35-1. In the Assembly it was amended 15 June 2026 and re-referred to Appropriations; the last recorded action is 29 June 2026, \"July 1 hearing postponed by committee\". Not law. Caps a portable solar generation device at 1,200 W aggregated AC output per dwelling and exempts it from interconnection requirements, while allowing a utility to require simple online registration."
+    "notes": "Introduced 5 January 2026 by Senator Wiener. Passed the Senate 35-1 on 21 April 2026. In the Assembly: amended 15 June 2026 and re-referred to Appropriations; placed on the suspense file 5 August 2026; reported from committee \"Do pass as amended\" (Ayes 11, Noes 0) with Assembly Rule 63 suspended on 17 August 2026; read second time and amended 17 and 18 August; read third time and amended, then ordered to third reading, on 20 August 2026. Not law. Caps a portable solar generation device at 1,200 W aggregated AC output per dwelling, requires certification as a plug-in photovoltaic system by Underwriters Laboratories or an equivalent nationally recognized testing laboratory plus a certified feature that isolates the device to prevent backfeeding during an outage, and exempts it from interconnection requirements; a utility may require a simple online registration but the notification \"shall not require approval\" and no fee may be charged. The current text carries a sunset: \"This section shall remain in effect only until January 1, 2030, and as of that date is repealed.\" We have not found an express operative date in the current text, so we do not state when it would take effect. Verified against leginfo.legislature.ca.gov on 25 August 2026."
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }
