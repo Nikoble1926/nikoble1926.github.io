@@ -1,6 +1,6 @@
 {
     "schema_version":  "1.0",
-    "last_updated":  "2026-08-25",
+    "last_updated":  "2026-09-11",
     "source":  "https://pluginsolarhub.org/state-legality/",
     "disclaimer":  "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
     "license":  {
@@ -65,25 +65,25 @@
                    {
                        "state":  "California",
                        "slug":  "california",
-                       "status":  "general interconnection rules apply; no plug-in-specific statute yet, but SB 868 is live - passed the Senate and is on Assembly third reading",
+                       "status":  "general interconnection rules apply; no plug-in-specific statute yet, but SB 868 is live - passed both chambers, enrolled 28 August and presented to the Governor on 31 August 2026",
                        "status_badge_verbatim":  "Bill pending — not law",
                        "avg_rate_cents":  31,
                        "main_utilities":  [
 
                                           ],
                        "page_url":  "https://pluginsolarhub.org/state-legality/california/",
-                       "last_reviewed":  "2026-08-25",
+                       "last_reviewed":  "2026-09-11",
                        "legislation":  {
                                            "bill":  "SB 868 (Plug and Play Solar Act)",
-                                           "status":  "on_assembly_third_reading",
-                                           "date":  "2026-08-20",
+                                           "status":  "enrolled_presented_to_governor",
+                                           "date":  "2026-08-31",
                                            "effective":  null,
                                            "sunset":  "2030-01-01",
                                            "max_watts":  1200,
                                            "cert_required":  "Underwriters Laboratories or equivalent nationally recognized testing laboratory",
                                            "signed_by":  null,
                                            "source_url":  "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB868",
-                                           "notes":  "Introduced 5 January 2026 by Senator Wiener. Passed the Senate 35-1 on 21 April 2026. In the Assembly: amended 15 June 2026 and re-referred to Appropriations; placed on the suspense file 5 August 2026; reported from committee \"Do pass as amended\" (Ayes 11, Noes 0) with Assembly Rule 63 suspended on 17 August 2026; read second time and amended 17 and 18 August; read third time and amended, then ordered to third reading, on 20 August 2026. Not law. Caps a portable solar generation device at 1,200 W aggregated AC output per dwelling, requires certification as a plug-in photovoltaic system by Underwriters Laboratories or an equivalent nationally recognized testing laboratory plus a certified feature that isolates the device to prevent backfeeding during an outage, and exempts it from interconnection requirements; a utility may require a simple online registration but the notification \"shall not require approval\" and no fee may be charged. The current text carries a sunset: \"This section shall remain in effect only until January 1, 2030, and as of that date is repealed.\" We have not found an express operative date in the current text, so we do not state when it would take effect. Verified against leginfo.legislature.ca.gov on 25 August 2026."
+                                           "notes":  "Introduced 5 January 2026 by Senator Wiener. Passed the Senate 35-1 on 21 April 2026. In the Assembly: amended 15 June 2026 and re-referred to Appropriations; placed on the suspense file 5 August 2026; reported from committee \"Do pass as amended\" (Ayes 11, Noes 0) with Assembly Rule 63 suspended on 17 August 2026; read second time and amended 17 and 18 August; read third time and amended, then ordered to third reading, on 20 August 2026; enrolled 28 August 2026; enrolled and presented to the Governor at 6 p.m. on 31 August 2026. Not law. Caps a portable solar generation device at 1,200 W aggregated AC output per dwelling, requires certification as a plug-in photovoltaic system by Underwriters Laboratories or an equivalent nationally recognized testing laboratory plus a certified feature that isolates the device to prevent backfeeding during an outage, and exempts it from interconnection requirements; a utility may require a simple online registration but the notification \"shall not require approval\" and no fee may be charged. The current text carries a sunset: \"This section shall remain in effect only until January 1, 2030, and as of that date is repealed.\" We have not found an express operative date in the current text, so we do not state when it would take effect. Verified against leginfo.legislature.ca.gov on 11 September 2026."
                                        }
                    },
                    {
@@ -607,25 +607,25 @@
                    {
                        "state":  "New Jersey",
                        "slug":  "new-jersey",
-                       "status":  "Passed legislature — awaiting Governor",
-                       "status_badge_verbatim":  "Passed legislature — awaiting Governor",
+                       "status":  "Signed — takes effect 1 Mar 2027",
+                       "status_badge_verbatim":  "Signed — takes effect 1 Mar 2027",
                        "avg_rate_cents":  18,
                        "main_utilities":  [
                                               "PSE\u0026G",
                                               "JCP\u0026L"
                                           ],
                        "page_url":  "https://pluginsolarhub.org/state-legality/new-jersey/",
-                       "last_reviewed":  "2026-08-01",
+                       "last_reviewed":  "2026-09-11",
                        "legislation":  {
                                            "bill":  "S2368 / A4836 (Garden State Balcony Solar Act)",
-                                           "status":  "passed_awaiting_governor",
-                                           "date":  "2026-06-30",
-                                           "effective":  null,
+                                           "status":  "signed",
+                                           "date":  "2026-09-01",
+                                           "effective":  "2027-03-01",
                                            "max_watts":  1200,
-                                           "cert_required":  "Nationally recognized testing laboratory",
-                                           "signed_by":  null,
-                                           "source_url":  "https://pub.njleg.state.nj.us/Bills/2026/S2500/2368_R3.HTM",
-                                           "notes":  "Garden State Plug-In Solar Act passed both chambers unanimously on June 30, 2026 (Senate 40-0, Assembly 79-0); awaiting Gov. Sherrill. Up to 1,200W systems; effective 6 months after enactment per bill text. To verify against NJ Legislature record before marking signed."
+                                           "cert_required":  "Listed or certified in accordance with Underwriters Laboratories Standard No. 3700, or a comparable standard, by a nationally recognized testing laboratory",
+                                           "signed_by":  "Gov. Mikie Sherrill",
+                                           "source_url":  "https://pub.njleg.gov/Bills/2026/S2500/2368_R3.HTM",
+                                           "notes":  "Signed by Governor Mikie Sherrill on 1 September 2026 (S2368/A4836). Section 5: the act takes effect six months after enactment - 1 March 2027 - except that the Board of Public Utilities may take anticipatory action earlier. A 'portable solar generation device' is movable photovoltaic equipment with a maximum output of not more than 1,200 watts, connected through a standard 120-volt outlet on the customer's side of the meter, listed or certified in accordance with Underwriters Laboratories Standard No. 3700 'or a comparable standard' by a nationally recognized testing laboratory, and including a device or feature that prevents export during a power outage. Exempt from interconnection agreements and from net metering; the utility may not require prior approval, a fee, or additional equipment. 1,200 W is also a combined cap per service address, or per dwelling unit in multi-family housing. Landlords may not prohibit a tenant who pays their own electric service from using one within the leased premises, including a leased balcony or patio; homeowners' and condominium associations may not enforce a prohibition; 14 days' written notice is required. Municipalities may not prohibit use on residential property or require a permit, fee or licence. Vote figures were withdrawn on 11 September 2026 pending verification against the official roll call. Read from the bill text (third reprint) and the Governor's press release, both on 11 September 2026."
                                        }
                    },
                    {
