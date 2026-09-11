@@ -7,7 +7,7 @@ Quick tip: Gov. Sherrill signed the Garden State Plug-In Solar Act
 legalize plug-in / balcony solar at the state level.
 
 The plug-in part (verified from the bill):
- - Cap 1,200W of panel capacity for a plug-in solar system.
+ - Cap: a maximum power output of not more than 1,200 watts - output, not panel capacity.
  - Equipment must be certified by a nationally recognized testing
    laboratory (UL or equivalent — i.e. UL 1741 / UL 3700).
  - Passed both chambers unanimously on June 30, 2026 (Senate 40-0,
