@@ -193,3 +193,25 @@ robocopy D:\repos\nikoble1926.github.io D:\repos\_deploy\psh /MIR /XD .git .wran
 NOTE: the older "Go-live checklist" above (steps using `git add -A`, /root/ server
 paths, storm_watch.py) is from the server-era workflow. On the laptop use the
 explicit-paths + robocopy + wrangler chain in step 5 above.
+
+------------------------------------------------------------
+STATUS, 11 September 2026 - NJ templates are SPENT
+------------------------------------------------------------
+nj-signed-READY.html was consumed on 11 Sep 2026: it became the live
+/state-legality/new-jersey/ page. DO NOT REUSE IT. It still contains four
+things the live page has since corrected, and it is deliberately NOT being
+kept in sync - a synchronised copy of a dead template is maintenance with no
+benefit. Kept only so the audit trail is readable:
+  - "Garden State Plug-In Solar Act" - the Act's section 1 reads BALCONY.
+  - vote figures 40-0 / 79-0 and "unanimously" - withdrawn everywhere; our
+    own two files disagreed and the roll call was never opened.
+  - "1,200W of panel capacity" - section 2a(1) says maximum POWER OUTPUT.
+  - unfilled [[SIGN_DATE]] / [[EFFECTIVE_DATE]] / [[CHAPTER_OR_LAW_REF]].
+nj-signed-pitch-READY.txt WAS realigned on 11 Sep 2026 and is still live: it
+now matches the published page fact for fact. It has not been sent. Nikos's
+OK is required before it goes anywhere.
+
+LESSON (cost us a full round): a standby draft does NOT inherit corrections
+made after it was written. The act's name was fixed against the bill text on
+25 August; this template, written in July, never learned it. Before shipping
+ANY standby file, diff it against what the live pages say today.

@@ -1,32 +1,52 @@
-Subject: New Jersey signs Garden State Plug-In Solar Act — 9th state to legalize plug-in solar
+Subject: New Jersey signs the Garden State Balcony Solar Act - the 9th state,
+         and it takes effect 1 March 2027
 
 Hi [[REPORTER_NAME]],
 
-Quick tip: Gov. Sherrill signed the Garden State Plug-In Solar Act
-(S2368/A4836) on [[SIGN_DATE]]. New Jersey becomes the 9th U.S. state to
-legalize plug-in / balcony solar at the state level.
+Quick tip: Gov. Sherrill signed the Garden State Balcony Solar Act
+(S2368/A4836) on September 1, 2026. New Jersey is the 9th U.S. state to pass
+a plug-in solar law - but the plug-in provisions do not take effect until
+March 1, 2027, six months after enactment. Until then New Jersey stays under
+ordinary utility interconnection rules, so "legal in New Jersey today" would
+be wrong and we do not write it that way.
 
-The plug-in part (verified from the bill):
- - Cap: a maximum power output of not more than 1,200 watts - output, not panel capacity.
- - Equipment must be certified by a nationally recognized testing
-   laboratory (UL or equivalent — i.e. UL 1741 / UL 3700).
- - Passed both chambers unanimously on June 30, 2026 (Senate 40-0,
-   Assembly 79-0) — a rare fully bipartisan energy vote.
- - Provisions take effect [[EFFECTIVE_DATE]] (six months after enactment).
- - Enacted citation: [[CHAPTER_OR_LAW_REF]].
+The plug-in part, read from the bill text (third reprint):
+ - Cap: a maximum power output of not more than 1,200 watts. The Act measures
+   output - what the device sends out - not the rated capacity of the panels
+   behind it.
+ - Certified equipment: the device must be "listed or certified in accordance
+   with Underwriters Laboratories Standard No. 3700... or a comparable
+   standard, or a combination of standards" by a nationally recognized testing
+   laboratory.
+ - It must stop exporting in a blackout.
+ - 1,200W is also a per-address cap: the combined output of all such devices
+   at one service address, or one dwelling unit in multi-family housing.
+ - Landlords and homeowners' / condominium associations may not prohibit it,
+   though reasonable restrictions on size and placement are allowed.
+ - A tenant must give at least 14 days' written notice.
+ - No municipal permit, application, fee or licence may be required.
+ - Provisions take effect March 1, 2027.
+
+We are not quoting an enacted chapter citation. One was circulating; we could
+not verify it from njleg and so it does not appear on our page either.
 
 Why it matters beyond NJ: New Jersey is one of the most renter- and
-apartment-dense states in the country — the Jersey City / Newark commuter
-belt alone is hundreds of thousands of rental units — and residential
-electricity runs above the national average (~18¢/kWh). Plug-in solar is
-one of the only solar options open to a renter, so a statewide law here
-reaches an unusually large audience. It also extends the Northeast wave
-that ran through Connecticut (HB 5340, June 4), Vermont (S.202, June 16)
-and New Hampshire (SB 540, July 2).
+apartment-dense states in the country - the Jersey City / Newark commuter
+belt alone is hundreds of thousands of rental units - and residential
+electricity runs above the national average (~18c/kWh). Plug-in solar is one
+of the only solar options open to a renter, so a statewide law here reaches
+an unusually large audience. It also extends the Northeast wave that ran
+through Connecticut (HB 5340, June 4), Vermont (S.202, June 16) and New
+Hampshire (SB 540, July 2). New York's SUNNY Act is still with Gov. Hochul;
+if she signs, New York is the 10th.
+
+Sources we used, both read on 11 September 2026:
+  Governor's press release - governor.nj.gov
+  Bill text, third reprint - pub.njleg.gov/Bills/2026/S2500/2368_R3.HTM
 
 I track all 50 state laws as a structured dataset and write the
 plain-English explainer at
-pluginsolarhub.org/state-legality/new-jersey/ — happy to share data, a
+pluginsolarhub.org/state-legality/new-jersey/ - happy to share data, a
 quote, or background. The dataset is free JSON: pluginsolarhub.org/developers/.
 
 Best,
@@ -35,10 +55,14 @@ PlugInSolarHub
 https://pluginsolarhub.org
 
 --- DO NOT SEND without Nikos's OK. Recipients (find current emails on the
-    day — do not guess addresses):
+    day - do not guess addresses):
       National: Grist, Solar Power World, pv magazine USA
       NJ local: NJ Spotlight News (energy desk), NJ.com (business/energy)
-    Honest framing only. Never claim "no fees / no utility approval" for NJ
-    unless the enacted bill text confirms it — the verified facts above are
-    cap 1,200W + certified equipment + effective date. One email per outlet,
-    no follow-up spam.
+    Every fact above is on the live page and traceable to the bill text or the
+    governor's release. Four things this draft used to say and must never say
+    again: "Garden State Plug-In Solar Act" (it is BALCONY), the vote figures
+    40-0 / 79-0 (withdrawn - we never opened the roll call), "1,200W of panel
+    capacity" (the Act caps OUTPUT), and "UL 1741" (the Act names UL 3700 or
+    a comparable standard; 1741 does not appear in it). Do not write that
+    plug-in solar is legal in New Jersey now; it is legal from 1 March 2027.
+    One email per outlet, no follow-up spam.
