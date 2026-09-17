@@ -9,6 +9,7 @@ Updated as bills move; legality dataset last verified 2026-06-14.
 - [Plug-in solar legality dataset (all 50 states, JSON)](https://pluginsolarhub.org/data/plug-in-solar-laws.json): Schema-versioned dataset covering legal status, average electricity rate, main utilities, and current plug-in solar legislation (bill, status, cap, effective date, source) for every U.S. state.
 - [Per-state directory index (JSON)](https://pluginsolarhub.org/data/states/index.json): Lists every per-state record with slug, status, page URL, and file path.
 - [Developer documentation](https://pluginsolarhub.org/developers/): Endpoints, schema reference, curl + JS examples, license, and contact for data partnerships.
+- Signed pay per call version of the legality dataset (x402): https://solar.nsgoods.org/solar-legality?state=<state>
 
 ## Key pages
 

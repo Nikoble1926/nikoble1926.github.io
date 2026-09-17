@@ -39,6 +39,15 @@
 <p style="margin-top:14px"><strong>On optional fields.</strong> <code>effective_delayed</code> and <code>watt_tiers</code> are <em>absent</em> from most records rather than <code>null</code>. Absence means we have not established the information from the statute &mdash; it does not mean the state has a single effective date or a single tier. Treat them as present-or-missing and do not assume a default. We add them per state as each statute is read from its primary text.</p>
 <p class="tag" style="margin:8px 0 0">All responses are <code>application/json</code> served from GitHub Pages over HTTPS. No CORS restrictions for read.</p>
 
+<h2 style="margin-top:32px">Signed answers for agents (x402)</h2>
+<p>The same dataset is also served as a signed, dated answer per state, pay per call, for agents that need a verifiable response rather than a free file.</p>
+<ul>
+<li>Endpoint: <code>https://solar.nsgoods.org/solar-legality?state=california</code> (any state name or slug)</li>
+<li>Price: 0.005 USDC per call on Base, paid with the x402 protocol (HTTP 402, no account, no API key)</li>
+<li>Free preview of the response format: <code><a href="https://solar.nsgoods.org/solar-legality/preview">https://solar.nsgoods.org/solar-legality/preview</a></code></li>
+<li>Each response carries a signature you can verify offline against the nsgoods manifest: <code><a href="https://x402.nsgoods.org/proof/index.json">https://x402.nsgoods.org/proof/index.json</a></code></li>
+</ul>
+<p>Use the free JSON above for reading and scripts. Use the signed endpoint when your agent has to prove what it was told, and when. Operated by the same team as this site.</p>
 <h2 style="margin-top:32px">Schema</h2>
 <table><caption class="sr-only">State record schema</caption><thead><tr><th scope="col">Field</th><th scope="col">Type</th><th scope="col">Description</th></tr></thead><tbody>
 <tr><td><code>schema_version</code></td><td>string</td><td>Dataset schema version (currently <code>"1.0"</code>).</td></tr>
