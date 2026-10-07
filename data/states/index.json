@@ -237,7 +237,7 @@
     {
       "slug": "new-york",
       "state": "New York",
-      "status": "Passed legislature — awaiting Governor",
+      "status": "Passed — not yet sent to the Governor",
       "page_url": "https://pluginsolarhub.org/state-legality/new-york/",
       "file": "/data/states/new-york.json"
     },
