@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-08-25",
+  "last_updated": "2026-10-07",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -10,25 +10,34 @@
   },
   "state": "California",
   "slug": "california",
-  "status": "general interconnection rules apply; no plug-in-specific statute yet, but SB 868 is live - passed both chambers, enrolled 28 August and presented to the Governor on 31 August 2026",
-  "status_badge_verbatim": "Bill pending — not law",
+  "status": "Signed 30 September 2026 (SB 868, Chapter 985, Statutes of 2026); takes effect 1 January 2027 under the California Constitution, Art. IV §8(c); the interconnection exemption is repealed on 1 January 2030",
+  "status_badge_verbatim": "Signed — takes effect 1 Jan 2027",
   "avg_rate_cents": 31,
   "main_utilities": [],
   "page_url": "https://pluginsolarhub.org/state-legality/california/",
-  "last_reviewed": "2026-09-11",
+  "last_reviewed": "2026-10-07",
   "legislation": {
-    "bill": "SB 868 (Plug and Play Solar Act)",
-    "short_title_verbatim": "Plug and Play Solar Act",
-    "status": "enrolled_presented_to_governor",
-    "date": "2026-08-31",
-    "effective": null,
+    "bill": "SB 868",
+    "status": "signed",
+    "date": "2026-09-30",
+    "effective": "2027-01-01",
     "sunset": "2030-01-01",
     "max_watts": 1200,
     "cert_required": "Underwriters Laboratories or equivalent nationally recognized testing laboratory",
     "signed_by": null,
     "source_url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB868",
     "source_url_type": "primary - California Legislative Information bill status",
-    "notes": "Introduced 5 January 2026 by Senator Wiener. Passed the Senate 35-1 on 21 April 2026. In the Assembly: amended 15 June 2026 and re-referred to Appropriations; placed on the suspense file 5 August 2026; reported from committee \"Do pass as amended\" (Ayes 11, Noes 0) with Assembly Rule 63 suspended on 17 August 2026; read second time and amended 17 and 18 August; read third time and amended, then ordered to third reading, on 20 August 2026; enrolled 28 August 2026; enrolled and presented to the Governor at 6 p.m. on 31 August 2026. Not law. Caps a portable solar generation device at 1,200 W aggregated AC output per dwelling, requires certification as a plug-in photovoltaic system by Underwriters Laboratories or an equivalent nationally recognized testing laboratory plus a certified feature that isolates the device to prevent backfeeding during an outage, and exempts it from interconnection requirements; a utility may require a simple online registration but the notification \"shall not require approval\" and no fee may be charged. The current text carries a sunset: \"This section shall remain in effect only until January 1, 2030, and as of that date is repealed.\" We have not found an express operative date in the current text, so we do not state when it would take effect. Verified against leginfo.legislature.ca.gov on 11 September 2026."
+    "notes": "Approved by the Governor and filed with the Secretary of State on 30 September 2026; Chapter 985, Statutes of 2026. Title: \"Electricity: portable solar generation devices.\" The act states no operative date. Under the California Constitution, Art. IV §8(c)(1), a statute goes into effect on January 1 next following a 90-day period from enactment, so SB 868 takes effect on 1 January 2027; that date comes from the Constitution, not from the text of the act. Pub. Util. Code §8530(c): a portable solar generation device has a maximum aggregated AC output of no more than 1,200 watts per dwelling, is designed to connect through a receptacle, meets the National Electrical Code and the California Electrical Code, is certified as a plug-in photovoltaic system by Underwriters Laboratories or an equivalent nationally recognized testing laboratory, and includes a certified feature that prevents backfeeding during an outage. §8531 exempts it from all interconnection requirements; a utility may require a simple online registration of address, make, model and size, which \"shall not require approval\", and may not charge a fee or require additional controls. §8531(e): \"This section shall remain in effect only until January 1, 2030, and as of that date is repealed.\" §8532: beginning 1 January 2030, a receptacle-connected portable photovoltaic device that does not meet §8530(c)(4) to (6) shall not be sold or offered for sale in the state. Earlier history: introduced 5 January 2026; passed the Senate 35-1 on 21 April 2026; enrolled 28 August and presented to the Governor 31 August 2026. The record names no signatory. Read from leginfo.legislature.ca.gov (bill status and chaptered text) on 7 October 2026.",
+    "certification_requirement": {
+      "required": true,
+      "provision": "Cal. Pub. Util. Code §8530(c)(5)-(6)",
+      "quote": "Is certified as a plug-in photovoltaic system by Underwriters Laboratories, or an equivalent nationally recognized testing laboratory.",
+      "standard_named": null,
+      "effective": "2027-01-01",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB868",
+      "verified": "2026-10-07",
+      "note": "Verbatim from the primary text, paragraph (5). Paragraph (6) separately requires a feature, certified by Underwriters Laboratories or an equivalent nationally recognized testing laboratory, that prevents backfeeding during an outage. The effective date comes from the California Constitution, Art. IV §8(c)(1), not from the act. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
+    }
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }

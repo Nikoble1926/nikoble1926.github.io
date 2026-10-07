@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-07-08",
+  "last_updated": "2026-10-07",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -18,7 +18,7 @@
     "JCP&L"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/new-jersey/",
-  "last_reviewed": "2026-09-11",
+  "last_reviewed": "2026-10-07",
   "legislation": {
     "bill": "S2368 / A4836 (Garden State Balcony Solar Act)",
     "status": "signed",
@@ -28,10 +28,20 @@
     "cert_required": "Listed or certified in accordance with Underwriters Laboratories Standard No. 3700, or a comparable standard, by a nationally recognized testing laboratory",
     "signed_by": "Gov. Mikie Sherrill",
     "source_url": "https://pub.njleg.gov/Bills/2026/S2500/2368_R3.HTM",
-    "notes": "Signed by Governor Mikie Sherrill on 1 September 2026 (S2368/A4836). Section 5: the act takes effect six months after enactment - 1 March 2027 - except that the Board of Public Utilities may take anticipatory action earlier. A 'portable solar generation device' is movable photovoltaic equipment with a maximum output of not more than 1,200 watts, connected through a standard 120-volt outlet on the customer's side of the meter, listed or certified in accordance with Underwriters Laboratories Standard No. 3700 'or a comparable standard' by a nationally recognized testing laboratory, and including a device or feature that prevents export during a power outage. Exempt from interconnection agreements and from net metering; the utility may not require prior approval, a fee, or additional equipment. 1,200 W is also a combined cap per service address, or per dwelling unit in multi-family housing. Landlords may not prohibit a tenant who pays their own electric service from using one within the leased premises, including a leased balcony or patio; homeowners' and condominium associations may not enforce a prohibition; 14 days' written notice is required. Municipalities may not prohibit use on residential property or require a permit, fee or licence. Vote figures were withdrawn on 11 September 2026 pending verification against the official roll call. Read from the bill text (third reprint) and the Governor's press release, both on 11 September 2026.",
+    "notes": "Signed by Governor Mikie Sherrill on 1 September 2026 (S2368/A4836). Section 5: the act takes effect six months after enactment - 1 March 2027 - except that the Board of Public Utilities may take anticipatory action earlier. A 'portable solar generation device' is movable photovoltaic equipment with a maximum output of not more than 1,200 watts, connected through a standard 120-volt outlet on the customer's side of the meter, listed or certified in accordance with Underwriters Laboratories Standard No. 3700 'or a comparable standard' by a nationally recognized testing laboratory, and including a device or feature that prevents export during a power outage. Exempt from interconnection agreements and from net metering; the utility may not require prior approval, a fee, or additional equipment. 1,200 W is also a combined cap per service address, or per dwelling unit in multi-family housing. Landlords may not prohibit a tenant who pays their own electric service from using one within the leased premises, including a leased balcony or patio; homeowners' and condominium associations may not enforce a prohibition; 14 days' written notice is required. Municipalities may not prohibit use on residential property or require a permit, fee or licence. Vote figures were withdrawn on 11 September 2026 pending verification against the official roll call. Read from the bill text (third reprint) and the Governor's press release, both on 11 September 2026. Re-read on 7 October 2026: the Legislature's bill record shows \"Approved P.L.2026, c.82.\" on 1 September 2026, with the third reprint as the last text.",
     "short_title_verbatim": "Garden State Balcony Solar Act",
     "source_url_type": "primary - bill text as reported by the Assembly Budget Committee, third reprint",
-    "source_url_secondary": "https://pv-magazine-usa.com/2026/07/01/new-jersey-legislature-unanimously-passes-plug-in-solar-bill/"
+    "source_url_secondary": "https://pv-magazine-usa.com/2026/07/01/new-jersey-legislature-unanimously-passes-plug-in-solar-bill/",
+    "certification_requirement": {
+      "required": true,
+      "provision": "P.L.2026, c.82, §2(a) (S2368, third reprint)",
+      "quote": "is listed or certified in accordance with Underwriters Laboratories Standard No. 3700, the “Outline of Investigation for Interactive Plug-in Photovoltaic Equipment and Systems,” or a comparable standard, or a combination of standards that together address plug-in photovoltaic safety and grid-parallel by a nationally recognized testing laboratory",
+      "standard_named": "UL 3700",
+      "effective": "2027-03-01",
+      "source_url": "https://pub.njleg.gov/Bills/2026/S2500/2368_R3.HTM",
+      "verified": "2026-10-07",
+      "note": "Verbatim from the primary text. Section 5: \"This act shall take effect six months after the date of enactment\"; approved 1 September 2026 as P.L.2026, c.82, so 1 March 2027. Section 2 carries no separate date. The chaptered text is not yet published; the third reprint is the last version on the Legislature's bill record. 'Nationally recognized testing laboratory' is the term used in 29 C.F.R. 1910.7; UL, CSA and Intertek/ETL are all NRTLs. A CE mark is a European self-declaration and is not an NRTL listing."
+    }
   },
   "source_file": "/data/plug-in-solar-laws.json"
 }

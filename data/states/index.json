@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-07-02",
+  "last_updated": "2026-10-07",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -41,7 +41,7 @@
     {
       "slug": "california",
       "state": "California",
-      "status": "general interconnection rules apply; no plug-in-specific statute as of 2026-06",
+      "status": "Signed 30 September 2026 (SB 868, Chapter 985, Statutes of 2026); takes effect 1 January 2027 under the California Constitution, Art. IV §8(c); the interconnection exemption is repealed on 1 January 2030",
       "page_url": "https://pluginsolarhub.org/state-legality/california/",
       "file": "/data/states/california.json"
     },
@@ -55,7 +55,7 @@
     {
       "slug": "connecticut",
       "state": "Connecticut",
-      "status": "Signed — takes effect 1 Oct 2026",
+      "status": "In force since 1 Oct 2026",
       "page_url": "https://pluginsolarhub.org/state-legality/connecticut/",
       "file": "/data/states/connecticut.json"
     },

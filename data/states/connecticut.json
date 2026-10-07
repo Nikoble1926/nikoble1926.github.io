@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-07-02",
+  "last_updated": "2026-10-07",
   "source": "https://pluginsolarhub.org/state-legality/",
   "disclaimer": "Informational, not legal advice. Plug-in solar law evolves fast; verify with your utility and state authority.",
   "license": {
@@ -10,15 +10,15 @@
   },
   "state": "Connecticut",
   "slug": "connecticut",
-  "status": "Signed — takes effect 1 Oct 2026",
-  "status_badge_verbatim": "Signed — takes effect 1 Oct 2026",
+  "status": "In force since 1 Oct 2026",
+  "status_badge_verbatim": "In force since 1 Oct 2026",
   "avg_rate_cents": 29,
   "main_utilities": [
     "Eversource",
     "United Illuminating"
   ],
   "page_url": "https://pluginsolarhub.org/state-legality/connecticut/",
-  "last_reviewed": "2026-08-01",
+  "last_reviewed": "2026-10-07",
   "legislation": {
     "bill": "HB 5340",
     "status": "signed",
@@ -28,7 +28,7 @@
     "cert_required": "Accredited testing laboratory (UL or equivalent)",
     "signed_by": "Gov. Ned Lamont",
     "source_url": "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00127-R00HB-05340-PA.PDF",
-    "notes": "Public Act 26-127 Sec. 9. 'Portable solar generation device' has a maximum POWER OUTPUT of not more than 1,200 watts, connects through a standard 120-volt AC outlet behind the customer's meter, and must meet the State Building Code, NEC (NFPA-70), IEEE 1547 and UL 1741. One device per meter. Sec. 9(a)(9) requires a consumer warning that generation exceeding on-site consumption is CHARGED TO THE CUSTOMER AS USAGE unless the customer has a net-metering meter. Does not exempt the device from the State Building Code, Fire Safety Code, State Fire Prevention Code or local ordinance.",
+    "notes": "Public Act 26-127 Sec. 9. 'Portable solar generation device' has a maximum POWER OUTPUT of not more than 1,200 watts, connects through a standard 120-volt AC outlet behind the customer's meter, and must meet the State Building Code, NEC (NFPA-70), IEEE 1547 and UL 1741. One device per meter. Sec. 9(a)(9) requires a consumer warning that generation exceeding on-site consumption is CHARGED TO THE CUSTOMER AS USAGE unless the customer has a net-metering meter. Does not exempt the device from the State Building Code, Fire Safety Code, State Fire Prevention Code or local ordinance. Re-read on 7 October 2026: the General Assembly's bill record shows no action after \"Signed by the Governor\" on 4 June 2026; Sec. 9 is marked \"(Effective October 1, 2026)\" and has been in force since that date.",
     "source_url_type": "primary - Connecticut Public Act 26-127, enacted text",
     "effective_note": "Sections 9 and 10 are both '(NEW) (Effective October 1, 2026)'.",
     "watt_tiers": [
